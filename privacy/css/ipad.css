@@ -1,0 +1,45 @@
+@media (min-width: 700px) and (max-width: 800px) {
+    .becomeDriver {
+        width: 10rem;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .sliders{
+        background-position-x: 20%;
+    }
+    .homeDiv {
+        padding-top: 50vh;
+    }
+    .homeDiv h2{
+        line-height: 3rem;
+        font-size: 2.2rem;
+    }
+    .contentSections{
+        margin-top: -20vh;
+        width: 90%;
+    }
+    .whiteBG{
+        display: none;
+    }
+    .whyDriveImg{
+        height: auto!important;
+        margin-top: 7vh;
+    }
+    .glimpse{
+        padding: 7vh 50px;
+        float:right;
+        margin-right: -11.1%;
+    }
+    .glimpseDiv img, .glimpseDiv iframe{
+        width: 100%!important;
+    }
+    .footerBgFront {
+        background: url(../img/SVG/layer_front.svg) 0 100%/18% 17%;
+        background-repeat: repeat-x;
+    }
+    .footerBgBack {
+        background: url(../img/SVG/layer_back.svg) 0 100%/47% 35%;
+        background-repeat: repeat-x;
+    }
+}

@@ -1,0 +1,219 @@
+@media (min-width: 450px) and (max-width: 500px) {
+    .menuTriangle {
+        display: none;
+        margin: 0;
+    }
+
+    .header__logo {
+        margin-left: -111px;
+    }
+
+    .menu {
+        /* float: right; */
+        /* border-bottom-right-radius: 10px; */
+        /* border-bottom-left-radius: 10px; */
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-top: -12px;
+        padding: 20px 20px 0;
+        /* height: 10vh; */
+        /* margin-left: 484px; */
+        margin-right: 483px;
+    }
+
+    .carousel-caption {
+        font-size: 16px;
+        margin-top: -3px;
+        color: white;
+    }
+
+    .becomeDriver_top {
+        width: 6rem;
+        height: 6.5rem;
+        margin: 2.5rem auto;
+        border-radius: 100px;
+        background-color: #24bfe5;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 600;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        margin-left: -1951px;
+        margin-top: 132px;
+    }
+
+    .pp1 {
+        margin-top: -21px;
+        color: black;
+        margin-right: -62px;
+    }
+
+    .pp2 {
+        margin-top: 171px;
+        margin-right: -172px;
+        color: black;
+    }
+
+    .one {
+        color: black;
+        font-family: cursive;
+    }
+
+    .sliders {
+        height: 48vh;
+        background-color: #9e9797;
+    }
+
+    .homepage-features {
+        width: 387px;
+        margin-top: 46px;
+    }
+
+    .homepage-features__background {
+        display: none;
+    }
+
+    .carousel-controls {
+        display: none;
+    }
+
+    .whyDriveImg {
+        height: 46%;
+        width: auto;
+        float: left;
+        max-width: 65%;
+        margin-left: 10%;
+        margin-top: -602px;
+    }
+
+    .whiteBG {
+        background-color: #566da2;
+        height: 100%;
+    }
+
+    .whyDriveImg {
+        height: 47%;
+        width: 98%;
+        float: left;
+        max-width: 100%;
+        margin-left: 16%;
+        margin-top: -602px;
+    }
+
+    .whyDriveContent {
+        font-family: 'Raleway';
+        /* text-align: right; */
+        color: #000000;
+        /* float: right; */
+        width: 35%;
+        margin-top: -344px;
+        display: table;
+        margin-left: 97px;
+        text-align: center;
+    }
+
+    .glimpseDiv h2, .contentSections h2 {
+        font-family: cursive;
+        font-size: 3.2rem;
+        line-height: 3.5rem;
+        margin: 0;
+        font-weight: 700;
+        color: #505050;
+        margin-top: -1px;
+        text-align: center;
+    }
+
+    .glimpse {
+        margin-top: 422px;
+        width: 123%;
+    }
+
+    .becomeDriver {
+        margin-top: 121px;
+
+    }
+    .video-container{
+        width: 80%;
+        height: 85%
+    }
+    .vidoeram{
+        width: 406px;
+        height: 300px;
+        margin-left: 11px;
+    }
+    .carDiv {
+        text-align: center;
+        margin: 80vh 20% 7vh 20%;
+    }
+    .carDiv h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+    .slidersCar {
+        margin-top: 144px;
+    }
+    /*.bx-wrapper img {*/
+        /*max-width: 280px;*/
+        /*width: 271px;*/
+        /*margin-left: -32px;*/
+    /*}*/
+    .car {
+        height: 158vh;
+    }
+    .bx-wrapper .bx-pager {
+        margin-bottom: 46px;
+    }
+    .contactLogo {
+        margin-left: -50px;
+        margin-top: -38px;
+    }
+    .contactLabel img {
+        margin-left: -50px;
+        margin-top: -6px;
+        margin-bottom: -4px;
+    }
+    .qFooter {
+        height: 45vh;
+    }
+    .qFooter .container {
+        padding-top: 0vh;
+    }
+    .col-lg-3 .col-xs-12{
+        display: none;
+    }
+    .footerLinks{
+        display: none;
+    }
+    .footerImages{
+        display: none;
+    }
+    .site-container {
+        height: 24%;
+    }
+    .site-pusher{
+        height:24%;
+    }
+    .carDiv .bx-wrapper .bx-controls-direction a{
+        display: none;
+    }
+
+}
+
+
+.menuBG {
+    /* display: block; */
+    /* float: right; */
+}
+.menu a{
+
+}
+.bx-wrapper {
+    /*position: relative;*/
+    margin: -498px auto 60px;
+    /*padding: 0;*/
+}
+.site-pusher, .site-container {
+    height: 14%;}
+nav.menu {
+    height: 14vh;
+}
