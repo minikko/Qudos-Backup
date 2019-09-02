@@ -163,17 +163,17 @@ p{
   display: block;
   cursor: pointer;
 }
-.header__logo object {
+.header__logo img {
   width: 120px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   transition: 0.3s;
 }
-.header__logo object:last-child {
+.header__logo img:last-child {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
+  opacity: 1;
 }
 .header__nav {
   position: fixed;
@@ -200,7 +200,7 @@ p{
   transform: translate3d(0, 0, 0);
 }
 .header__nav a {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   color: #0f1423;
   margin-bottom: 20px;
@@ -227,7 +227,7 @@ p{
   height: 35px;
   line-height: 35px;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -320,13 +320,13 @@ p{
 .header--white .header__content:before {
   display: none;
 }
-.header--active .header__logo object:first-child,
-.header--white .header__logo object:first-child {
+.header--active .header__logo img:first-child,
+.header--white .header__logo img:first-child {
   //opacity: 0;
 }
-.header--active .header__logo object:last-child,
-.header--white .header__logo object:last-child {
-  opacity: 0;
+.header--active .header__logo img:last-child,
+.header--white .header__logo img:last-child {
+  opacity: 1;
 }
 
 .qudos_lightblue{
@@ -354,10 +354,10 @@ p{
     width: 140px;
   }
   .header__logo {
-    //height: 64px;
-    //margin-left: -30px;
+    height: 64px;
+    margin-left: -30px;
   }
-  .header__logo object {
+  .header__logo img {
     width: 160px;
   }
   .header__nav {
@@ -378,7 +378,7 @@ p{
   }
   .header__nav a {
     margin: 0 0 0 55px;
-/*    color: #fff!important;*/
+    /* color: #fff!important; */
   }
   .header__nav a:hover {
     color: #000;
