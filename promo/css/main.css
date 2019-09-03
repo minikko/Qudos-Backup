@@ -1,6 +1,17 @@
 /*==============================
 	Common styles
 ==============================*/
+@-ms-viewport{
+  width: device-width;
+}
+
+a{
+    display: inline-block;
+}
+object{
+    pointer-events: none ;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;

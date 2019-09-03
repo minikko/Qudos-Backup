@@ -436,7 +436,11 @@ ul.qudos_blue {
 }
 
 .footer__title--connect {
-  text-align: center;
+  /* text-align: center; */
+}
+
+.footer__title--download {
+    margin-top: 10px;
 }
 
 .footer__list {
@@ -450,7 +454,7 @@ ul.qudos_blue {
 
 .footer__list a {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 5px;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -476,6 +480,9 @@ ul.qudos_blue {
 .footer__text a:hover {
   color: #fff;
 }
+
+
+
 
 .footer__logo {
   width: 100%;
@@ -613,6 +620,8 @@ ul.qudos_blue {
   margin-left: -7px;
 }
 
+
+
 @media only screen and (max-width: 2560px) and (min-width: 1240px) {
   .header_blurb {
     margin-top: 50px;
@@ -673,7 +682,8 @@ ul.qudos_blue {
   }
 
   .footer__social li {
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
   }
 
   .footer__title--connect {

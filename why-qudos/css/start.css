@@ -25,7 +25,7 @@ header.header {
 }
 
 .qudos_button a {
-	line-height: 50px;
+	/* line-height: 50px; */
 	color: #fff;
 	font-weight: 500;
 	border-radius: 10px;

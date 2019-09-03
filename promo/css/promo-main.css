@@ -1,6 +1,17 @@
 /*==============================
   Common styles
 ==============================*/
+@-ms-viewport{
+  width: device-width;
+}
+
+a{
+    display: inline-block;
+}
+object{
+    pointer-events: none ;
+}
+
 *{
   margin:0;
   padding:0;
@@ -182,10 +193,10 @@ p{
   transition: 0.3s;
 }
 .header__logo object:last-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* opacity: 0; */
 }
 .header__nav {
   position: fixed;
@@ -345,7 +356,7 @@ p{
 }
 .header--active .header__logo object:last-child,
 .header--white .header__logo object:last-child {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 

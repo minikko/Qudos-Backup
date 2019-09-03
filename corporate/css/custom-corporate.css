@@ -464,7 +464,7 @@ ul.qudos-starlist {
 .footer {
   background: #fff !important;
   padding: 0px 0 0px;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .footer h2 {
@@ -1210,6 +1210,9 @@ ul.footer__social li a {
   }
 }
 
+ul.footer__social {
+    font-size: 24px;
+}
 
 .qudos_content_below {
     padding: 0px 20px 0px;

@@ -20,7 +20,7 @@ body {
 	left: 45%;
 }
 
-.qudos_button a {
+.qudos_button a, .qudos_button button {
 	line-height: 50px;
 	color: #fff;
 	font-weight: 500;

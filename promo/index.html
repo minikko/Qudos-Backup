@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head> 
  
 	<title>Qudos | Promo and Deals</title>
 
@@ -61,31 +61,29 @@
 				<div class="col-12">
 					<div class="header__content">
 						<a href="/" class="header__logo">
-						<!-- 	<object type="image/svg+xml" data="img/logo--white.svg"></object>
-							<object type="image/svg+xml" data="img/logo--black.svg"></object> -->
+							<object type="image/svg+xml" data="../why-qudos/img/logo--black.svg"></object>
 
-							<img src="img/logo--black.svg">
+
 						</a>
 
-						<nav class="header__nav">
-                                    <a href="promo/">Promo</a>
+						<nav class="header__nav" id="nav-icon4">
+							  <a href="../promo/">Promo</a>
                                     <a href="../affiliatelogin.html">Affiliate</a>
                                     <a href="../why-qudos/drive.html">Drive</a>
                                     <a href="../why-qudos/start.html">Ride</a>
-                                    <a class="desk" href="mailto:support@drivequdos.com">Contact Us</a>
+                                 <!--    <a class="desk" href="mailto:support@drivequdos.com">Contact Us</a> -->
 
 
-							
+                               <a class="desk" href="mailto:support@drivequdos.com">Contact Us</a>
 							<div class="header__social">
 								<a href="https://twitter.com/ridequdos"><i class="fab fa-twitter"></i></a>
 								<a href="https://www.facebook.com/QudosRide/"><i class="fab fa-facebook"></i></a>
-								<a href="https://www.linkedin.com/company/ridequdos/"><i
-										class="fab fa-linkedin"></i></a>
+								<a href="https://www.linkedin.com/company/ridequdos/"><i class="fab fa-linkedin"></i></a>
 								<a href="https://www.instagram.com/qudosride/"><i class="fab fa-instagram"></i></a>
 							</div>
 						</nav>
 
-						<a href="../why-qudos/start.html" class="header__btn">Start Riding</a>
+						<a href="https://appartner.ridequdos.com/alerts" class="header__btn">Start Riding</a>
 
 						<button class="header__menu" type="button">
 							<span></span>
@@ -153,7 +151,8 @@
 
 
 						<div class="qudos_button wow fadeInUp" data-wow-delay=".25s">
-							<a class="qright" href="#">Know More <i class="fa fa-angle-right"></i></a>
+							<!-- <a class="qright" href="#">Know More <i class="fa fa-angle-right"></i></a> -->
+							<button class="qright" data-toggle="modal" data-target="#squarespaceModal">Know More <i class="fa fa-angle-right"> </i></button>
 						</div>
 					</div>
 
@@ -220,15 +219,12 @@
 					</div>
 
 					<div class="qudos_button wow fadeInUp" data-wow-delay=".25s">
-						<a class="qright" href="#">Know More <i class="fa fa-angle-right"></i></a>
+						<a class="qright" href="../how/referfave.html">Know More <i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>
 			</div>		
 		</div>
 	</section>
-
-
-
 
 
 	<footer class="footer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".25s" >
@@ -279,86 +275,209 @@
 
 	</footer>
 
-
-
-
-
-	<!-- line modal -->
+<!-- line modal -->
 <div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
   <div class="modal-dialog">
 	<div class="modal-content">
 		<div class="modal-header">
+			<h3 class="modal-title" id="lineModalLabel">Choose Your Experience</h3>
 			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-			<h3 class="modal-title" id="lineModalLabel">My Modal</h3>
+
 		</div>
 		<div class="modal-body">
 			
-            <!-- content goes here -->
-			<form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputFile">File input</label>
-                <input type="file" id="exampleInputFile">
-                <p class="help-block">Example block-level help text here.</p>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Check me out
-                </label>
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
+				<div class="col-12">
+					<div class="experience__wrap">
+						<div class="experience__box">
+							<img src="../img/experience/1.jpg" alt="">
+                                <h3>Start driving to connect and build a steady base of loyal and amazing clientele.</h3>
+                                <a href="https://apppartner.ridequdos.com/alerts">Drive with Qudos</a>
+                                </div>
+
+						<div class="experience__box">
+							<img src="../img/experience/2.jpg" alt="">
+							<h3>Rider will enjoy truly curated and highly personalized ride experience within your fingertips.</h3>
+							<a href="https://appartner.ridequdos.com/alerts">Ride with Qudos</a>
+						</div>
+					</div>
+				</div>
 
 		</div>
-		<div class="modal-footer">
-			<div class="btn-group btn-group-justified" role="group" aria-label="group button">
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-default" data-dismiss="modal"  role="button">Close</button>
-				</div>
-				<div class="btn-group btn-delete hidden" role="group">
-					<button type="button" id="delImage" class="btn btn-default btn-hover-red" data-dismiss="modal"  role="button">Delete</button>
-				</div>
-				<div class="btn-group" role="group">
-					<button type="button" id="saveImage" class="btn btn-default btn-hover-green" data-action="save" role="button">Save</button>
-				</div>
-			</div>
-		</div>
+
 	</div>
   </div>
 </div>
 
 <style type="text/css">
-	.center {
-    margin-top:50px;   
-}
-
-.modal-header {
-	padding-bottom: 5px;
-}
-
-.modal-footer {
-    	padding: 0;
-	}
-    
-.modal-footer .btn-group button {
-	height:40px;
-	border-top-left-radius : 0;
-	border-top-right-radius : 0;
-	border: none;
-	border-right: 1px solid #ddd;
-}
 	
-.modal-footer .btn-group:last-child > button {
-	border-right: 0;
-}
+	/*==============================
+		Experience
+	==============================*/
+
+	button.close {
+	    background: #3b3f4a;
+	}
+
+	.modal-header .close {
+	    margin: -2rem -2rem -1rem auto;
+	    border-radius: 30px;
+	    padding: 5px 10px;
+	}
+
+	.modal-header {
+	    background: #2f8dc6;
+	    border-radius: 18px 18px 0px 0px;
+	    text-align: center !important;
+	}
+
+	h3#lineModalLabel {
+	    text-align: center;
+	    color: #fff;
+	}
+
+	.close {
+	    float: right;
+	    font-size: 1.5rem;
+	    font-weight: 700;
+	    line-height: 1;
+	    color: #fff;
+	    text-shadow: 0 1px 0 #fff;
+	    opacity: .9;
+	}
+
+	.modal-content  {
+	    -webkit-border-radius: 20px !important;
+	    -moz-border-radius: 20px !important;
+	    border-radius: 20px !important; 
+	}
+
+	.modal-dialog {
+	    max-width: 1140px;
+	    margin: 1.75rem auto;
+	    margin-top: 10%;
+	}
+
+	.experience__wrap {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  position: relative;
+	}
+	.experience__wrap:before {
+	  content: '';
+	  position: absolute;
+	  display: block;
+	  height: 450px;
+	  left: -15px;
+	  right: -15px;
+	  top: 50%;
+	  -webkit-transform: translateY(-50%);
+	  -moz-transform: translateY(-50%);
+	  transform: translateY(-50%);
+	  -webkit-border-radius: 5px;
+	  border-radius: 5px;
+	  background-image: -moz-linear-gradient(180deg, #f2f3f5 0%, #e5effa 35%, #d8eafe 100%);
+	  background-image: -webkit-linear-gradient(180deg, #f2f3f5 0%, #e5effa 35%, #d8eafe 100%);
+	  background-image: -ms-linear-gradient(180deg, #f2f3f5 0%, #e5effa 35%, #d8eafe 100%);
+	  background-image: linear-gradient(180deg, #f2f3f5 0%, #e5effa 35%, #d8eafe 100%);
+	  z-index: 1;
+	}
+	.experience__box {
+	  padding: 25px 0 35px;
+	  margin: 25px 0;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  -webkit-border-radius: 5px;
+	  border-radius: 5px;
+	  background-image: -moz-linear-gradient(180deg, #3d414d 0%, #232331 36%, #080514 100%);
+	  background-image: -webkit-linear-gradient(180deg, #3d414d 0%, #232331 36%, #080514 100%);
+	  background-image: -ms-linear-gradient(180deg, #3d414d 0%, #232331 36%, #080514 100%);
+	  background-image: linear-gradient(180deg, #3d414d 0%, #232331 36%, #080514 100%);
+	  position: relative;
+	  z-index: 2;
+	  max-width: 380px;
+	}
+	.experience__box img {
+	  -webkit-border-radius: 5px;
+	  border-radius: 5px;
+	  margin-bottom: 30px;
+	}
+	.experience__box h3 {
+	  color: #fff;
+	  font-size: 16px;
+	  line-height: 24px;
+	  font-family: 'Montserrat', sans-serif;
+	  font-weight: 400;
+	  display: block;
+	  text-align: center;
+	  padding: 0 30px;
+	  margin: 0;
+	}
+	.experience__box a {
+	  width: 240px;
+	  height: 50px;
+	  line-height: 50px;
+	  -webkit-border-radius: 5px;
+	  border-radius: 5px;
+	  font-size: 15px;
+	  font-family: 'Montserrat', sans-serif;
+	  font-weight: 400;
+	  color: #fff;
+	  background-color: #1f8dc6;
+	  text-align: center;
+	  margin-top: 20px;
+	}
+	@media (min-width: 480px) {
+	  .experience__wrap:before {
+	    left: -30px;
+	    right: -30px;
+	  }
+	}
+	@media (min-width: 768px) {
+	  .experience {
+	    padding-top: 65px;
+	  }
+	  .experience__wrap:before {
+	    left: 120px;
+	    right: 120px;
+	  }
+	}
+	@media (min-width: 992px) {
+	  .experience__wrap {
+	    flex-direction: row;
+	  }
+	  .experience__wrap:before {
+	    height: 360px;
+	    left: 20px;
+	    right: 20px;
+	    top: 110px;
+	    -webkit-transform: translateY(0);
+	    -moz-transform: translateY(0);
+	    transform: translateY(0);
+	  }
+	  .experience__box {
+	    margin: 30px 40px 60px;
+	    max-width: 360px;
+	    width: 360px;
+	  }
+	}
+	@media (min-width: 1200px) {
+	  .experience {
+	    padding-top: 100px;
+	  }
+	  .experience__box {
+	    margin: 35px 60px 60px;
+	  }
+	  .experience__wrap:before {
+	    left: 40px;
+	    right: 40px;
+	  }
+	}	
 </style>
+
 
 	<script src="../why-qudos/js/aos.js"></script>
 	<script src="../why-qudos/js/scripts.min.js"></script>

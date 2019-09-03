@@ -31,7 +31,7 @@
 	background-image: -webkit-linear-gradient(90deg, #254870 0%, #142f51 36%, #021532 99%);
 	background-image: -ms-linear-gradient(90deg, #254870 0%, #142f51 36%, #021532 99%);
 	background-image: linear-gradient(90deg, #254870 0%, #142f51 36%, #021532 99%);
-	padding: 20px 40px;
+	padding: 0px 40px;
 }
 
 .qudos_button a:hover {

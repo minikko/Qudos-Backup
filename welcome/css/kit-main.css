@@ -1,10 +1,23 @@
 /*==============================
   Common styles
 ==============================*/
+
 *{
   margin:0;
   padding:0;
 }
+
+@-ms-viewport{
+  width: device-width;
+}
+
+a{
+    display: inline-block !important;
+}
+object{
+    pointer-events: none !important;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -465,7 +478,7 @@ p{
 }
 .footer__list a {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 5px;
   font-size: 12px;
   color: rgba(255,255,255,0.6);
   text-decoration: none;
@@ -627,6 +640,8 @@ p{
     color: #626262;
   }
 }
+
+
 @media (min-width: 992px) {
   .footer__logo {
     position: relative;
@@ -638,8 +653,8 @@ p{
     margin-bottom: 100px;
   }
   .footer__social li {
-    margin-top: 20px;
-
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
   .footer__title--connect {
     margin-bottom: 10px;
@@ -656,6 +671,8 @@ p{
     margin-top: 00px;
   }
 }
+
+
 
 
 

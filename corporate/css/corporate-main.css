@@ -6,6 +6,13 @@
   width: device-width;
 }
 
+a{
+    display: inline-block;
+}
+object{
+    pointer-events: none !important;
+}
+
 *{
   margin:0;
   padding:0;
@@ -495,7 +502,7 @@ p{
 }
 .footer__list a {
   display: inline-block;
-  margin-top: 10px;
+  /* margin-top: 5px; */
   font-size: 12px;
   color: rgba(255,255,255,0.6);
   text-decoration: none;
@@ -609,6 +616,7 @@ p{
   width: auto;
   margin-right: 20px;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 .footer--white .footer__social li:last-child {
   margin-right: 0;
@@ -671,7 +679,7 @@ p{
 
   }
   .footer__title--connect {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
 }
 @media (min-width: 1200px) {
