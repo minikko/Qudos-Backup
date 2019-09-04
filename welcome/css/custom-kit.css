@@ -831,7 +831,7 @@ ul.footer__social li a {
 
   .footer {
     background-size: auto auto;
-    padding: 80px 0 0px;
+    /* padding: 80px 0 0px; */
     font-size: 24px;
   }
 }
