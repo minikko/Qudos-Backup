@@ -91,7 +91,7 @@ ul.qudos_blue {
 }
 
 ul.qudos_blue li:before {
-  content: 'âœ“';
+  content: '✔';
    padding-right: 0.5em
 }
 
@@ -154,7 +154,7 @@ ul.qudos_blue li:before {
 }
 
 .img_content_fourth-section:after {
-  content: url(../img/qudos_car_right.png);
+  content: url(../img/qudos_car_left.png);
   position: absolute;
   bottom: -30px;
   right: -85px;
@@ -231,9 +231,9 @@ span.qudos_blue {
   border-color: transparent transparent #ffffff #ffffff;
   transform-origin: 0 0;
   transform: rotate(45deg);
-  box-shadow: -5px 5px 6px 0px rgba(33, 142, 199, 0.22);
+  box-shadow: -3px 3px 3px 0px rgba(33, 142, 199, 0.22);
   margin-top: 20px;
-  margin-left: 5px;
+  margin-left: 0px;
 }
 
 @media (max-width:425px) {
@@ -942,7 +942,7 @@ ul.qudos_blue {
 }
 
 ul.qudos_blue li:before {
-  content: 'âœ“';
+  content: 'Ã¢Å“â€œ';
    padding-right: 0.5em
 }
 
@@ -1756,5 +1756,5 @@ img.clouds_transitions.cloud3_footer {
     margin-right: 25px;
   }
 }
-
+ 
 
