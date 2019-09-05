@@ -19,221 +19,250 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="js/config.js"></script>
       <script type="text/javascript">
-         var countryCode = '+1-';
-         $(function() {
-         
-         $("#forget").click(function() {
-         $("#main-login").addClass("hidden");
-         $("#reset1").removeClass("hidden");
-         });
-         
-         
-         $("#reset-2").click(function() {
-         
-         var reg = /^[1-9]{1}[0-9]{5,9}$/;
-         var mobile1 = $('#mobile1').val();
-         
-         
-         if(mobile1.trim() == '' ){
-             alert('Please enter your Mobile Number.');
-             $('#mobile1').focus();
-             return false;
-         }
-         else if(!reg.test(mobile1)){
-             alert('Please enter valid Mobile Number.');
-             $('#mobile1').focus();
-             return false;
-         }
-         
-         $.ajax({
-            method:'POST',
-            url: VENDOR_API_URL + '/mobile_forgot_password',
-            async:true,
-            data:{
-                mobile: countryCode + mobile1
-            },
-            success: function (data,status) {
-                console.log('OTP has been sent',data);
-                if(typeof data==="string"){
-                    data = JSON.parse(data);
-                }
-                if(data.error){
-                     alert(data.error);
-                     return;
-                }
-                $("#main-login").addClass("hidden");
-                $("#reset1").addClass("hidden");
-                $("#reset2").removeClass("hidden");
-            $('html, body').animate({scrollTop:0}, 'slow');
-            },
-            error: function (data,status) {
-                 console.log('Error occured ')
-             }
-         });
-         
-         });
-         
-         
-         $("#changeMobile").click(function () {
-             $("#reset1").removeClass("hidden");
-             $("#reset2").addClass("hidden");
-         })
-         
-         
-         $("#resendOtp").click(function () {
-             var mobile1 = $('#mobile1').val();
-             $.ajax({
-                 method:'POST',
-                 url: VENDOR_API_URL + '/resend_otp',
-                 async:true,
-                 data:{
-                     mobile: countryCode + mobile1,
-                     //driver_mobile: countryCode + mobile1,
-                     is_approved:1
-                 },
-                 success: function (data,status) {
-                     console.log('OTP Resend Response :',data);
-         
-                     if(typeof data==="string"){
-                         data = JSON.parse(data);
-                     }
-           $('html, body').animate({scrollTop:0}, 'slow');
-         if(data.error){
-          alert(data.error);
-          return false;
-         }else{
-          alert(data.log);
-         }
-                 },
-                 error: function (data,status) {
-                     console.log('Error occured while resending otp')
-                 }
-             });
-         })
-         
-         $("#reset-3").click(function() {
-         var reg = /^[0-9]{4}$/i;
-         var otp = $('#otp').val();
-         
-         
-         if(otp.trim() == '' ){
-             alert('Please enter OTP sent to your Mobile Number.');
-             $('#otp').focus();
-             return false;
-         }
-         else if(!reg.test(otp)){
-             alert('Please enter valid OTP.');
-             $('#otp').focus();
-             return false;
-         }
-            var mobile1 = $('#mobile1').val();
-            $.ajax({
-                method:'POST',
-                url: VENDOR_API_URL + '/verify_otp',
-                async:true,
-                data:{
-                   mobile: countryCode + mobile1,
-                    is_approved: 1,
-                    otp: otp
-                },
-                success: function (data,status) {
-                    console.log('OTP verified',data);
-                    if(typeof data==="string"){
-                        data = JSON.parse(data);
-                    }
-                    if(data.error){
-                        alert(data.error);
-                        return;
-                    }
-                    $("#main-login").addClass("hidden");
-                    $("#reset1").addClass("hidden");
-                    $("#reset2").addClass("hidden");
-                    $("#reset3").removeClass("hidden");
-            $('html, body').animate({scrollTop:0}, 'slow');
-                },
-                error: function (data,status) {
-                    console.log('Error occured during otp verification',data);
-                }
+        var countryCode = '+1-';
+        $(function() {
+
+            $("#forget").click(function() {
+              $("#main-login").addClass("hidden");
+              $("#reset1").removeClass("hidden");
+              $("#signing_heading").addClass("hidden");
+              $("#reset_heading").removeClass("hidden");
             });
-         
-         });
-         
-         
-         $("#reset-4").click(function() {
-          var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
-         
-         var passwordn = $('#passwordn').val();
-         var passwordnc = $('#passwordnc').val();
-         
-         if(passwordn.trim() == '' ){
-             alert('Please enter your New Password.');
-             $('#passwordn').focus();
-             return false;
-         }else if(passwordn.trim().length < 6 ){
-             alert('Password should be of aleast 6 characters.');
-             $('#passwordn').focus();
-             return false;
-         }else if(passwordnc.trim() == '' ){
-             alert('Please enter New Password.');
-             $('#passwordnc').focus();
-             return false;
-         }else if(passwordnc.trim() != passwordn.trim()){
-         alert('Please enter the same password.');
-         $('#passwordnc').focus();
-             return false;
-         
-         }
-           var mobile1 = $('#mobile1').val();
-           var otp = $('#otp').val();
-           $.ajax({
-               method:'POST',
-               url: VENDOR_API_URL + '/reset_password_mobile',
-               async:true,
-               data:{
-                   mobile: countryCode + mobile1,
-                   password: passwordn,
-                   otp: otp,
-                   is_approved: 1
-               },
-               success: function (data,status) {
-                   console.log('Password reset response: ',data);
-                   if(typeof data==="string"){
-                       data = JSON.parse(data);
-                   }
-                   if(data.error){
-                       alert(data.error);
-                       return;
-                   }
-                   $("#main-login").addClass("hidden");
-                   $("#reset1").addClass("hidden");
-                   $("#reset2").addClass("hidden");
-                   $("#reset3").addClass("hidden");
-                   $("#reset4").removeClass("hidden");
-           $('html, body').animate({scrollTop:0}, 'slow');
-               },
-               error: function (data,status) {
-                   console.log('Error occured while resetting password',data);
-               }
-           });
-         
-         });
-         
-         $("#login-main").click(function() {
-         
-         $("#main-login").removeClass("hidden");
-         $("#reset1").addClass("hidden");
-         $("#reset2").addClass("hidden");
-         $("#reset3").addClass("hidden");
-         $("#reset4").addClass("hidden");
-         $("#reset5").addClass("hidden");
-         
-         });
-         
-         
-         
-         
-         
-         });
+
+
+            $("#reset-2").click(function() {
+
+                var reg = /^[1-9]{1}[0-9]{5,9}$/;
+                var mobile1 = $('#mobile1').val();
+
+
+                if (mobile1.trim() == '') {
+                    alert('Please enter your Mobile Number.');
+                    $('#mobile1').focus();
+                    return false;
+                } else if (!reg.test(mobile1)) {
+                    alert('Please enter valid Mobile Number.');
+                    $('#mobile1').focus();
+                    return false;
+                }
+
+                $.ajax({
+                    method: 'POST',
+                    url: VENDOR_API_URL + '/mobile_forgot_password',
+                    async: true,
+                    data: {
+                        mobile: countryCode + mobile1
+                    },
+                    success: function(data, status) {
+                        console.log('OTP has been sent', data);
+                        if (typeof data === "string") {
+                            data = JSON.parse(data);
+                        }
+                        if (data.error) {
+                            alert(data.error);
+                            return;
+                        }
+                        $("#signing_heading").addClass("hidden");
+                        $("#reset_heading").addClass("hidden");
+                        $("#reset2_heading").addClass("hidden");
+                        $("#reset3_heading").addClass("hidden");
+                        $("#main-login").addClass("hidden");
+                        $("#reset1").addClass("hidden");
+                        $("#reset2").removeClass("hidden");
+                        $('html, body').animate({
+                            scrollTop: 0
+                        }, 'slow');
+                    },
+                    error: function(data, status) {
+                        console.log('Error occured ')
+                    }
+                });
+
+            });
+
+
+            $("#changeMobile").click(function() {
+                $("#reset1").removeClass("hidden");
+                $("#reset2").addClass("hidden");
+                $("#signing_heading").addClass("hidden");
+                $("#reset_heading").removeClass("hidden");
+                $("#reset2_heading").addClass("hidden");
+            })
+
+
+            $("#resendOtp").click(function() {
+                var mobile1 = $('#mobile1').val();
+                $.ajax({
+                    method: 'POST',
+                    url: VENDOR_API_URL + '/resend_otp',
+                    async: true,
+                    data: {
+                        mobile: countryCode + mobile1,
+                        //driver_mobile: countryCode + mobile1,
+                        is_approved: 1
+                    },
+                    success: function(data, status) {
+                        console.log('OTP Resend Response :', data);
+
+                        if (typeof data === "string") {
+                            data = JSON.parse(data);
+                        }
+                        $('html, body').animate({
+                            scrollTop: 0
+                        }, 'slow');
+                        if (data.error) {
+                            alert(data.error);
+                            return false;
+                        } else {
+                            alert(data.log);
+                        }
+                    },
+                    error: function(data, status) {
+                        console.log('Error occured while resending otp')
+                    }
+                });
+            })
+
+            $("#reset-3").click(function() {
+                var reg = /^[0-9]{4}$/i;
+                var otp = $('#otp').val();
+
+
+                if (otp.trim() == '') {
+                    alert('Please enter OTP sent to your Mobile Number.');
+                    $('#otp').focus();
+                    return false;
+                } else if (!reg.test(otp)) {
+                    alert('Please enter valid OTP.');
+                    $('#otp').focus();
+                    return false;
+                }
+                var mobile1 = $('#mobile1').val();
+                $.ajax({
+                    method: 'POST',
+                    url: VENDOR_API_URL + '/verify_otp',
+                    async: true,
+                    data: {
+                        mobile: countryCode + mobile1,
+                        is_approved: 1,
+                        otp: otp
+                    },
+                    success: function(data, status) {
+                        console.log('OTP verified', data);
+                        if (typeof data === "string") {
+                            data = JSON.parse(data);
+                        }
+                        if (data.error) {
+                            alert(data.error);
+                            return;
+                        }
+                        $("#main-login").addClass("hidden");
+                        $("#reset1").addClass("hidden");
+                        $("#reset2").addClass("hidden");
+                        $("#reset3").removeClass("hidden");
+                        $("#signing_heading").addClass("hidden");
+                        $("#reset_heading").addClass("hidden");
+                        $("#reset2_heading").addClass("hidden");
+                        $("#reset3_heading").addClass("hidden");
+                        $("#reset4_heading").removeClass("hidden");
+                        $('html, body').animate({
+                            scrollTop: 0
+                        }, 'slow');
+                    },
+                    error: function(data, status) {
+                        console.log('Error occured during otp verification', data);
+                    }
+                });
+
+            });
+
+
+            $("#reset-4").click(function() {
+                var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+
+                var passwordn = $('#passwordn').val();
+                var passwordnc = $('#passwordnc').val();
+
+                if (passwordn.trim() == '') {
+                    alert('Please enter your New Password.');
+                    $('#passwordn').focus();
+                    return false;
+                } else if (passwordn.trim().length < 6) {
+                    alert('Password should be of aleast 6 characters.');
+                    $('#passwordn').focus();
+                    return false;
+                } else if (passwordnc.trim() == '') {
+                    alert('Please enter New Password.');
+                    $('#passwordnc').focus();
+                    return false;
+                } else if (passwordnc.trim() != passwordn.trim()) {
+                    alert('Please enter the same password.');
+                    $('#passwordnc').focus();
+                    return false;
+
+                }
+                var mobile1 = $('#mobile1').val();
+                var otp = $('#otp').val();
+                $.ajax({
+                    method: 'POST',
+                    url: VENDOR_API_URL + '/reset_password_mobile',
+                    async: true,
+                    data: {
+                        mobile: countryCode + mobile1,
+                        password: passwordn,
+                        otp: otp,
+                        is_approved: 1
+                    },
+                    success: function(data, status) {
+                        console.log('Password reset response: ', data);
+                        if (typeof data === "string") {
+                            data = JSON.parse(data);
+                        }
+                        if (data.error) {
+                            alert(data.error);
+                            return;
+                        }
+                        $("#main-login").addClass("hidden");
+                        $("#reset1").addClass("hidden");
+                        $("#reset2").addClass("hidden");
+                        $("#reset3").addClass("hidden");
+                        $("#reset4").removeClass("hidden");
+                        $("#signing_heading").addClass("hidden");
+                        $("#reset_heading").addClass("hidden");
+                        $("#reset2_heading").addClass("hidden");
+                        $("#reset3_heading").addClass("hidden");
+                        $("#reset4_heading").removeClass("hidden");
+                          $('html, body').animate({
+                            scrollTop: 0
+                        }, 'slow');
+                    },
+                    error: function(data, status) {
+                        console.log('Error occured while resetting password', data);
+                    }
+                });
+
+            });
+
+            $("#login-main").click(function() {
+
+              $("#main-login").removeClass("hidden");
+              $("#reset1").addClass("hidden");
+              $("#reset2").addClass("hidden");
+              $("#reset3").addClass("hidden");
+              $("#reset4").addClass("hidden");
+              $("#reset5").addClass("hidden");
+              $("#signing_heading").removeClass("hidden");
+              $("#reset_heading").addClass("hidden");
+              $("#reset2_heading").addClass("hidden");
+              $("#reset3_heading").addClass("hidden");
+              $("#reset4_heading").addClass("hidden");
+
+            });
+
+
+
+
+        });
       </script>
    </head>
    <body>
@@ -270,18 +299,47 @@
       </header>
       <section class="sign">
          <div class="container">
-            <div class="row">
-               <div class="col-12 col-xl-10 offset-xl-1">
+            <div class="row">   
+              
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 left-heading" id="signing_heading">
+                    <h3>Affiliate Sign In</h3>
+                   Qudos creates the opportunity for our affiliates to build the business they truly want.
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 left-heading hidden" id="reset_heading">
+                    <h3>Reset Password</h3>
+                         Enter your number and we will send you a
+                         OTP to reset your password.
+                </div>
+
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 left-heading hidden" id="reset2_heading">
+                   <div id="main-hidden" class="col-md-12">
+                       <h3>OTP Confirmation</h3>
+                    </div>
+                    <div id="main-hidden1" class="col-md-12">
+                       Qudos builds an environment of satisfaction and comfortability through each rider and driver interaction.
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 left-heading hidden" id="reset3_heading">
+                   <h3>Reset Password</h3>
+                       Qudos gives our affiliates the tools to create long standing and frequent business relationships.
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 left-heading hidden" id="reset4_heading">
+                    <h3>Reset Successfully</h3>
+                     <p class="top-margin">Your Password has been successfuly changed, you can now continue to login.</p>
+                </div>
+
+               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                   <div class="sign__content">
                      <div class="row">
                         <div class="popup-main-content">
                            <!--Start Inner Row-->
                            <div id="main-login" class="row">
-                              <div class="col-md-6">
-                                 <h3>Affiliate Sign In</h3>
-                                 Qudos creates the opportunity for our affiliates to build the business they truly want.
-                              </div>
-                              <div class="col-md-6">
+
+                              <div class="col-md-12">
                                  <div class="login-form">
                                     <form name="login">
                                        <label>Mobile Number</label>
@@ -327,9 +385,7 @@
                                           $('#password').focus();
                                           return false;
                                        }
-                                       
-                                       
-                                       
+                                  
                                        
                                        $.ajax({
                                           method:'POST',
@@ -377,12 +433,12 @@
                            <!--End inner Row-->
                            <!--Start Inner Row1-->
                            <div id="reset1" class="row hidden">
-                              <div class="col-md-6">
+                              <!-- <div class="col-md-6">
                                  <h3>Reset Password</h3>
                                  Enter your number and we will send you a
                                  OTP to reset your password.
-                              </div>
-                              <div class="col-md-6">
+                              </div> -->
+                              <div class="col-md-12">
                                  <div class="login-form">
                                     <form name="login">
                                        <label>Mobile Number</label>
@@ -398,51 +454,41 @@
                            <!--Start Inner Row1-->
                            <!--Start Inner Row2-->
                            <div id="reset2" class="row hidden">
-                              <div id="main-hidden" class="col-md-5">
-                                 <h3>OTP Confirmation</h3>
-                              </div>
-                              <div id="main-hidden1" class="col-md-7">
-                                 Qudos builds an environment of satisfaction and comfortability through each rider and driver interaction.
-                              </div>
-                              <div class="col-md-6">
+                                 
+                              <div class="col-md-12">
                                  <div class="login-form">
-                                    <br>
                                     <p>Confirm your mobile number to reset
                                        your password
                                     </p>
                                     <form name="login">
                                        <label>Enter OTP sent to your Mobile number</label>
                                        <div class="row-input">
-                                          <input id="otp"  type="tel" name="otp"  inputmode="numeric" placeholder="0000" required>
+                                          <input id="otp" type="tel" name="otp" inputmode="numeric" placeholder="0000" required="">
                                           <div class="row row-input a-color">
                                              <div class="col-xs-5"><a id="resendOtp" href="javascript:void(0)">Resend OTP</a></div>
                                              <div class="col-xs-7"><a id="changeMobile" href="javascript:void(0)">Change mobile number</a></div>
                                           </div>
                                        </div>
-                                       <button id="reset-3"  href="#" class="submit top-margin" type="button" >Submit</button>
+                                       <button id="reset-3" href="#" class="submit top-margin" type="button">Submit</button>
                                     </form>
                                  </div>
                               </div>
                            </div>
                            <!--Start Inner Row2-->
                            <!--Start Inner Row3-->
-                           <div id="reset3" class="row hidden">
-                              <div class="col-md-6">
-                                 <h3>Reset Password</h3>
-                                 Qudos gives our affiliates the tools to create long standing and frequent business relationships.
-                              </div>
-                              <div class="col-md-6">
+                          <div id="reset3" class="row hidden">
+                              <div class="col-md-12">
                                  <div class="login-form">
                                     <form name="login">
                                        <label>Enter New Password</label>
                                        <div class="row-input">
-                                          <input id="passwordn" value="" name="passwordn" class="password"  type="password" placeholder="Enter new password">
+                                          <input id="passwordn" value="" name="passwordn" class="password" type="password" placeholder="Enter new password">
                                        </div>
                                        <label>Confirm New Password</label>
                                        <div class="row-input">
-                                          <input id="passwordnc" value="" name="passwordnc" class="password"  type="password" placeholder="Re-enter new password">
+                                          <input id="passwordnc" value="" name="passwordnc" class="password" type="password" placeholder="Re-enter new password">
                                        </div>
-                                       <button id="reset-4" class="submit" type="button"  onclick="resetpass()">Submit</button>
+                                       <button id="reset-4" class="submit" type="button" onclick="resetpass()">Submit</button>
                                     </form>
                                  </div>
                               </div>
@@ -450,24 +496,10 @@
                            <!--Start Inner Row3-->
                            <!--Start Inner Row4-->
                            <div id="reset4" class="row row-input hidden">
-                              <div class="col-md-12">
-                                 <p class="small-show"><img src="img/tick.png"  alt="sucess">
-                                 </p>
-                              </div>
-                              <div class="col-md-6">
-                                 <h3>Reset Successfully</h3>
-                                 <p class="top-margin">Your Password has been successfuly changed, you can now continue to login.
-                                 </p>
-                                 <div class="row clear">
-                                    <div class="col-md-12">
-                                       <a id="login-main" href="affiliatelogin.html" class="submit-login">Go to Login</a>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-md-6 small-hide">
-                                 <p align="center"><img src="img/tick.png" width="180" height="180" alt="sucess">
-                                 </p>
-                              </div>
+                                <div class="col-md-12 small-hide">
+                                   <p align="center"><img class="img-fluid" src="img/tick.png" width="180" height="180" alt="sucess"></p>
+                                    <a id="login-main" href="affiliatelogin.html" class="submit-login">Go to Login</a>
+                                </div>
                            </div>
                            <!--End Inner Row4-->
                         </div>
@@ -587,7 +619,7 @@
                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px">
                               <image  x="0px" y="0px" width="18px" height="18px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAQAAAD8x0bcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhgBASUr6LMIAAABYUlEQVQoz43SsWsTARQG8F/uLkOV5iQqxSVNMhRcaq1REIcOYl0UXBw6KEVcnPxnBAcRBQehCILgkm4dXISYuAQL5hp1EGpLL6CW2hCH3kVBCn7T433few/e9xW6xqiZMy1Gqq8tyYlCJjrphqqferZwXN2Evpc2/4hqbtm3qmWYDYfmXRF5JjkQnXBP6qkBplSMfPEVk24re+hboctdUx5IHXHTTLap64VdR9236VGgpqYpVXTHjA9WrFh32rLQd6uqapEzdrVwySlvvAbvXReKDLVcNRep+miIc35oZsdGXmXVUM90ILaNorINv/yLbXGQ/wsjhyCQKmPPjopg3C+6qATK0kBfXYiOSQtj0YJrLiBU14+0Ncx7a82sy47p4LxZW9Zw1oR2JJFYtC712JKGBvjsuT2xRRuS3JaBJwYK6ir4pGekZFmc23Jg8FDTO/uHGfyfUfk7dCUM9HX0cuI3sK1zjecnoy0AAAAASUVORK5CYII=" />
                            </svg>
-                           Copyrighted 2017
+                           Copyrighted 2019
                         </small>
                         <span class="footer__rights">All Rights Reserved</span>
                         <a href="index.html" class="footer__link">www.ridequdos.com</a>

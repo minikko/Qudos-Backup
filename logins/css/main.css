@@ -478,13 +478,13 @@ ul {
 
 @media (min-width: 1200px) {
   .header__content {
-    padding: 0 65px;
+    /* padding: 0 65px; */
   }
   .header__nav {
     right: 285px;
   }
   .header--white .header__content {
-    padding: 0 95px;
+    /* padding: 0 95px; */
   }
   .header--white .header__nav {
     right: 95px;
@@ -1476,11 +1476,31 @@ ul {
 
 .sign {
   display: block;
-  padding: 45px 0;
-  margin-top: 88px;
   background: url(../../logins/img/credentials_background.jpg) center center;
+  margin-top: 70px;
+  background-position-y: 0px;
   background-size: cover;
+  padding: 150px 0;
+  background-repeat: no-repeat;
 }
+
+
+.sign h3 {
+  font-size: 32px;
+  margin: 0px 0px 10px 0px;
+  padding: 0px 0px 20px 0px;
+  position: relative;
+  float: left;
+  width: 100%;
+  background: url(../img/bg-h3.jpg) bottom left no-repeat;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+.sign .container .row div.col-6.col-md-6:first-child {
+    padding-left: 100px;
+}
+
 
 .sign__content {
   background-color: #fff;
@@ -1643,10 +1663,10 @@ ul {
 
 @media (min-width: 1200px) {
   .sign {
-    padding: 70px 0;
+    padding: 140px 0;
   }
   .sign__content {
-    padding: 60px 90px;
+    padding: 60px 80px;
   }
 }
 
@@ -2217,5 +2237,11 @@ only screen and (min-resolution: 2dppx) {
   }
 }
 
+.sign .container .left-heading {
+    padding-left: 100px;
+}
+
 
 /*kk*/
+
+
