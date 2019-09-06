@@ -17,14 +17,19 @@ $(document).ready(function () {
 		$('.header__nav').toggleClass('header__nav--active');
 	});
 
-	$(document).ready(function(){
-	  $(".owl-carousel").owlCarousel();
+	/*==============================
+	Superior slider
+	==============================*/
+	$('.rating__slider .owl-carousel').owlCarousel({
+		mouseDrag: false,
+		dots: true,
+		items: 1,
+		loop: true,
+		autoplay: true,
+		autoplayTimeout: 2000,
+	});
+	$('.rating__btn').on('click', function() {
+		$('.rating__slider .owl-carousel').trigger('next.owl.carousel');
 	});
 
 });
-
-
-
-			
-
-
