@@ -275,8 +275,8 @@ header.header {
 .section_one {
     position: relative;
     z-index: -1;
-	background: #f4f9fe url('../img/start_second-sectionbg.png');
-	padding: 100px 0px 100px;
+    background: #f4f9fe;
+    padding: 100px 0px 100px;
 }
 
 .section_two {

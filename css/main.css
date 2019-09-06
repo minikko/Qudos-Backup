@@ -533,6 +533,15 @@ ul {
 
 .home__btn:hover {
   color: #fff;
+  background: rgba(8,5,20,1);
+  background: -moz-linear-gradient(left, rgba(8,5,20,1) 0%, rgba(22,36,63,1) 51%, rgba(35,67,105,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(8,5,20,1)), color-stop(51%, rgba(22,36,63,1)), color-stop(100%, rgba(35,67,105,1)));
+  background: -webkit-linear-gradient(left, rgba(8,5,20,1) 0%, rgba(22,36,63,1) 51%, rgba(35,67,105,1) 100%);
+  background: -o-linear-gradient(left, rgba(8,5,20,1) 0%, rgba(22,36,63,1) 51%, rgba(35,67,105,1) 100%);
+  background: -ms-linear-gradient(left, rgba(8,5,20,1) 0%, rgba(22,36,63,1) 51%, rgba(35,67,105,1) 100%);
+  background: linear-gradient(to right, rgba(8,5,20,1) 0%, rgba(22,36,63,1) 51%, rgba(35,67,105,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#080514', endColorstr='#234369', GradientType=1 );
+  
 }
 
 @media (min-width: 480px) {

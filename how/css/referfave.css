@@ -126,11 +126,11 @@ ul.qudos_blue li:before {
   position: absolute;
   position: absolute;
   top: 95px;
-  left: -75px;
+  left: -85px;
   z-index: -9;
   -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .img_content_second-section:after {
@@ -227,15 +227,15 @@ span.qudos_blue {
   border: 20px solid transparent;
   border-color: transparent transparent #ffffff #ffffff;
   -webkit-transform-origin: 0 0;
-      -ms-transform-origin: 0 0;
-          transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
   -webkit-transform: rotate(-135deg);
-      -ms-transform: rotate(-135deg);
-          transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
   -webkit-box-shadow: -8px 6px 6px 0px rgba(33, 142, 199, 0.27);
-          box-shadow: -8px 6px 6px 0px rgba(33, 142, 199, 0.27);
+  box-shadow: -8px 6px 6px 0px rgba(33, 142, 199, 0.27);
   margin-top: 30px;
-  margin-right: -35px;
+  margin-right: -40px;
 }
 
 .speech-bubble-right {
@@ -255,15 +255,15 @@ span.qudos_blue {
   border: 20px solid transparent;
   border-color: transparent transparent #ffffff #ffffff;
   -webkit-transform-origin: 0 0;
-      -ms-transform-origin: 0 0;
-          transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
   -webkit-box-shadow: -5px 5px 6px 0px rgba(33, 142, 199, 0.22);
-          box-shadow: -5px 5px 6px 0px rgba(33, 142, 199, 0.22);
+  box-shadow: -5px 5px 5px 0px rgba(33, 142, 199, 0.22);
   margin-top: 20px;
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 @media (max-width:425px) {
@@ -370,8 +370,8 @@ span.qudos_blue {
 }
 
 .section_one {
-   background: #f4f9fe url('../img/start_second-sectionbg.png'); 
-  padding: 100px 0px 100px;
+   background: #f4f9fe;
+   padding: 100px 0px 100px;
 }
 
 .section_two {

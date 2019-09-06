@@ -20,7 +20,7 @@ body {
 }
 
 .qudos_button a {
-  line-height: 50px;
+  /* line-height: 50px; */
   color: #fff;
   font-weight: 500;
   border-radius: 10px;
@@ -211,15 +211,15 @@ span.qudos_blue {
   border: 20px solid transparent;
   border-color: transparent transparent #ffffff #ffffff;
   -webkit-transform-origin: 0 0;
-      -ms-transform-origin: 0 0;
-          transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
   -webkit-transform: rotate(-135deg);
-      -ms-transform: rotate(-135deg);
-          transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
   -webkit-box-shadow: -8px 6px 6px 0px rgba(33, 142, 199, 0.27);
-          box-shadow: -8px 6px 6px 0px rgba(33, 142, 199, 0.27);
+  box-shadow: -8px 6px 6px 0px rgba(33, 142, 199, 0.27);
   margin-top: 30px;
-  margin-right: -40px;
+  margin-right: -39px;
 }
 
 .speech-bubble-right {
@@ -239,13 +239,13 @@ span.qudos_blue {
   border: 25px solid transparent;
   border-color: transparent transparent #ffffff #ffffff;
   -webkit-transform-origin: 0 0;
-      -ms-transform-origin: 0 0;
-          transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
   -webkit-box-shadow: -3px 3px 6px 0px rgba(33, 142, 199, 0.22);
-          box-shadow: -3px 3px 6px 0px rgba(33, 142, 199, 0.22);
+  box-shadow: -5px 5px 3px 0px rgba(33, 142, 199, 0.11);
   margin-top: 20px;
   margin-left: 5px;
 }
@@ -343,6 +343,7 @@ span.qudos_blue {
   /* margin-left: -200px; */
   /* margin-top: -120px; */
   /* margin-right: 10px; */
+  padding: 50px !important;
   text-align: center;
 }
 
@@ -369,7 +370,7 @@ span.qudos_blue {
 }
 
 .section_one {
-  background: #f4f9fe url('../img/start_second-sectionbg.png');
+  background: #F4F9FD;
   padding: 100px 0px 100px;
 }
 
@@ -393,7 +394,7 @@ span.qudos_blue {
 .section-card {
   background: #fff;
   -webkit-box-shadow: 0px 1px 5px 0px rgba(33, 142, 199, 0.55);
-          box-shadow: 0px 1px 5px 0px rgba(33, 142, 199, 0.55);
+  box-shadow: 1px 1px 5px 0px rgba(33, 142, 199, 0.55);
   border-radius: 1em;
   /* padding: 20px 60px; */
 }
