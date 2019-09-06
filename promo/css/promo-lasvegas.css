@@ -25,16 +25,16 @@ body {
   font-weight: 500;
   border-radius: 10px;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(#254870), color-stop(36%, #142f51), color-stop(99%, #021532));
   background-image: -o-linear-gradient(left, #254870 0%, #142f51 36%, #021532 99%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#254870), color-stop(36%, #142f51), color-stop(99%, #021532));
   background-image: linear-gradient(90deg, #254870 0%, #142f51 36%, #021532 99%);
   padding: 20px 40px;
 }
 
 .qudos_button a:hover {
   background: #021532;
-  background: -webkit-gradient(linear, left top, right top, from(#021532), to(#254870));
   background: -o-linear-gradient(left, #021532 0%, #254870 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#021532), to(#254870));
   background: linear-gradient(to right, #021532 0%, #254870 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#021532', endColorstr='#254870', GradientType=1);
   /* IE6-9 */
@@ -78,78 +78,77 @@ body {
 }
 
 ul.qudos_blue {
-  color: #0091cc;
-  font-size: 18px;
-  list-style-type: inherit;
-  margin-left: 20px;
+    color: #0091cc;
+    font-size: 18px;
+    list-style-type: inherit;
+    margin-left: 20px;
 }
 
 .img_content_first-section:before {
   content: url(../img/bldg_vegas.png);
   position: absolute;
-  bottom: -25px;
-  right: -215px;
-  -webkit-transform: scale(0.6);
-      -ms-transform: scale(0.6);
-          transform: scale(0.6);
+  bottom: 5px;
+  right: 0px;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .img_content_first-section:after {
   content: url(../img/qudos_analogclock.png);
   position: absolute;
-  top: 85px;
-  left: -55px;
-  z-index: -1;
-  -webkit-transform: scale(0.95);
-      -ms-transform: scale(0.95);
-          transform: scale(0.95);
+  top: 90px;
+  left: -75px;
+  z-index: -9;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .img_content_second-section:before {
   content: url(../img/bldg_vegas.png);
   position: absolute;
-  bottom: 25px;
-  left: -250px;
-  z-index: -6;
-  -webkit-transform: scale(0.6);
-      -ms-transform: scale(0.6);
-          transform: scale(0.6);
+  top: 95px;
+  left: -75px;
+  z-index: -9;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .img_content_second-section:after {
   content: url(../img/qudos_car_left.png);
   position: absolute;
-  bottom: 30px;
-  left: -84px;
-  z-index: -5;
+  bottom: 15px;
+  left: -115px;
 }
 
 .img_content_third-section:before {
   content: url(../img/bldg_vegas.png);
-    position: absolute;
-    bottom: -25px;
-    right: -215px;
-    -webkit-transform: scale(0.6);
-        -ms-transform: scale(0.6);
-            transform: scale(0.6);
+  position: absolute;
+  bottom: 25px;
+  right: -10px;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .img_content_third-section:after {
   content: url(../img/qudos_car_right.png);
   position: absolute;
   bottom: -50px;
-  left: 135px;
+  left: 100px;
 }
 
 .img_content_fourth-section:before {
   content: url(../img/bldg_vegas.png);
   position: absolute;
-  bottom: -50px;
-  left: -250px;
-  z-index: -6;
-  -webkit-transform: scale(0.6);
-      -ms-transform: scale(0.6);
-          transform: scale(0.6);
+  top: 140px;
+  left: -75px;
+  z-index: -9;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .img_content_fourth-section:after {
@@ -211,15 +210,15 @@ span.qudos_blue {
   border: 20px solid transparent;
   border-color: transparent transparent #ffffff #ffffff;
   -webkit-transform-origin: 0 0;
-      -ms-transform-origin: 0 0;
-          transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
   -webkit-transform: rotate(-135deg);
-      -ms-transform: rotate(-135deg);
-          transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
   -webkit-box-shadow: -8px 6px 6px 0px rgba(33, 142, 199, 0.27);
-          box-shadow: -8px 6px 6px 0px rgba(33, 142, 199, 0.27);
+  box-shadow: -8px 6px 6px 0px rgba(33, 142, 199, 0.27);
   margin-top: 30px;
-  margin-right: -40px;
+  margin-right: -39px;
 }
 
 .speech-bubble-right {
@@ -239,13 +238,13 @@ span.qudos_blue {
   border: 25px solid transparent;
   border-color: transparent transparent #ffffff #ffffff;
   -webkit-transform-origin: 0 0;
-      -ms-transform-origin: 0 0;
-          transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
   -webkit-box-shadow: -3px 3px 6px 0px rgba(33, 142, 199, 0.22);
-          box-shadow: -3px 3px 6px 0px rgba(33, 142, 199, 0.22);
+  box-shadow: -5px 5px 3px 0px rgba(33, 142, 199, 0.11);
   margin-top: 20px;
   margin-left: 5px;
 }
@@ -343,6 +342,7 @@ span.qudos_blue {
   /* margin-left: -200px; */
   /* margin-top: -120px; */
   /* margin-right: 10px; */
+  padding: 50px !important;
   text-align: center;
 }
 
@@ -369,7 +369,7 @@ span.qudos_blue {
 }
 
 .section_one {
-  background: #f4f9fe url('../img/start_second-sectionbg.png');
+  background: #F4F9FD;
   padding: 100px 0px 100px;
 }
 
@@ -393,7 +393,7 @@ span.qudos_blue {
 .section-card {
   background: #fff;
   -webkit-box-shadow: 0px 1px 5px 0px rgba(33, 142, 199, 0.55);
-          box-shadow: 0px 1px 5px 0px rgba(33, 142, 199, 0.55);
+  box-shadow: 1px 1px 5px 0px rgba(33, 142, 199, 0.55);
   border-radius: 1em;
   /* padding: 20px 60px; */
 }
@@ -500,6 +500,7 @@ img.planes_transitions.plane2 {
   top: 15%;
   bottom: 0;
   left: 35%;
+  width: 13%;
 }
 
 
@@ -547,6 +548,7 @@ img.clouds_transitions.cloud3_footer {
       margin-top: 75px;
   }
 }
+
 
 @media (max-width: 1024px) {
   .qudos-divider {
@@ -772,21 +774,21 @@ img.clouds_transitions.cloud3_footer {
   .img_content_first-section:before {
     content: url(../img/bldg_vegas.png);
     position: absolute;
-    bottom: -40px;
-    right: -305px;
+    bottom: 65px;
+    right: -145px;
   }
   .img_content_first-section:after {
     content: url(../img/qudos_analogclock.png);
     position: absolute;
     top: 35px;
-    left: 300px;
+    left: -15px;
     z-index: -9;
   }
   .img_content_second-section:before {
     content: url(../img/bldg_vegas.png);
     position: absolute;
-    bottom: -35px;
-    left: -140px;
+    bottom: 59px;
+    left: -200px;
   }
   .img_content_second-section:after {
     content: url(../img/qudos_car_left.png);
@@ -797,33 +799,30 @@ img.clouds_transitions.cloud3_footer {
   .img_content_third-section:before {
     content: url(../img/bldg_vegas.png);
     position: absolute;
-    bottom: -60px;
-    right: -359px;
+    bottom: 65px;
+    right: 90px;
   }
   .img_content_third-section:after {
     content: url(../img/qudos_car_right.png);
     position: absolute;
     bottom: -50px;
     left: 91px;
-    -webkit-transform: scale(0.6);
-        -ms-transform: scale(0.6);
-            transform: scale(0.6);
   }
   .img_content_fourth-section:before {
     content: url(../img/bldg_vegas.png);
     position: absolute;
-    left: -320px;
-    bottom: -63px;
+    left: -220px;
+    top: 55px;
   }
-  .img_content_fourth-section:after {
+.img_content_fourth-section:after {
     content: url(../img/qudos_car_right.png);
     position: absolute;
     bottom: -55px;
     right: -10px;
-    -webkit-transform: scale(0.6);
-        -ms-transform: scale(0.6);
-            transform: scale(0.6);
-  }
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+}
   .img_content_second-section img {
     position: relative;
     z-index: 9;
@@ -866,3 +865,267 @@ img.clouds_transitions.cloud3_footer {
     margin-right: 25px;
   }
 }
+
+@media (max-width: 768px) {
+    
+    h1 {
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    h4{
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    h2 {
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    .qudos_button {
+        margin-top: 10px;
+        -webkit-transition: 1.3s;
+        -o-transition: 1.3s;
+        transition: 1.3s;
+        font-size:15px;
+    }
+
+    .qudos_content.left-side p,
+    .qudos_content.right-side p {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+    
+    .qudos_content {
+        padding: 20px 35px 0px;
+    }
+    
+    ul.qudos_blue {
+       font-size: 15px;
+    }
+
+    .banner .container {
+        padding: 0px 0px 0px !important;
+    }
+
+    .bannner_img_resize {
+        width: 135% !important;
+        position: relative;
+        margin-left: -95px;
+        z-index: -1;
+    }
+
+    .floater {
+        padding: 0px 0px 0px;
+      }
+
+    /* Blurbs */
+
+    .first_section_blurb {
+      padding:25px !important;
+      text-align: center;
+    }
+
+    .second_section_blurb {
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .third_section_blurb {
+        margin-left: 30px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .fourth_section_blurb {
+        margin-right:20px;
+        text-align: center;
+        z-index: 9;
+    }
+
+
+    /* Blurb ::afters */
+
+    .speech-bubble-header:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 25px solid transparent;
+        border-color: transparent transparent #ffffff #ffffff;
+        -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        -webkit-box-shadow: -4px 3px 2px 0px rgba(33, 142, 199, 0.18);
+        box-shadow: -4px 3px 2px 0px rgba(33, 142, 199, 0.18);
+        margin-top: 35px;
+        margin-right: -50px;
+    }
+
+    .speech-bubble:after {
+         content: '';
+         position: absolute;
+         right: 0;
+         top: 50%;
+         width: 0;
+         height: 0;
+         border: 16px solid transparent;
+         border-color: transparent transparent #ffffff #ffffff;
+         -webkit-transform-origin: 0 0;
+         -ms-transform-origin: 0 0;
+         transform-origin: 0 0;
+         -webkit-transform: rotate(-135deg);
+         -ms-transform: rotate(-135deg);
+         transform: rotate(-135deg);
+         -webkit-box-shadow: -4px 3px 2px 0px rgba(33, 142, 199, 0.18);
+         box-shadow: -3px 2px 2px 0px rgba(33, 142, 199, 0.13);
+         margin-top: 22px;
+         margin-right: -30px;
+    }
+    .speech-bubble-right:after {
+         content: '';
+         position: absolute;
+         right: 0;
+         top: 50%;
+         width: 0;
+         height: 0;
+         border: 16px solid transparent;
+         border-color: transparent transparent #ffffff #ffffff;
+         -webkit-transform-origin: 0 0;
+         -ms-transform-origin: 0 0;
+         transform-origin: 0 0;
+         -webkit-transform: rotate(45deg);
+         -ms-transform: rotate(45deg);
+         transform:rotate(45deg);
+         -webkit-box-shadow: -4px 3px 2px 0px rgba(33, 142, 199, 0.18);
+         box-shadow: -3px 2px 2px 0px rgba(33, 142, 199, 0.13);
+         margin-top: -23px;
+         margin-left: 2px;
+    }
+
+     img.planes_transitions.plane {
+          position: absolute !important;
+          bottom: 15%;
+          right: 6%;
+          z-index: 10;
+          width: 50%;
+    }
+
+    /** Images before after***/
+        .img_content_first-section:before {
+          position: absolute;
+          bottom: 5px;
+          right: -100px;
+          -webkit-transform: scale(0.75);
+              -ms-transform: scale(0.75);
+                  transform: scale(0.75);
+        }
+
+        .img_content_first-section:after {
+          position: absolute;
+          top: -45px;
+          left: -40px;
+          z-index: -9;
+          -webkit-transform: scale(0.75);
+          -ms-transform: scale(0.75);
+          transform: scale(0.75);
+        }
+
+        .img_content_second-section:before {
+          position: absolute;
+          top: 150px;
+          left: -170px;
+          z-index: -9;
+          -webkit-transform: scale(0.75);
+          -ms-transform: scale(0.75);
+          transform: scale(0.75);
+        }
+
+        .img_content_second-section:after {
+          position: absolute;
+          bottom: -25px;
+          left: -134px;
+          z-index: 9;
+          -webkit-transform: scale(0.75);
+          -ms-transform: scale(0.75);
+          transform: scale(0.75);
+        }
+
+        .img_content_third-section:before {
+          position: absolute;
+          bottom: 5px;
+          right: -100px;
+          -webkit-transform: scale(0.75);
+          -ms-transform: scale(0.75);
+          transform: scale(0.75);
+        }
+
+        .img_content_third-section:after {
+          position: absolute;
+          bottom: -50px;
+          left: 100px;
+          -webkit-transform: scale(0.75);
+          -ms-transform: scale(0.75);
+          transform: scale(0.75);
+        }
+
+        .img_content_fourth-section:before {
+          position: absolute;
+          top: 10px;
+          left: -170px;
+          z-index: -9;
+          -webkit-transform: scale(0.75);
+          -ms-transform: scale(0.75);
+          transform: scale(0.75);
+        }
+
+        .img_content_fourth-section:after {
+          position: absolute;
+          bottom: -25px;
+          right: -40px;
+          -webkit-transform: scale(0.75);
+          -ms-transform: scale(0.75);
+          transform: scale(0.75);
+        }
+
+
+    /*Footer*/
+
+    .footer h2 {
+        border: 1px solid #b3b4b4;
+        border-radius: 50px;
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    img.clouds_transitions.cloud1_footer {
+      position: absolute !important;
+      bottom: 25%;
+      left: 10%;
+    }
+
+    img.clouds_transitions.cloud2_footer {
+      position: absolute !important;
+      top: 1%;
+      bottom: 0;
+      left: 5%;
+    }
+
+    img.clouds_transitions.cloud3_footer {
+      position: absolute !important;
+      top: 35%;
+      bottom: 0;
+      right: 20%;
+    }
+
+}
+

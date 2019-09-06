@@ -16,6 +16,8 @@ object{
   margin:0;
   padding:0;
 }
+
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -24,6 +26,12 @@ html,
 body {
   height: 100%;
 }
+
+body {
+  position:relative; // that's it
+  overflow:hidden;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -411,8 +419,8 @@ p{
     background-color: transparent;
   }
   .header__nav a {
-    margin: 0 0 0 55px;
-/*    color: #fff!important;*/
+    margin: 0 0 0 40px;
+    /*    color: #fff!important;*/
   }
   .header__nav a:hover {
     color: #000;
@@ -528,3 +536,6 @@ img.planes_transitions.plane2 {
     width: 13%;
 }
  
+
+
+
