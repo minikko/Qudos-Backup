@@ -1204,6 +1204,33 @@ img.clouds_transitions.cloud3_footer {
 }
 
 @media (max-width: 320px) {
+  h1, h2 {
+        font-size: 1.2em;
+  }
+
+  h3, h4 {
+      font-size: .90em;
+  }
+
+  p {
+      font-size: .80em !important;
+      text-align: center;
+      padding: 0px 10px;
+  }
+
+  .qudos_button {
+      font-size:  .90em;
+  }
+
+  .qudos_button a {
+    padding: 15px 20px;
+  }
+
+  .img_content_headingimg {
+      width: 300px;
+      margin: 0 auto !important;
+      padding-top: 70px;
+  }
   .section-card {
     padding: 20px;
   }
@@ -1212,5 +1239,101 @@ img.clouds_transitions.cloud3_footer {
   }
   .footer__link {
     margin-right: 25px;
+  }
+
+  .fourth_section_blurb {
+    margin-right: 0px;
+    margin-bottom: 75px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 30px 25px;
+  }
+
+  .speech-bubble-header:after {
+      margin-top: 90px;
+  }
+
+  .speech-bubble:after {
+      margin-top: 45px;
+      left: 37%;
+  }
+
+  .img_content_first-section:before {
+    position: absolute;
+    bottom: -65px;
+    right: -225px;
+    -webkit-transform: scale(0.40);
+    -ms-transform: scale(0.40);
+    transform: scale(0.40);
+  }
+  .img_content_first-section:after {
+    position: absolute;
+    top: 35px;
+    left: -25px;
+    z-index: -9;
+  }
+  .img_content_second-section:before {
+    position: absolute;
+    top: 191px;
+    left: -230px;
+    -webkit-transform: scale(0.40);
+    -ms-transform: scale(0.40);
+    transform: scale(0.40);
+  }
+  .img_content_second-section:after {
+    position: absolute;
+    bottom: -40px;
+    left: -70px;
+    -webkit-transform: scale(0.40);
+    -ms-transform: scale(0.40);
+    transform: scale(0.40);
+  }
+  .img_content_third-section:before {
+    position: absolute;
+    bottom: -70px;
+    right: -225px;
+    -webkit-transform: scale(0.40);
+    -ms-transform: scale(0.40);
+    transform: scale(0.40);
+  }
+  .img_content_third-section:after {
+    position: absolute;
+    bottom: -50px;
+    left: 91px;
+    -webkit-transform: scale(0.40);
+    -ms-transform: scale(0.40);
+    transform: scale(0.40);
+  }
+  .img_content_fourth-section:before {
+    position: absolute;
+    top: -60px;
+    right: -270px;
+    -webkit-transform: scale(0.40);
+    -ms-transform: scale(0.40);
+    transform: scale(0.40);
+  }
+  .img_content_fourth-section:after {
+    position: absolute;
+    bottom: -45px;
+    right: 35px;
+    -webkit-transform: scale(0.40);
+    -ms-transform: scale(0.40);
+    transform: scale(0.40);
+  }
+
+  .footer_content {
+       font-size: .80em;
+  }
+
+  .footer h2 {
+    width: 80%;
+     font-size: .80em;
+  }
+
+  ul.qudos_blue {
+      color: #0091cc;
+       font-size: .80em !important;
+      list-style-type: none;
+      margin-left: 0px;
   }
 }
