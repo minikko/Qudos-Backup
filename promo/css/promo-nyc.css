@@ -787,9 +787,9 @@ img.clouds_transitions.cloud3_footer {
         margin-top: 100px;
     }
      .img_content_headingimg {
-        width: 80%;
-        margin: 0 auto;
-        padding-top: 50px;
+        width: 320px;
+        margin: 0 auto !important;
+        padding-top: 70px;
     }
      .header_blurb {
         margin: 0px 20px;
