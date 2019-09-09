@@ -1,4 +1,4 @@
-body {
+ body {
     overflow-x: hidden !important;
 }
 .row.no-gutters {
@@ -576,7 +576,7 @@ img.clouds_transitions.cloud3_footer {
         transform: scale(0.75);
     }
      .img_content_fourth-section:before {
-        top: 10px;
+        top: 45px;
         -ms-transform: scale(0.75);
         transform: scale(0.75);
         position: absolute;
