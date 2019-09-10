@@ -280,7 +280,6 @@ ul {
 }
 
 .header__btn {
-  width: 130px;
   height: 40px;
   line-height: 40px;
   color: #fff;
@@ -294,6 +293,7 @@ ul {
   background-image: -ms-linear-gradient(90deg, #1f8dc6 0%, #2e81a0 48%, #3c747a 100%);
   background-image: linear-gradient(90deg, #1f8dc6 0%, #2e81a0 48%, #3c747a 100%);
   margin-right: 60px;
+  padding: 0px 10px;
 }
 
 .header__btn:hover {
@@ -443,8 +443,8 @@ ul {
     background-color: transparent;
   }
   .header__nav a {
-    margin: 0 0 0 55px;
-    color: #fff!important;
+    margin: 0 0 0 30px;
+    color: #fff!important; 
   }
   .header__nav a:hover {
     color: #fff;
@@ -2222,3 +2222,55 @@ only screen and (min-resolution: 2dppx) {
 
 
 /*kk*/
+
+
+
+@media (max-width: 768px) {
+
+  li.app_text {
+      text-align: center;
+  }
+
+  .footer__title--download{
+        margin-top:100px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    
+    .footer__logo {
+        display: block;
+        position: relative;
+        margin:0 auto;
+        text-align:center;
+    }
+    .footer__title {
+        text-align:center;
+    }
+    
+    .footer__list {
+        text-align: center;
+    }
+
+    .footer__text{
+        text-align:center
+    }
+
+    .footer__social li {
+        display: block;
+        float: left;
+        width: 25%;
+        margin-top: 30px;
+    }
+
+    .footer__title--download{
+        margin-top:100px
+    }
+
+    .footer__list li.app_image img{
+      width:40%;
+    }
+
+}
+
