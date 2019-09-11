@@ -112,7 +112,7 @@
 							  </p>
 							</div>
 
-							<button class="copy-letter-button" data-clipboard-action="copy" data-clipboard-target="#copyme">Copy to clipboard</button>
+							<button class="copy-letter-button" id="copeme" data-clipboard-action="copy" data-clipboard-target="#copyme">Copy to clipboard</button>
 	            		</div>
 	        		</div>
 	            </div>
@@ -137,7 +137,7 @@
 							  </p>
 							</div>
 
-							<button class="copy-letter-button" data-clipboard-action="copy" data-clipboard-target="#copyme1">Copy to clipboard</button>
+							<button class="copy-letter-button" id="copeme" data-clipboard-action="copy" data-clipboard-target="#copyme1">Copy to clipboard</button>
 	            		</div>
 	        		</div>
 	            </div>
@@ -158,7 +158,7 @@
 							  </p>
 							</div>
 
-							<button class="copy-letter-button" data-clipboard-action="copy" data-clipboard-target="#copyme2">Copy to clipboard</button>
+							<button class="copy-letter-button" id="copeme" data-clipboard-action="copy" data-clipboard-target="#copyme2">Copy to clipboard</button>
 	            		</div>
 	        		</div>
 	            </div>
@@ -179,7 +179,7 @@
 							  </p>
 							</div>
 
-							<button class="copy-letter-button" data-clipboard-action="copy" data-clipboard-target="#copyme3">Copy to clipboard</button>
+							<button class="copy-letter-button" id="copeme" data-clipboard-action="copy" data-clipboard-target="#copyme3">Copy to clipboard</button>
 	            		</div>
 	        		</div>
 	        	</div>
@@ -308,6 +308,10 @@
       <script src="../why-qudos/js/scripts.min.js"></script>
       <script src="../why-qudos/js/wow.min.js"></script>
       <script src="../why-qudos/js/main.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <!-- SweetAlert2 -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
       <script type="text/javascript">
       	var clipboard = new Clipboard('.copy-letter-button');
@@ -318,6 +322,15 @@
 
 		clipboard.on('error', function(e) {
 		  console.log(e);
+		});
+
+	
+		$(document).on('click', '#copeme', function(e) {
+			swal(
+				'Success',
+				'You just copied the <b style="color:#228ec8;">promo</b> code!',
+				'success'
+			)
 		});
       </script>
    </body>
