@@ -15,6 +15,13 @@
       <meta name="keywords" content="">
       <title>Qudos | Always the Ride You Want™</title>
       <link rel="shortcut icon" type="image/png" href="img/favIcon.png">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      
    </head>
    <body>
       <header class="header">
@@ -39,7 +46,42 @@
                            <a href="https://www.instagram.com/qudosride/"><i class="icon-instagram"></i></a>
                         </div>
                      </nav>
-                     <a href="#experience" class="header__btn">Start Qudos</a>
+
+                     <div class="btn-group">
+                       <button type="button" class="header__btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Start Qudos
+                       </button>
+                       <div class="dropdown-menu dropdown-menu-right header_brandlist">
+                         <a class="header_brand dropdown-item" href="https://apppartner.ridequdos.com/alerts">
+                           
+                           <div class="row">
+                              <div class="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                  <img src="img/qudos_driver.png" class="img-fluid header__img">
+                              </div>
+                              <div class="col-8 col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 header__text">
+                                  Drive With Qudos
+                              </div>
+                            
+                           </div>
+                          </a>
+
+                          <div class="header__divider"></div>
+                         
+                           <a class="header_brand dropdown-item" href="https://appcustomer.ridequdos.com/alerts">
+                           <div class="row">
+                              <div class="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                  <img src="img/qudos_rider.png" class="img-fluid header__img">
+                              </div>
+                              <div class="col-8 col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 header__text">
+                                  Ride With Qudos
+                              </div>
+                             
+                           </div>
+                          </a>
+
+                       </div>
+                     </div>
+
                      <button class="header__menu" type="button">
                      <span></span>
                      <span></span>
@@ -352,8 +394,10 @@
       <script src="js/jquery.min.js"></script>
       <script src="js/owl.carousel.min.js"></script>
       <script src="js/main.js"></script>
+     
       <style type="text/css">
       /*only landing page nav*/
+       a:hover {text-decoration: none !important;}
          .header--active, .header--white
          {
          background-color: #fff; 
@@ -371,6 +415,34 @@
          }
          .footer__list li.app_image img {
          margin-left: -3px;
+         }
+
+         .dropdown-menu {
+             width: 300px !important;
+             height: auto !important;
+             right: 0 !important;
+             left: 5px !important;
+             background: #fff;
+             border-radius: 5px;
+         }
+
+         img.header__img {
+            box-shadow: 0px 0px 10px 0px #a9a9a9;
+            border-radius: 15px;}
+
+         .dropdown-toggle::after{
+            content: none !important;
+         }
+
+         .header__text {
+             margin-top: 20px;
+             font-weight: 500;
+         }
+
+         .header__divider {
+             border-bottom: .1rem solid #363945;
+             border-radius: 19px;
+             margin: 10px 20px 10px;
          }
 
       </style>

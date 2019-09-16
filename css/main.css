@@ -206,7 +206,7 @@ ul {
 
 .header__logo {
   position: relative;
-  height: 50px;
+  height: 65px;
   display: block;
   cursor: pointer;
 }
@@ -280,6 +280,7 @@ ul {
 }
 
 .header__btn {
+  font-family: 'Montserrat', sans-serif;
   height: 40px;
   line-height: 40px;
   color: #fff;
@@ -298,6 +299,10 @@ ul {
 
 .header__btn:hover {
   color: #fff;
+}
+
+.header_brand{
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header__menu {

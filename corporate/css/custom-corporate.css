@@ -462,7 +462,7 @@ ul.qudos-starlist {
 }
 
 .footer {
-  background: #fff !important;
+  background: #e6e7e8 !important;
   padding: 0px 0 0px;
   font-size: 16px;
 }
@@ -1058,20 +1058,20 @@ ul.footer__social li a {
     content: '';
     position: absolute;
     bottom: 0;
-    margin-top: 95px;
+    margin-top: 90px;
     left: 50%;
     width: 0;
     height: 0;
     border: 30px solid transparent;
     border-color: transparent transparent #ffffff #ffffff;
     -webkit-transform-origin: 0 0;
-        -ms-transform-origin: 0 0;
-            transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
     -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     -webkit-box-shadow: -3px 3px 3px 0px rgba(33, 142, 199, 0.26);
-            box-shadow: -3px 3px 3px 0px rgba(33, 142, 199, 0.26);
+    box-shadow: -3px 3px 3px 0px rgba(33, 142, 199, 0.26);
     margin-left: -35px;
   }
   
@@ -1099,7 +1099,7 @@ ul.footer__social li a {
     transform: rotate(-45deg);
     -webkit-box-shadow: -3px 3px 3px 0px rgba(33, 142, 199, 0.24);
     box-shadow: -3px 3px 3px 0px rgba(33, 142, 199, 0.24);
-    margin-top: 60px;
+    margin-top: 48px;
   }
   .speech-bubble-right {
     position: relative;
@@ -1213,4 +1213,53 @@ ul.footer__social {
 
 .qudos_content_below {
     padding: 0px 20px 0px;
+}
+
+@media (max-width: 768px) {
+
+  li.app_text {
+      text-align: center;
+  }
+
+  .footer__title--download{
+        margin-top:100px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    
+    .footer__logo {
+        display: block;
+        position: relative;
+        margin:0 auto;
+        text-align:center;
+    }
+    .footer__title {
+        text-align:center;
+    }
+    
+    .footer__list {
+        text-align: center;
+    }
+
+    .footer__text{
+        text-align:center
+    }
+
+    .footer__social li {
+        display: block;
+        float: left;
+        width: 25%;
+        margin-top: 30px;
+    }
+
+    .footer__title--download{
+        margin-top: 50px;
+    }
+
+    .footer__list li.app_image img{
+      width:40%;
+    }
+
 }
