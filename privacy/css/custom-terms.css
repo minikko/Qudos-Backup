@@ -1143,7 +1143,7 @@ ul.footer__social li a {
 
 @media (max-width: 375px) {
   .speech-bubble-header:after {
-    margin-top: 57px;
+    margin-top: 65px;
   }
     .speech-bubble {
     position: relative;

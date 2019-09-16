@@ -97,3 +97,66 @@ body{
 }
 
 
+
+ .img-fluid {
+ max-width: 100%;
+ height: auto;
+ }
+ .footer__list li.app_image img {
+ margin-left: -3px;
+ }
+
+ @media (max-width: 768px) {
+
+  li.app_text {
+      text-align: center;
+  }
+
+  .footer__title--download{
+        margin-top:100px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+
+  .contentDiv h5, .legalContent > h5{
+    text-align:center;
+  }
+    
+    .footer__logo {
+        display: block;
+        position: relative;
+        margin:0 auto;
+        text-align:center;
+    }
+    .footer__title {
+        text-align:center;
+    }
+    
+    .footer__list {
+        text-align: center;
+    }
+
+    .footer__text{
+        text-align:center
+    }
+
+    .footer__social li {
+        display: block;
+        float: left;
+        width: 25%;
+        margin-top: 30px;
+    }
+
+    .footer__title--download{
+        margin-top: 40px;
+    }
+
+    .footer__list li.app_image img{
+      width:40%;
+    }
+
+}
+
+
