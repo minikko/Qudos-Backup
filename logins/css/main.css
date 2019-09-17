@@ -2241,7 +2241,39 @@ only screen and (min-resolution: 2dppx) {
     padding-left: 100px;
 }
 
-
 /*kk*/
 
 
+@media screen and (max-width:480px) {
+   .sign .container .left-heading {
+        padding-left: 20px;
+    }
+    .sign {
+      padding:50px 0px;
+    }
+    span.footer__title{
+        text-align:center !important;
+        
+        margin: 0 auto;
+    }
+
+    .footer__list li{
+        text-align:center;
+    }
+    .footer__text{
+         text-align:center;
+    }
+
+    .footer__list li.app_image img {
+        width: 40%;
+    }
+
+    .footer__logo {
+      display: block;
+      position: relative !important;
+      bottom: 100%;
+      margin-bottom: 0px;
+      margin: 0 auto !important;
+      text-align: center;
+    }
+}

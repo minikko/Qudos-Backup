@@ -1286,6 +1286,10 @@ ul {
   width: 126px;
 }
 
+.footer__title--download {
+   padding-top: 30px; 
+}
+
 .footer__social li {
   display: inline-block;
   float: left;
@@ -1462,7 +1466,7 @@ ul {
     margin-bottom: 10px;
   }
   .footer__title--download {
-    /* padding-top: 10px; */
+     padding-top: 30px; 
   }
 }
 
@@ -2358,3 +2362,38 @@ only screen and (min-resolution: 2dppx) {
    color: #fff;
    margin-left: 50px;
  }
+
+
+@media screen and (max-width:480px) {
+   .sign .container .left-heading {
+        padding-left: 20px;
+    }
+    .sign {
+      padding:50px 0px;
+    }
+    span.footer__title{
+        text-align:center !important;
+        
+        margin: 0 auto;
+    }
+
+    .footer__list li{
+        text-align:center;
+    }
+    .footer__text{
+         text-align:center;
+    }
+
+    .footer__list li.app_image img {
+        width: 40%;
+    }
+
+    .footer__logo {
+      display: block;
+      position: relative !important;
+      bottom: 100%;
+      margin-bottom: 0px;
+      margin: 0 auto !important;
+      text-align: center;
+    }
+} 
