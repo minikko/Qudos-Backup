@@ -56,8 +56,13 @@ body {
   float: right;
 }
 
+
+.qudos_header.left { 
+  color: #fff;
+}
+
 .qudos_content {
-  padding: 25px 20px 0px;
+  padding: 25px 0px 0px;
 }
 
 .qudos_content p, .qudos_content.left-side p, .qudos_content.right-side p {
@@ -352,7 +357,7 @@ ul.qudos-starlist {
 }
 
 .section_one {
-  background: #f4f9fe url('../img/start_second-sectionbg.png');
+  background: #fff;
   padding: 100px 0px 100px;
   background-size: cover;
 }
