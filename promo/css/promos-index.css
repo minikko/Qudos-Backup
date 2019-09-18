@@ -302,6 +302,63 @@ img.clouds_transitions.cloud3 {
 
 
 
+	.flip{
+		background: #228ec8;
+	}
+
+	.promo-card {
+	    border-radius: 20px;
+	    border: 1px solid #91c6e2;
+	    margin: 30px 0px;
+	}
+
+	.promocard-img img {
+	    border-radius: 18px 0px 0px 18px;
+	}
+
+	.promocard-text {
+	   padding: 25px 20px !important;
+	   font-size: 30px;
+	   font-weight: 500;
+	   color: #000;
+	}
+
+	.promocard-text.flip { 
+	   padding:25px !important;
+	   font-size: 32px;
+	   font-weight: 500; 
+	   color: #fff;
+	}
+
+
+	.copyme {
+	    padding: 30px 30px 0px 30px;
+	}
+
+	.copyme p {
+	    background: #ffffff;
+	    padding: 10px;
+	    font-size: 18px;
+	    font-weight: bold;
+	    border-radius: 10px;
+	    border: 2px dashed #308ec8;
+	}
+
+	.copy-letter-button {
+	    color: #676767;
+	    font-size: 16px;
+	}
+
+
+	.copy-letter-button.flip {
+	    color: #fff !important;
+	    
+	}
+
+	.featured-section {
+	    padding-bottom: 50px;
+	}
+
 @media (max-width: 1024px) {
 	.qudos-divider {
 		margin: 10px 0;
@@ -714,7 +771,7 @@ img.clouds_transitions.cloud3 {
 
 @media (max-width: 360px) {
 	.speech-bubble-header:after {
-		margin-top: 128px;
+		margin-top: 105px;
 	}
 
 	.speech-bubble:after {
@@ -800,56 +857,7 @@ img.clouds_transitions.cloud3 {
 }
 
 
-	.flip{
-		background: #228ec8;
-	}
 
-	.promo-card {
-	    border-radius: 20px;
-	    border: 1px solid #91c6e2;
-	    margin: 30px 0px;
-	}
-
-	.promocard-img img {
-	    border-radius: 18px 0px 0px 18px;
-	}
-
-	.promocard-text {
-	   padding: 25px 20px !important;
-	   font-size: 30px;
-	   font-weight: 500;
-	   color: #000;
-	}
-
-	.promocard-text.flip { 
-	   padding:25px !important;
-	   font-size: 32px;
-	   font-weight: 500; 
-	   color: #fff;
-	}
-
-
-	.copyme {
-	    padding: 30px 30px 0px 30px;
-	}
-
-	.copyme p {
-	    background: #ffffff;
-	    padding: 10px;
-	    font-size: 18px;
-	    font-weight: bold;
-	    border-radius: 10px;
-	    border: 2px dashed #308ec8;
-	}
-
-	.copy-letter-button {
-	    color: #676767;
-	    font-size: 16px;
-	}
-
-	.featured-section {
-	    padding-bottom: 50px;
-	}
 
 	@media (max-width: 768px) {
 	    .promocard-text {

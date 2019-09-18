@@ -746,7 +746,7 @@ ul.footer__social li a {
   }
   .banner {
     position: inherit;
-    background: #fff url(../img/promonyc_wave.png) no-repeat center center;
+    /*! background: #fff url(../img/promonyc_wave.png) no-repeat center center; */
     background-position: 51% 100%;
     background-size: cover;
   }
@@ -835,3 +835,38 @@ ul.footer__social li a {
     font-size: 15px;
   }
 }
+
+
+
+@media screen and (max-width:480px) {
+   
+    span.footer__title{
+        text-align:center !important;
+        margin: 0 auto;
+    }
+
+    .footer__list li{
+        text-align:center;
+    }
+    .footer__text{
+         text-align:center;
+    }
+
+    .footer__list li.app_image img {
+        width: 25%;
+        margin-top: 20px;
+    }
+
+    .footer__logo {
+      display: block;
+      position: relative !important;
+      bottom: 100%;
+      margin-bottom: 0px;
+      margin: 0 auto !important;
+      text-align: center;
+    }
+  
+    .footer__title--download {
+      padding-top: 20px
+    }
+} 
