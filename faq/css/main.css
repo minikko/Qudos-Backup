@@ -440,7 +440,7 @@ p {
     background-color: transparent;
   }
   .header__nav a {
-    margin: 0 0 0 55px;
+    margin: 0 0 0 40px;
     /*    color: #fff!important;*/
   }
   .header__nav a:hover {
@@ -585,6 +585,7 @@ p {
   float: left;
   width: 25%;
   margin-top: 30px;
+  /* font-size: 32px; */
 }
 
 .footer__social a {
@@ -592,7 +593,7 @@ p {
   text-align: center;
   opacity: 0.52;
   color: #fff;
-  font-size: 20px;
+  font-size: 32px;
 }
 
 .footer__social a:hover {

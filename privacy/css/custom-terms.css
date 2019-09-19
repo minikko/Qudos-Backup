@@ -467,7 +467,7 @@ ul.qudos-starlist {
   background-image: -ms-linear-gradient(130deg, #171f2d 0%, #0d111c 34%, #03030a 100%);
   background-image: linear-gradient(130deg, #171f2d 0%, #0d111c 34%, #03030a 100%);
   z-index: 1;
-  padding: 0px 0 0px;
+  padding: 80px 0 0px;
   font-size: 16px;
 }
 

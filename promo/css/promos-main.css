@@ -513,7 +513,7 @@ p{
 
 .footer__logo {
   display: inline-block;
-  position: absolute;
+  /* position: absolute; */
   bottom: 100%;
   margin-bottom: 40px;
 }

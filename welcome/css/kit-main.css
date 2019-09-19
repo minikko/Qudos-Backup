@@ -386,8 +386,8 @@ p{
     background-color: transparent;
   }
   .header__nav a {
-    margin: 0 0 0 55px;
-/*    color: #fff!important;*/
+    margin: 0 0 0 40px;
+    /*    color: #fff!important;*/
   }
   .header__nav a:hover {
     color: #000;

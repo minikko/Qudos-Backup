@@ -385,7 +385,7 @@ p{
     background-color: transparent;
   }
   .header__nav a {
-    margin: 0 0 0 55px;
+    margin: 0 0 0 40px;
     /* color: #fff!important; */
   }
   .header__nav a:hover {
@@ -460,7 +460,7 @@ p{
     width: 40%;
     margin: 0 auto;
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 16px;
     padding: 5px;
 }
 

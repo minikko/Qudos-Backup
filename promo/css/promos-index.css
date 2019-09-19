@@ -417,7 +417,7 @@ img.clouds_transitions.cloud3 {
 
 	.footer {
 		font-size: 14px;
-		padding-top: 50px;
+		padding-top: 80px;
 	}
 
 	.footer__line {
@@ -814,7 +814,7 @@ img.clouds_transitions.cloud3 {
   }
 
   .footer__title--download{
-        margin-top:100px;
+        margin-top: 50px;
         margin-bottom: 10px;
     }
 }
