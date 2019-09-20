@@ -440,7 +440,7 @@ p{
   font-size: 15px;
   letter-spacing: 0.4px;
   color: #fff;
-  text-align: center;
+  /* text-align: center; */
   background: #0d111c;
 }
 
@@ -936,7 +936,7 @@ p{
   font-size: 15px;
   letter-spacing: 0.4px;
   color: #fff;
-  text-align: center;
+  /* text-align: center; */
   background: #0d111c;
 }
 
