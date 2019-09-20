@@ -701,3 +701,10 @@ p{
 .banner .container {
     /* padding: 175px 0px 0px !important; */
 }
+
+
+.col-xs-6 {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}

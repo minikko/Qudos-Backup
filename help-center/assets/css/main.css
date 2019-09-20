@@ -992,3 +992,10 @@ img.planes_transitions.plane2 {
 .qudos_lightblue{
   color: #3aefff
 }
+
+
+.col-xs-6 {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
