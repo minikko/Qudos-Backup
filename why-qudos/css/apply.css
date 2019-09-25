@@ -152,7 +152,7 @@
 	position: inherit;
 	background: #fff url("../img/start_waverbanner.png") no-repeat center center;
 	background-size: cover;
-	margin-top: 100px;
+	padding-top: 100px;
 	/*background-attachment: fixed; lets see how this goes with new layout*/
 }
 

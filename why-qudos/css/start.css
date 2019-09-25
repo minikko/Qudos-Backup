@@ -21,7 +21,7 @@ body {
 }
 
 header.header {
-	background: #fff;
+	/* background: #fff; */
 }
 
 .qudos_button a {
@@ -169,10 +169,9 @@ header.header {
 
 .banner {
 	position: inherit;
-	background: #232f41 url("../img/start_waverbanner.png") no-repeat center center;
+	background: url("../img/start_waverbanner.png") no-repeat center center;
 	background-size: cover;
 	padding-top: 100px;
-
 }
 
 .banner .container {

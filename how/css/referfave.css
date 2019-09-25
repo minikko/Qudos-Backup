@@ -15,7 +15,7 @@ body {
 
 
 header.header {
-  background: #fff;
+  /* background: #fff; */
 }
 
 .img-side {
@@ -96,7 +96,7 @@ ul.qudos_blue {
 }
 
 ul.qudos_blue li:before {
-  content: 'Ã¢Å“â€';
+  content: 'ÃƒÂ¢Ã…â€œÃ¢â‚¬Â';
   padding-right: 0.5em;
 }
 
@@ -265,7 +265,7 @@ span.qudos_blue {
 
 .banner {
   position: inherit;
-  background: #232f41 url(../img/start_waverbanner.png) no-repeat center center;
+  background: url(../img/start_waverbanner.png) no-repeat center center;
   background-size: cover;
   padding-top: 100px;
 }
@@ -673,7 +673,7 @@ img.clouds_transitions.cloud3_footer {
     margin-left: 0;
     margin-top: 0px;
     padding: 35px;
-  }
+  } 
 
   .first_section_blurb {
     margin-right: 0;
@@ -788,7 +788,7 @@ img.clouds_transitions.cloud3_footer {
 
   .banner {
     position: inherit;
-    background: #232f41 url(../img/start_waverbanner.png) no-repeat center center;
+    background: url(../img/start_waverbanner.png) no-repeat center center;
     background-size: cover;
     padding-top: 100px;
   }

@@ -35,7 +35,7 @@ p {
     position: inherit;
     background: #fff url("../img/promonyc_wave--mirrored.png") no-repeat center center;
     background-size: cover;
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .banner .container {
@@ -798,9 +798,9 @@ img.clouds_transitions.cloud3_footer {
     }
 
     .banner {
-        background: #fff url(../img/promonyc_wave.png) no-repeat center center;
+      
         background-size: cover;
-        margin-top: 100px;
+        padding-top: 100px;
     }
 
     .banner .container {

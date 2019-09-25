@@ -306,8 +306,7 @@ span.qudos_blue {
   position: inherit;
   background: #fff url("../img/promonyc_wave.png") no-repeat center center;
   background-size: cover;
-  margin-top: 100px;
-
+  padding-top: 100px;
 }
 
 .banner .container {
@@ -822,6 +821,10 @@ ul.footer__social li a {
   .qudos_custom_blurb h2 a {
       font-size: 16px;
   }
+  .qudos_content_header{
+    text-align:center !important;
+    margin: 0 auto;
+  }
   .header__logo {
     height: 50px;
     margin-left: -5px;
@@ -858,7 +861,7 @@ ul.footer__social li a {
     margin-right: 30px;
   }
   .banner {
-    margin-top: 100px;
+    padding-top: 100px;
   }
   .img_content_headingimg {
     margin-top: 50px;

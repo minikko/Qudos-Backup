@@ -272,20 +272,20 @@
         content: '';
         position: absolute;
         bottom: 0;
-        margin-top: 95px;
+        margin-top: 84px;
         left: 52%;
         width: 0;
         height: 0;
         border: 30px solid transparent;
         border-color: transparent transparent #ffffff #ffffff;
         -webkit-transform-origin: 0 0;
-            -ms-transform-origin: 0 0;
-                transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0;
         -webkit-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-                transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
         -webkit-box-shadow: -3px 3px 3px 0px rgba(33, 142, 199, 0.32);
-                box-shadow: -3px 3px 3px 0px rgba(33, 142, 199, 0.32);
+        box-shadow: -3px 3px 3px 0px rgba(33, 142, 199, 0.32);
         margin-left: -50px;
     }
 
