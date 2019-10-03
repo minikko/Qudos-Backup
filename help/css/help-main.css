@@ -705,9 +705,8 @@ p{
     .footer__social li {
         display: block;
         float: left;
-        width: 25%;
+        width: 19% !important;
         margin-top: 30px;
-
     }
 
     .footer__title--download{
@@ -725,7 +724,7 @@ p{
     ul.footer__social.clearfix {
       text-align: center;
       margin: 0 auto;
-      padding-left: 105px;
+      /* padding-left: 105px; */
   }
 
 
