@@ -1,5 +1,71 @@
 @media only screen and (max-width: 375px) {
 
+	h1{
+	  font-size: 36px;
+	  font-weight: bold;
+	}
+	h2{
+	  font-size: 34px;
+	  font-weight: 600;
+	}
+	h3{
+	  font-size: 16px;
+	  font-weight: 400 !important;
+	}
+	h4{
+	  font-size: 14px;
+	 
+	}
+	p{
+	  font-size: 12px;
+	}
+	
+
+	header.header {
+		padding-bottom: 30px;
+		background: #fff;
+		border-bottom-left-radius: 0% 20%;
+		border-bottom-right-radius: 71% 100%;
+	}
+
+	.masthead-wrap {
+	  background-position-x: -110px;
+	  background-position-y: -240px;
+	}
+
+	.masthead {
+	  height: 100vh;
+	  min-height: 500px;
+	  background-size: 700px;
+	  background-repeat: no-repeat;
+	  background-position-y: 450px;
+	  background-position-x: 30%;
+	  padding: 200px 0;
+	}
+
+	.header__content:before {
+      content: none;
+	}
+
+	.section_one, 
+	.section_two,
+	.section_three {
+	  background-image: none;
+	}
+
+	section{
+		padding: 100px 15px !important;
+	}
+
+	.top__part-image{
+		padding-bottom: 50px;
+	}
+	.bottom__part-image{
+		padding: 50px 0px;
+	}
+}
+
+@media only screen and (min-width: 320px) {
 
 	h1{
 	  font-size: 36px;
@@ -250,7 +316,7 @@
 
 	h1{
 	  font-size: 44px;
-	  font-weight: 500;
+	  font-weight: bold;
 	}
 	h2{
 	  font-size: 36px;
