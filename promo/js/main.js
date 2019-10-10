@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	"use strict";
+	// "use strict";
 
 	/*==============================
 	Header
@@ -16,6 +16,9 @@ $(document).ready(function () {
 		$(this).toggleClass('header__menu--active');
 		$('.header__nav').toggleClass('header__nav--active');
 	});
+
+
+	new WOW().init();
 
 	var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
@@ -74,5 +77,59 @@ $(document).ready(function () {
         document.body.appendChild(css);
     };
 
+    	animateRight();
+		animateRight2();
+		animateRight3();
+
+
+		function animateRight() {
+		  $("#i1").animate({
+		        'marginLeft' : "+=20px" //moves left
+		    }, 3000, 'swing', animateLeft);
+		   
+		}
+
+		function animateLeft() {
+		    $("#i1").animate({
+		        'marginLeft' : "-=20px" //moves right
+		    }, 3000, 'swing', animateRight);
+
+
+		}
+
+		function animateRight2() {
+		    $("#i2").animate({
+		        'marginLeft' : "+=50px" //moves left
+		    }, 3000, 'swing', animateLeft2);
+		   
+		}
+
+		function animateLeft2() {
+		    $("#i2").animate({
+		        'marginLeft' : "-=50px" //moves right
+		    }, 3000, 'swing', animateRight2);
+
+
+		}
+		function animateRight3() {
+		    $("#i3").animate({
+		        'marginLeft' : "+=75px" //moves left
+		    }, 3000, 'swing', animateLeft3);
+		   
+		}
+
+		function animateLeft3() {
+		    $("#i3").animate({
+		        'marginLeft' : "-=75px" //moves right
+		    }, 3000, 'swing', animateRight3);
+
+
+		}
 
 });
+
+
+
+			
+
+
