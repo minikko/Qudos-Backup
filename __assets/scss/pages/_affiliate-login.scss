@@ -1,0 +1,115 @@
+.affiliate-login {
+    .header__menu {
+        span {
+            background-color: black;
+        }
+    }
+
+    .sign {
+        display: block;
+        background: url(../img/affiliate-login/credentials_background.jpg) center center;
+        margin-top: 8.8rem;
+        background-position-y: 0;
+        background-size: cover;
+        padding: 15rem 0;
+        background-repeat: space;
+
+        h3 {
+            font-size: 32px;
+            margin: 0px 0px 10px 0px;
+            padding: 0px 0px 20px 0px;
+            position: relative;
+            max-width: 40rem;
+            background: url(../img/bg-h3.jpg) bottom left no-repeat;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: normal;
+            left: -7.8rem;
+        }
+
+        p {
+            line-height: 2rem;
+            max-width: 40rem;
+            font-size: 1.4rem;
+        }
+
+        .container {
+            .row {
+                div.col-6.col-md-6:first-child {
+                    padding-left: 10rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .affiliate-login {
+        .header {
+            &__nav {
+                right: 0;
+
+                a {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .affiliate-login {
+        .submit {
+            margin-right: 1.4rem;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .affiliate-login {
+        .sign {
+            h3 {
+                left: -4.5rem;
+            }
+        }
+
+        .submit {
+            margin-right: 1.1rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .affiliate-login {
+        .submit {
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .affiliate-login {
+        .sign {
+            h3 {
+                left: 0;
+            }
+        }
+
+        .container {
+            .row {
+                div.col-xs-12:first-child {
+                    top: -5.5rem;
+
+                    h3 {
+                        background-position: bottom center;
+                    }
+
+                    h3,
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
