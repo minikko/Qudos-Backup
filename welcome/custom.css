@@ -1,3 +1,9 @@
+.qudos-blue{
+    color:#228ec8;
+}
+.header__prime:before{
+    bottom:-2.5rem;
+}
 .chat-text{
     font-family: 'Gochi Hand', cursive;
     color: #000;
@@ -44,27 +50,35 @@
 #q-3{
     width:18%;
     top:17px;
-    left:43rem !important;
+    left:43rem ;
 }
 .why-qudos__section--2{
-    height: 60vh !important;
+    height: 60vh ;
+    -webkit-clip-path:none;
+    clip-path: none;
 }
 .why-qudos__section--2-2{
-    height:60vh !important;
+    height:60vh ;
+    -webkit-clip-path:none;
+    clip-path: none;
 }
 .why-qudos__section--2-3{
-    height:55vh !important;
+    height:55vh ;
+    -webkit-clip-path:none;
+    clip-path: none;
 }
 .why-qudos__section--2-4{
     background: #fafafa;
-    height:30vh !important;
+    height:35vh ;
+    -webkit-clip-path:none;
+    clip-path: none;
 }
 .why-qudos__section--5{
     background: #fff;
-    height:60vh !important;
+    height:60vh ;
 }
 .section-top-curve{
-    height:200px;
+    height:150px;
     background: url("../../__assets/img/welcome/top-curve.svg") top no-repeat;
     margin-bottom:-10px;
 }
@@ -77,13 +91,13 @@
     background-color: #fff;
 }
 .nu-footer p{
-    color:#000 !important;
+    color:#000 ;
 }
 .why-qudos__section--1 img.img-fluid:nth-child(2) {
     animation: none;
 }
 .why-qudos__section--2-2 .subheader__prime, .why-qudos__section--2-4 .subheader__prime{
-   width: 100% !important;
+   width: 100% ;
 }
 .why-qudos__section--2 .platform__btn{
     top:0px;
@@ -118,22 +132,22 @@
         width:14%;
     }
    .why-qudos__section--2{
-       height:60vh !important;
+       height:60vh ;
    }
    .why-qudos__section--2-2{
-       height:60vh !important;
+       height:60vh ;
    }
    .why-qudos__section--2-3{
-    height:60vh !important;
+    height:60vh ;
     }
     .why-qudos__section--2-4{
-        height:35vh !important;
+        height:35vh ;
         }
    .why-qudos__section--5{
-       height:65vh !important;
+       height:65vh ;
    }
    #q-3{
-       left:43rem !important;
+       left:43rem ;
    }
    .card{
     box-shadow: 15px 30px 10px #f2f2f2;
@@ -187,19 +201,19 @@
         width:20%;
     }
     .why-qudos__section--2{
-        height: 70vh !important;
+        height: 70vh ;
     }
     .why-qudos__section--2-2{
-        height: 70vh !important;
+        height: 70vh ;
     }
     .why-qudos__section--2-3{
-        height: 65vh !important;
+        height: 65vh ;
     }
     .why-qudos__section--2-4{
-        height: 35vh !important;
+        height: 35vh ;
     }
     .why-qudos__section--5{
-        height: 60vh !important;
+        height: 60vh ;
     }
     #sec-5-img{
         top:20px;
@@ -219,10 +233,10 @@
     #q-3{
         width:15%;
         top:30px;
-        left:30rem !important;
+        left:30rem ;
     }
     .chat-text{
-        font-size: 3rem !important;
+        font-size: 3rem ;
     }
 }
 
@@ -246,19 +260,19 @@
         left:130px;
     }
     .why-qudos__section--2{
-        height:40vh !important;
+        height:40vh ;
     }
     .why-qudos__section--2-2{
-        height:40vh !important;
+        height:40vh ;
     }
     .why-qudos__section--2-3{
-        height:40vh !important;
+        height:40vh ;
     }
     .why-qudos__section--2-4{
-        height:25vh !important;
+        height:25vh ;
     }
     .why-qudos__section--5{
-        height:40vh !important;
+        height:40vh ;
     }
 
    .card{
@@ -269,14 +283,14 @@
     border-left:1.2rem solid #228ec8;
     }
     .c-description{
-        font-size:1.3rem !important;
+        font-size:1.3rem ;
     }
     .card .c-header{
         font-size:2rem;
         font-weight: bold;
     }
     .chat-text{
-        font-size: 1.5rem !important;
+        font-size: 1.5rem ;
     }
     #q-1{
         display: block;
@@ -292,13 +306,27 @@
     #q-3{
         width:15%;
         top:15px;
-        left:20rem !important;
+        left:20rem ;
     }
 }
 
 @media (max-width:480px){
+    .why-qudos__section--1 .header__prime{
+        width:100%;
+    }
+    .svg-gradient-circle--1{
+        left:-60%;
+        margin-top:-20%;
+    }
+    #header-title{
+        margin-top:0px;
+        margin-bottom:100px;
+    }
+    .subheader__prime #header-title{
+        font-size:3rem;
+    }
     .chat-text{
-        font-size:2rem !important;
+        font-size:2.3rem !important;
     }
     .card{
         box-shadow: 15px 30px 10px #f2f2f2;
@@ -306,35 +334,36 @@
         padding:20px 8px;
         border:none;
         border-left:1.2rem solid #228ec8;
-        }
-        .c-description{
-            font-size:1.5rem !important;
-        }
-        .card .c-header{
-            font-size:2rem;
-            font-weight: bold;
-        }
+    }
+    .c-description{
+        font-size:1.5rem ;
+    }
+    .card .c-header{
+        font-size:2rem;
+        font-weight: bold;
+    }
     .why-qudos__section--2 .platform__btn{
-       top:50px !important;
+       top:50px ;
     }
     #car-1{
-        left:170px;
-        top:70px;
+        left:70%;
+        top:9%;
         width:50%;
     }
     #qudos-sign-1{
-        top:0px;
-        left:340px;
+        top:3%;
+        left:115%;
     }
     #driver-phone{
         width:18%;
-        top:40px;
-        left:420px;
+        top:7%;
+        left:135%;
     }
     #sec-2-img{
         margin-top:5rem;
         margin-left: 0;
-        width:70%;
+        width:300px;
+        height:300px;
     }
     #sec-3-img{
         width:60%;
@@ -344,7 +373,7 @@
     }
     #sec-4-img{
         width:70%;
-        margin-left: 50px !important;
+        margin-left: 50px ;
     }
     #sec-5-img{
         top:-250px;
@@ -365,7 +394,7 @@
     #q-3{
         width:15%;
         top:-225px;
-        left:29rem !important;
+        left:29rem ;
     }
     .why-qudos__section--2-2 .d-flex{
         order:2;
@@ -381,26 +410,112 @@
         width: 100%;
     }
     .why-qudos__section--2{
-        height:90vh !important;
+        height:90vh ;
         padding-bottom:200px;
     }
     .why-qudos__section--2-2{
-        height:90vh !important;
+        height:90vh ;
     }
     .why-qudos__section--2-3{
-        height:90vh !important;
+        height:90vh ;
     }
     .why-qudos__section--2-4{
-        height:60vh !important;
+        height:60vh ;
     }
     .why-qudos__section--5{
-        height:90vh !important;
+        height:90vh ;
     }
     .why-qudos__section--5 div.col-sm-6:first-child{
         margin-top:4rem;
     }
     
     }
+
+@media (max-width:375px){
+    #sec-2-img{
+        margin-top:5rem;
+        margin-left: 0;
+        width:200px;
+        height:200px;
+    }
+    .svg-gradient-circle--1{
+        left:-60%;
+        margin-top:-25%;
+    }
+    .why-qudos__section--2{
+        margin-top:20px;
+        height:75vh;
+    }
+    .why-qudos__section--2-2{
+        height:70vh;
+    }
+    .why-qudos__section--2-3{
+        height:95vh;
+    }
+    .platform__btn{
+        max-width:100%;
+    }
+    #driver-phone{
+        top:6%;
+    }
+    #q-2{
+        left:62%;
+    }
+}
+
+@media (max-width:320px){
+    #header-title .header__prime{
+        font-size:3rem;
+        line-height:4.3rem;
+    }
+    .svg-gradient-circle--1{
+        left:-70%;
+        margin-top:-40%;
+    }
+    #driver-phone{
+        left:155%;
+    }
+    #car-1{
+        left:90%;
+    }
+    #qudos-sign-1{
+        left:135%;
+    }
+    .why-qudos__section--2{
+        height:90vh;
+    }
+    .why-qudos__section--2-2{
+        height:85vh;
+    }
+    .why-qudos__section--2-3{
+        height:95vh;
+    }
+    .why-qudos__section--2-4{
+        height:70vh;
+    }
+    #sec-3-img{
+        margin-bottom:0rem;
+    }
+    #sec-4-img{
+        margin-top:0rem;
+    }
+    .card{
+        margin-left:0;
+        margin-right:0;
+    }
+    #sec-5-img{
+        left:45%;
+    }
+    #q-1{
+        left:50%;
+    }
+    #q-2{
+        left:60%;
+    }
+    #q-3{
+        left:67%;
+    }
+}
 
 
 

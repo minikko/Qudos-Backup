@@ -1,0 +1,49 @@
+.owl {
+    &-dots {
+        position: absolute;
+        -webkit-tap-highlight-color: transparent;
+        margin: 0;
+        bottom: 25px;
+        left: 20px;
+    }
+
+    &-dot {
+        display: inline-block;
+        position: relative;
+        margin: 0 10px 0 0;
+        width: 9px;
+        height: 9px;
+
+        span {
+            display: block;
+            position: relative;
+            width: 9px;
+            height: 9px;
+            -webkit-backface-visibility: visible;
+            -webkit-transition: 0.4s;
+            -moz-transition: 0.4s;
+            transition: 0.4s;
+            background-color: rgba(39, 20, 20, 0.24);
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+    }
+
+    &.active {
+        span {
+            background-color: #271414;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .owl{
+        &-carousel {
+            .owl-item {
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -4,8 +4,19 @@
         color: black;
     }
 
+    .svg-gradient-circle--1 {
+        position: relative;
+        top: -5rem;
+        right: -10rem;
+    }
+
     .header {
         background-color: white;
+        border-bottom-right-radius: 32px;
+
+        &--active {
+            border-bottom-right-radius: 0;
+        }
 
         &__btn {
             background-image: -webkit-gradient(linear, left top, right top, color-stop(4%, #083c58), color-stop(85%, #1b2430));
@@ -192,12 +203,6 @@
         }
     }
 
-    .svg-gradient-circle--1 {
-        position: relative;
-        top: -5rem;
-        right: -10rem;
-    }
-
     @media (min-width: 768px) {
         .header__nav {
             a {
@@ -261,7 +266,8 @@
         &__section--3 {
             .container {
                 position: relative;
-                top: 18rem;
+                top: 30%;
+                transform: translateY(-50%);
             }
         }
 
@@ -1139,7 +1145,7 @@
 
         &__section--3 {
             .container {
-                top: 11vh;
+                top: 40vh;
             }
         }
 
@@ -1152,6 +1158,17 @@
 
             img.img-fluid:nth-child(5) {
                 left: 18.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .why-qudos {
+
+        &__section--3 {
+            .container {
+                top: 90%;
             }
         }
     }

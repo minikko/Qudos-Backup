@@ -1,0 +1,253 @@
+/*==============================
+  Common styles
+==============================*/
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  min-width: 320px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.close {
+    margin: 2rem 2rem 0 0;
+  }
+}
+
+a {
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  transition: 0.4s ease;
+  display: inline-block;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+a:not([href]):not([tabindex]) {
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+a:not([href]):not([tabindex]):hover {
+  text-decoration: underline;
+  color: white;
+}
+
+object {
+  pointer-events: none;
+}
+
+
+input,
+textarea,
+select {
+  padding: 0;
+  margin: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+select.vehicle {
+  width: 100%;
+  position: relative;
+  float: left;
+  padding: 1.5rem 0 1.5rem 5.5rem;
+  margin-bottom: 20px;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  background: url(../img/dropdown.png) right 2rem top 2.3rem no-repeat;
+  color: #6b6b6b;
+}
+
+
+span.main-mobile {
+  position: absolute;
+  left: 5.5rem;
+  top: 1.5rem;
+  font-size: 1.6rem;
+  color: #6b6b6b;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &.signup-step {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin: 2rem 0 2rem 0;
+
+    li {
+      float: left;
+      margin: 0 7px 0 0;
+
+      &.active {
+        a {
+          background: black;
+        }
+      }
+
+      a {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #c2c2c2;
+        display: inline-block;
+        float: left;
+      }
+    }
+  }
+}
+
+::-moz-selection {
+  background: white;
+  color: black;
+  text-shadow: none;
+}
+
+::selection {
+  background: white;
+  color: black;
+  text-shadow: none;
+}
+
+::-webkit-input-placeholder {
+  color: $qudos-placeholder-tint;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: $qudos-placeholder-tint;
+  opacity: 1;
+}
+
+:-moz-placeholder {
+  color: $qudos-placeholder-tint;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: $qudos-placeholder-tint;
+  opacity: 1;
+}
+
+#fourth-step.submit {
+  position: relative;
+  float: left;
+  width: 80%;
+  background: $qudos-blue;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.phone-verify {
+  font-size: 2.6rem;
+  padding-left: 3rem;
+}
+
+.iti-flag {
+  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.4.0/img/flags.png");
+}
+
+.intl-tel-input {
+  width: 100%
+}
+
+.hidden {
+  display: none;
+}
+
+.submit {
+  cursor: pointer;
+
+  &-veri,
+  &-login {
+    position: relative;
+    float: left;
+    width: 100%;
+    background: $qudos-blue;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    padding: 15px 0px 15px 0px;
+  }
+
+  &-veri {
+
+    &:hover,
+    &:active {
+      background: $qudos-blue;
+      color: white;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .owl-dots {
+    left: 37.5rem;
+    bottom: 6rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .container {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  html, body {
+    font-size: 56.25%;
+  }
+}

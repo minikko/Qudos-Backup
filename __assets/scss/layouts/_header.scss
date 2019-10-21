@@ -331,59 +331,21 @@
     }
 }
 
-@media (min-width: 1200px) {
-
-    .header {
-        &__content {
-            padding: 0 6.5rem;
-        }
-
-        &__nav {
-            right: 28.5rem;
-        }
-    }
-
-    .header--white .header__content {
-        padding: 0 9.5rem;
-    }
-
-    .header--white .header__nav {
-        right: 9.5rem;
-    }
-}
 
 @media (max-width: 991px) {
     .header {
         &__nav {
-            right: 20rem;
-
             a {
-                margin: 0 0 0 3rem;
+                margin: 0 1rem;
             }
 
             &--active {
                 right: 0;
 
-                a {
-                    margin: 0;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 800px) {
-    .header {
-        &__nav {
-            a {
-                margin: 0 0 0 3rem;
-            }
-
-            &--active {
-                right: 0;
-
-                a {
-                    margin: 0;
+                &>a {
+                    &:not(:last-child) {
+                        margin: 0 0 1.5rem 0;
+                    }
                 }
             }
         }

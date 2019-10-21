@@ -1,3 +1,7 @@
+[class*="qudos__blue-text"] {
+    color: $qudos-blue;
+}
+
 .clear {
     display: block;
     content: "";
@@ -13,7 +17,7 @@
 }
 
 .svg-container {
-    margin-top: 0em;
+    margin-top: 1em;
     width: 100%;
     position: absolute;
 }

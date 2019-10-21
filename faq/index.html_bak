@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+   <head> 
+      <title>Qudos® | FAQ</title>
+      <!-- Primary Meta Tags -->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="keywords" content="">
+      <meta name="description" content="Need help navigating your Qudos app? Use the FAQ to learn more about our ride hailing services.">
+      <meta name="copyright" content="Qudos Ride with your Favorite™">
+      <!-- Open Graph / Facebook -->
+      <meta property="og:url" content="">
+      <meta property="og:title" content="Qudos® | FAQ">
+      <meta property="og:description" content="Need help navigating your Qudos app? Use the FAQ to learn more about our ride hailing services.">
+      <meta property="og:image" content="">
+      <!-- Twitter -->
+      <meta name="twitter:card" content="">
+      <meta name="twitter:title" content="Qudos® | FAQ">
+      <meta name="twitter:description" content="Need help navigating your Qudos app? Use the FAQ to learn more about our ride hailing services.">
+      <!-- FAVICON -->
+      <link rel="icon" type="image/png" href="img/favicon.png">
+      <!-- FONTS -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600" rel="stylesheet">
+      <link href="fontawesome/css/all.css" rel="stylesheet">
+      <!-- Bootstrap CSS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+      <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/fontello.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/custom.css">
+   </head>
+   <body>
+      <header class="header">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="header__content">
+                     <a href="/" class="header__logo">
+                     <object type="image/svg+xml" data="img/logo--black.svg"></object>
+                     <object type="image/svg+xml" data="img/logo--white.svg"></object>
+                     </a>
+                     <nav class="header__nav" id="nav-icon4">
+                        <a href="../promo/">Promo</a>
+                        <a href="../affiliatelogin.html">Affiliate</a>
+                        <a href="../why-qudos/drive.html">Drive</a>
+                        <a href="../why-qudos/ride.html">Ride</a>
+                        <a class="desk" href="mailto:support@drivequdos.com">Contact Us</a>
+                        <div class="header__social">
+                           <a href="https://twitter.com/ridequdos"><i class="fab fa-twitter"></i></a>
+                           <a href="https://www.facebook.com/QudosRide/"><i class="fab fa-facebook"></i></a>
+                           <a href="https://www.linkedin.com/company/ridequdos/"><i
+                              class="fab fa-linkedin"></i></a>
+                           <a href="https://www.instagram.com/qudosride/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                     </nav>
+                     <a href="https://appcustomer.ridequdos.com/alerts" class="header__btn">Start Riding</a>
+                     <button class="header__menu" type="button">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="banner">
+         <div class="container">
+            <div class="container">
+               <div class="row">
+                  <div
+                     class="col-sm-12 col-lg-6 col-md-8 section-card section-card-main card-border card-margin-auto speech-bubble">
+                     <div class="row">
+                        <div class="col-12">
+                           <h1>Know More
+                              <br>About Qudos®
+                           </h1>
+                           <div class="qudos-divider"></div>
+                           <h4>Qudos is the only ride-sharing app that connects riders
+                              to drivers they like and trust - again and again.
+                           </h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-1">
+                     <div class="triangle-right"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="banner-background"></div>
+      <div class="banner-character"></div>
+      <div class="banner-wave"></div>
+      <section class="section_one">
+         <div class="container">
+            <div class="section-card section-card-carousel card-border">
+               <div class="row">
+                  <div class="nutshell"></div>
+               </div>
+               <br>
+               <h1 class="text-center">In a Nutshell</h1>
+               <br>
+               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <p class="text-center">Unlike other ride-hailing apps, Qudos enables riders and drivers to
+                           closely interact.
+                           The app allows for riders, who particularly like the services of a certain driver, to
+                           request for the
+                           same driver again and again - ensuring trust and reliability. Such a feature not only
+                           serves the rider,
+                           but also helps the driver build a loyal, steady customer base. An interactive
+                           relationship between the rider
+                           and driver is a win-win situation for everyone.
+                        </p>
+                     </div>
+                     <div class="carousel-item">
+                        <p class="text-center">
+                           Apart from getting rides from the ride hailing public, Qudos has corporate accounts that
+                           includes medical offices,
+                           small coporations, local hotels and gyms. These corporate accounts are a more targeted
+                           and reliable source of
+                           repeat rides for our drivers.
+                        </p>
+                     </div>
+                     <div class="carousel-item">
+                        <p class="text-center">
+                           Qudos provides a platform for our drivers and riders to interact repeatedly. Through
+                           this, we empower our
+                           drivers to directly connect with and develop their own set of repeat customers, not only
+                           with individual riders but
+                           with corporate accounts such as medical offices, hotels, corporations, etc.
+                        </p>
+                     </div>
+                  </div>
+                  <br>
+                  <ol class="carousel-indicators">
+                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section_two">
+         <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <div id="accordion">
+               <div data-aos="fade-up" data-aos-duration="500" class="card" data-toggle="collapse"
+                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne"
+                  onclick="collapse(this)">
+                  <div class="card-header collapsed">
+                     <h5 class="mb-0">
+                        <h3><i class="fas fa-angle-right fa-lg"></i>&nbsp; What is <b>QUDOS</b>?</h3>
+                     </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                     <div class="card-body">
+                        <p>Qudos is a ride-hailing platform that allows riders and drivers to personalise and take control of their riding experience.</p>
+                     </div>
+                  </div>
+               </div>
+               <div data-aos="fade-up" data-aos-duration="500" class="card" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" id="headingOne"
+                  onclick="collapse(this)">
+                  <div class="card-header collapsed">
+                     <h5 class="mb-0">
+                        <h3><i class="fas fa-angle-right fa-lg"></i>&nbsp; What percentage of earnings would I receive?</h3>
+                     </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                     <div class="card-body">
+                        <p>Drivers get up to 85% of commission while our competitors give drivers only 50%-60%.</p>
+                     </div>
+                  </div>
+               </div>
+               <div data-aos="fade-up" data-aos-duration="500" class="card" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" id="headingOne"
+                  onclick="collapse(this)">
+                  <div class="card-header collapsed">
+                     <h5 class="mb-0">
+                        <h3><i class="fas fa-angle-right fa-lg"></i>&nbsp; Why should I switch to Qudos when I can get more riders through other ride-share apps?</h3>
+                     </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                     <div class="card-body">
+                        <p>Qudos is designed to be an additional source of income. You can continue to use other ride-hailing apps while keeping your Qudos app open in the background. You will get a text message telling you when you have a ride request. This way, you will never miss a ride from Qudos.</p>
+                     </div>
+                  </div>
+               </div>
+               <div data-aos="fade-up" data-aos-duration="500" class="card" data-toggle="collapse"
+                  data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" id="headingOne"
+                  onclick="collapse(this)">
+                  <div class="card-header collapsed">
+                     <h5 class="mb-0">
+                        <h3><i class="fas fa-angle-right fa-lg"></i>&nbsp; What does it mean to be a QudosFave Driver?</h3>
+                     </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                     <div class="card-body">
+                        <p>It means that as long as you are within the rider’s request radius, the rider can specifically request you as their driver. QudosFave enables riders to save their favorite drivers for future rides.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div data-aos="fade-up" data-aos-duration="500" class="card" data-toggle="collapse"
+                  data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive" id="headingOne"
+                  onclick="collapse(this)">
+                  <div class="card-header collapsed">
+                     <h5 class="mb-0">
+                        <h3><i class="fas fa-angle-right fa-lg"></i>&nbsp; How do riders add me as their favorite driver?</h3>
+                     </h5>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                     <div class="card-body">
+                        <ul>
+                           <li>Click on the Qudos menu icon on the bottom right of the screen.</li>
+                           <li>Go to QudosFave driver.</li>
+                           <li>Go to Explore.</li>
+                           <li>Search the name of the driver.</li>
+                           <li>Click on the three dots to the right of their name.</li>
+                           <li>Click "Add".</li>
+                        </ul>
+                        <p>Upon ride completion, a ride rating will appear. As long as the rider rates you 5 stars, an automatic option to add you as their QudosFave driver will appear.</p>
+                     </div>
+                  </div>
+               </div>
+               <div data-aos="fade-up" data-aos-duration="500" class="card" data-toggle="collapse"
+                  data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix" id="headingOne"
+                  onclick="collapse(this)">
+                  <div class="card-header collapsed">
+                     <h5 class="mb-0">
+                        <h3><i class="fas fa-angle-right fa-lg"></i>&nbsp; How do riders book a ride with their favorite driver?
+                        </h3>
+                     </h5>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                     <div class="card-body">
+                        <p>Riders can set their drop-off location, click on the “Favorite Drivers” option and choose from their list of saved drivers. They can also enter a promo code using the Promo Code option.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div data-aos="fade-up" data-aos-duration="500" class="card" data-toggle="collapse"
+                  data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven" id="headingOne"
+                  onclick="collapse(this)">
+                  <div class="card-header collapsed">
+                     <h5 class="mb-0">
+                        <h3><i class="fas fa-angle-right fa-lg"></i>&nbsp; Tell me about the Qudos Book Later feature.</h3>
+                     </h5>
+                  </div>
+                  <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                     <div class="card-body">
+                        <p>This feature allows riders to schedule their ride in advance. Riders can select the date and time, and request specifically for you to drive them as early as an hour or up to a month ahead of time.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div data-aos="fade-up" data-aos-duration="500" class="card" data-toggle="collapse"
+                  data-target="#collapse8" aria-expanded="true" aria-controls="collapse8" id="headingOne"
+                  onclick="collapse(this)">
+                  <div class="card-header collapsed">
+                     <h5 class="mb-0">
+                        <h3><i class="fas fa-angle-right fa-lg"></i>&nbsp; How do riders use the Book Later feature?
+                        </h3>
+                     </h5>
+                  </div>
+                  <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
+                     <div class="card-body">
+                        <ul>
+                           <li>Click on the Qudos menu icon on the bottom right of the screen.</li>
+                           <li>Go to QudosFave driver.</li>
+                           <li>Go to Explore.</li>
+                           <li>Search the name of the driver.</li>
+                           <li>Click on the three dots to the right of their name.</li>
+                           <li>Click "Add".</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div data-aos="fade-up" data-aos-duration="500" class="card" data-toggle="collapse"
+                  data-target="#collapse9" aria-expanded="true" aria-controls="collapse9" id="headingOne"
+                  onclick="collapse(this)">
+                  <div class="card-header collapsed">
+                     <h5 class="mb-0">
+                        <h3><i class="fas fa-angle-right fa-lg"></i>&nbsp; What is the Car VIP option?</h3>
+                     </h5>
+                  </div>
+                  <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
+                     <div class="card-body">
+                        <p>
+                           The Car VIP is a feature that allows drivers the option to accommodate riders requesting a high-end ride-hailing experience.
+                           <br>
+                           If your car is under the Grande or Luxury category, you will have an additional option in your settings called Car VIP. If your car type is Grande, you will receive ride requests for Grande cars only if your Car VIP option is turned on. If you car type is Luxury, you will only receive ride requests for Luxury cars.
+                           <br>
+                           If you drive a Grande or Luxury vehicle and wish to receive ride requests for every car type, make sure your Car VIP option is turned off.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div data-aos="fade-up" data-aos-duration="500" class="card" data-toggle="collapse"
+                  data-target="#collapse10" aria-expanded="true" aria-controls="collapse10" id="headingOne"
+                  onclick="collapse(this)">
+                  <div class="card-header collapsed">
+                     <h5 class="mb-0">
+                        <h3><i class="fas fa-angle-right fa-lg"></i>&nbsp; What is QudosList?</h3>
+                     </h5>
+                  </div>
+                  <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
+                     <div class="card-body">
+                        <p>
+                           QudosList is a social network for riders and drivers to connect. As a driver, you can use QudosList to market yourself and build your loyal clientele. Riders can also network with one another to find drivers.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div data-aos="fade-up" data-aos-duration="500" class="card" data-toggle="collapse"
+                  data-target="#collapse11" aria-expanded="true" aria-controls="collapse11" id="headingOne"
+                  onclick="collapse(this)">
+                  <div class="card-header collapsed">
+                     <h5 class="mb-0">
+                        <h3><i class="fas fa-angle-right fa-lg"></i>&nbsp; When do I get paid?</h3>
+                     </h5>
+                  </div>
+                  <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
+                     <div class="card-body">
+                        <p>
+                           Qudos works on a Monday to Sunday weekly billing schedule. Payments are credited to your account the following Wednesday.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div data-aos="fade-up" data-aos-duration="500" class="card" data-toggle="collapse"
+                  data-target="#collapse12" aria-expanded="true" aria-controls="collapse12" id="headingOne"
+                  onclick="collapse(this)">
+                  <div class="card-header collapsed">
+                     <h5 class="mb-0">
+                        <h3><i class="fas fa-angle-right fa-lg"></i>&nbsp; How will I receive my payment?</h3>
+                     </h5>
+                  </div>
+                  <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
+                     <div class="card-body">
+                        <p>
+                           Stripe a third party service, securely keeps all your bank information.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div data-aos="fade-up" data-aos-duration="500" class="card" data-toggle="collapse"
+                  data-target="#collapse13" aria-expanded="true" aria-controls="collapse13" id="headingOne"
+                  onclick="collapse(this)">
+                  <div class="card-header collapsed">
+                     <h5 class="mb-0">
+                        <h3><i class="fas fa-angle-right fa-lg"></i>&nbsp; I have a bonus on top of the fare. When will the bonus be reflected in the ride summary account?</h3>
+                     </h5>
+                  </div>
+                  <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
+                     <div class="card-body">
+                        <p>
+                           All bonuses, discounts, payouts and cash backs, if applicable, are computed after the Monday-Sunday billing schedule. Bonuses will be reflected on the Wednesday prior to receiving your payments.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div data-aos="fade-up" data-aos-duration="500" class="card" data-toggle="collapse"
+                  data-target="#collapse14" aria-expanded="true" aria-controls="collapse14" id="headingOne"
+                  onclick="collapse(this)">
+                  <div class="card-header collapsed">
+                     <h5 class="mb-0">
+                        <h3><i class="fas fa-angle-right fa-lg"></i>&nbsp; If I encounter a problem, who should I contact?</h3>
+                     </h5>
+                  </div>
+                  <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordion">
+                     <div class="card-body">
+                        <p><a href="tel:7183605010">(718)-360-5010</a><br><a
+                           href="mailto:support@drivequdos.com">support@driveQudos.com</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section_three">
+         <div class="container-fluid">
+            <div class="container">
+            </div>
+         </div>
+      </section>
+      <footer class="footer footer--black">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="footer__line"></div>
+               </div>
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href="/" class="footer__logo">
+                  <object class="footer-logo" type="image/svg+xml" data="img/logo--white.svg"></object>
+                  </a>
+               </div>
+               <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                  <span class="footer__title">Qudos Technologies</span>
+                  <ul class="footer__list">
+                     <li><a href="../index.html#experience">About Qudos</a></li>
+                     <li><a href="../target-audience/">Target Audience</a></li>
+                     <li><a href="../faq/">Frequently Asked Questions</a></li>
+                     <li><a href="../privacy/terms.html">Terms & Conditions</a></li>
+                     <li><a href="../privacy/privacy.html">Privacy Policy</a></li>
+                     <li><a href="mailto:support@driveQudos.com">Contact Us</a></li>
+                  </ul>
+               </div>
+               <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                  <span class="footer__title">Rider</span>
+                  <ul class="footer__list">
+                     <li><a href="../why-qudos/ride.html">QudosRide™</a></li>
+                     <li><a href="../qudoslist/">QudosList™</a></li>
+                     <li><a href="../how/referfave.html">Refer Favorite Driver</a></li>
+                     <li><a href="../how/addfave.html">Add Favorite Driver</a></li>
+                     <li><a href="../privacy/">Qudos Corporate</a></li>
+                  </ul>
+                  <span class="footer__title">Driver</span>
+                  <ul class="footer__list">
+                     <li><a href="../welcome/">Welcome</a></li>
+                     <li><a href="../why-qudos/apply.html">How to Apply</a></li>
+                  </ul>
+               </div>
+               <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                  <span class="footer__title">Reach Us</span>
+                  <p class="footer__text">1969 Steinway Street, <br>Long Island City, NY 11105 <br><a
+                     href="tel:7183605010">(718)-360-5010</a><br><a
+                     href="mailto:support@drivequdos.com">support@driveQudos.com</a></p>
+               </div>
+               <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                  <span class="footer__title footer__title--connect">Connect with Us</span>
+                  <ul class="footer__social clearfix">
+                     <li><a href="https://www.facebook.com/QudosRide/">
+                        <i class="fab fa-facebook"></i>
+                        </a>
+                     </li>
+                     <li><a href="https://twitter.com/ridequdos"> 
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.linkedin.com/company/ridequdos/">
+                        <i class="fab fa-linkedin"></i> 
+                        </a>
+                     </li>
+                     <li><a href="https://www.instagram.com/qudosride/">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                     </li>
+                  </ul>
+
+                  </ul>
+                  <span class="footer__title footer__title--download">Download</span>
+                 <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6 ">
+                           <ul class="footer__list">
+                              <li class="app_image"><a href="https://appcustomer.ridequdos.com/alerts" target="_blank">
+                                 <img src="../img/qudos_rider.png" class="img-fluid">
+                                 </a>
+                              </li>
+                              <li class="app_text"><a href="https://appcustomer.ridequdos.com/alerts">Rider</a></li>
+                           </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6 ">
+                           <ul class="footer__list">
+                              <li class="app_image"><a href="https://apppartner.ridequdos.com/alerts" target="_blank">
+                                 <img src="../img/qudos_driver.png" class="img-fluid">
+                                 </a>
+                              </li>
+                              <li class="app_text"><a href="https://apppartner.ridequdos.com/alerts">Driver</a></li>
+                           </ul>
+                        </div>
+                     </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer__copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                     <small class="footer__small">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px">
+                           <image x="0px" y="0px" width="18px" height="18px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAQAAAD8x0bcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhgBASUr6LMIAAABYUlEQVQoz43SsWsTARQG8F/uLkOV5iQqxSVNMhRcaq1REIcOYl0UXBw6KEVcnPxnBAcRBQehCILgkm4dXISYuAQL5hp1EGpLL6CW2hCH3kVBCn7T433few/e9xW6xqiZMy1Gqq8tyYlCJjrphqqferZwXN2Evpc2/4hqbtm3qmWYDYfmXRF5JjkQnXBP6qkBplSMfPEVk24re+hboctdUx5IHXHTTLap64VdR9236VGgpqYpVXTHjA9WrFh32rLQd6uqapEzdrVwySlvvAbvXReKDLVcNRep+miIc35oZsdGXmXVUM90ILaNorINv/yLbXGQ/wsjhyCQKmPPjopg3C+6qATK0kBfXYiOSQtj0YJrLiBU14+0Ncx7a82sy47p4LxZW9Zw1oR2JJFYtC712JKGBvjsuT2xRRuS3JaBJwYK6ir4pGekZFmc23Jg8FDTO/uHGfyfUfk7dCUM9HX0cuI3sK1zjecnoy0AAAAASUVORK5CYII="></image>
+                        </svg>
+                        Copyrighted 2019
+                     </small>
+                     <span class="footer__rights">All Rights Reserved</span>
+                     <a href="index.html" class="footer__link">www.ridequdos.com</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="js/scripts.min.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+         AOS.init();
+      </script>
+   </body>
+</html>
