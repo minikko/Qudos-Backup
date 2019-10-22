@@ -1,0 +1,59 @@
+.corporate-portal {
+    section {
+        overflow-x: hidden;
+    }
+
+    .header__menu {
+        span {
+            background-color: black;
+        }
+    }
+
+    .service-wrap {
+        background-image: none;
+        background-color: whitesmoke;
+
+        .footer {
+
+            &__list a,
+            &__text {
+                color: black;
+
+                a {
+                    color: inherit;
+                }
+            }
+
+            &__title {
+                color: black;
+                font-weight: 600;
+            }
+
+            &__social {
+                a {
+                    i {
+                        color: black;
+                    }
+                }
+            }
+
+            &__small,
+            &__rights,
+            &__link {
+                color: darkgrey;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .corporate-portal {
+        .header {
+            &__nav {
+                a {
+                    color: black;
+                }
+            }
+        }
+    }
+}

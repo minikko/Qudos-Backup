@@ -460,7 +460,7 @@
         background: url("../img/banner_circlebg.png") no-repeat bottom right;
         background-size: auto;
         background-repeat: no-repeat;
-        background-position-y: -60%;
+        background-position-y: -120%;
         background-position-x: 105%;
         padding-top: 200px;
     }

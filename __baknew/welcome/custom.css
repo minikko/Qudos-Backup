@@ -1,0 +1,522 @@
+.qudos-blue{
+    color:#228ec8;
+}
+.header__prime:before{
+    bottom:-2.5rem;
+}
+.chat-text{
+    font-family: 'Gochi Hand', cursive;
+    color: #000;
+    font-size:4rem;
+}
+#driver-phone{
+    top:130px;
+    margin-left:40px;
+    width:30%;
+}
+#qudos-sign-1{
+    left:450px;
+    top:50px;
+    width:18%;
+}
+#car-1{
+    top:250px;
+    left:100px;
+    width:60%;
+}
+#sec-2-img{
+    width:70%;
+}
+#sec-3-img{
+    margin-left:150px;
+    margin-top:50px;
+    width:70%;
+}
+#sec-4-img{
+    width:70%;
+}
+#sec-5-img{
+    width:27%;
+}
+#q-1{
+    right:180px;
+    width:15%;
+}
+#q-2{
+    right:80px;
+    top:-70px;
+    width:20%;
+}
+#q-3{
+    width:18%;
+    top:17px;
+    left:43rem ;
+}
+.why-qudos__section--2{
+    height: 60vh ;
+    -webkit-clip-path:none;
+    clip-path: none;
+}
+.why-qudos__section--2-2{
+    height:60vh ;
+    -webkit-clip-path:none;
+    clip-path: none;
+}
+.why-qudos__section--2-3{
+    height:55vh ;
+    -webkit-clip-path:none;
+    clip-path: none;
+}
+.why-qudos__section--2-4{
+    background: #fafafa;
+    height:35vh ;
+    -webkit-clip-path:none;
+    clip-path: none;
+}
+.why-qudos__section--5{
+    background: #fff;
+    height:60vh ;
+}
+.section-top-curve{
+    height:150px;
+    background: url("../../__assets/img/welcome/top-curve.svg") top no-repeat;
+    margin-bottom:-10px;
+}
+.section-bottom-curve{
+    height:90px;
+    background: url("../../__assets/img/welcome/bottom-curve.svg") no-repeat;
+    margin-top:-10px;
+}
+.nu-footer{
+    background-color: #fff;
+}
+.nu-footer p{
+    color:#000 ;
+}
+.why-qudos__section--1 img.img-fluid:nth-child(2) {
+    animation: none;
+}
+.why-qudos__section--2-2 .subheader__prime, .why-qudos__section--2-4 .subheader__prime{
+   width: 100% ;
+}
+.why-qudos__section--2 .platform__btn{
+    top:0px;
+}
+.card{
+    box-shadow: 15px 40px 10px #f2f2f2;
+    margin:20px;
+    padding:30px 50px;
+    border:none;
+    border-left:1.2rem solid #228ec8;
+}
+.c-description{
+    font-size:2rem;
+}
+.card .c-header{
+    font-size:3rem;
+    font-weight: bold;
+}
+
+@media (max-width:1440px){
+    #driver-phone{
+        width:23%;
+        top:200px;
+        margin-left:-45px;
+    }
+    #car-1{
+        width:50%;
+    }
+    #qudos-sign-1{
+        left:390px;
+        top:100px;
+        width:14%;
+    }
+   .why-qudos__section--2{
+       height:60vh ;
+   }
+   .why-qudos__section--2-2{
+       height:60vh ;
+   }
+   .why-qudos__section--2-3{
+    height:60vh ;
+    }
+    .why-qudos__section--2-4{
+        height:35vh ;
+        }
+   .why-qudos__section--5{
+       height:65vh ;
+   }
+   #q-3{
+       left:43rem ;
+   }
+   .card{
+    box-shadow: 15px 30px 10px #f2f2f2;
+    margin:20px;
+    padding:20px 40px;
+    border:none;
+    border-left:1.2rem solid #228ec8;
+}
+.c-description{
+    font-size:1.5rem;
+}
+.card .c-header{
+    font-size:2.5rem;
+    font-weight: bold;
+}
+.section-top-curve{
+    height:130px;
+}
+.section-bottom-curve{
+    height:80px;
+}
+
+}
+@media (max-width:1024px){
+    .why-qudos__section--2 .platform__btn{
+        top:20px;
+    }
+    #car-1{
+        left:130px;
+        top:200px;
+        width:50%;
+    }
+    #qudos-sign-1{
+        width:14%;
+        left:380px;
+        top:100px;
+    }
+    #sec-2-img{
+        margin-left:0;
+    }
+    #sec-3-img{
+        margin-left:60px ;
+    }
+    #sec-5-img{
+        top:100px;
+        left:190px;
+    }
+    #driver-phone{
+        left:480px;
+        top:170px;
+        width:20%;
+    }
+    .why-qudos__section--2{
+        height: 70vh ;
+    }
+    .why-qudos__section--2-2{
+        height: 70vh ;
+    }
+    .why-qudos__section--2-3{
+        height: 65vh ;
+    }
+    .why-qudos__section--2-4{
+        height: 35vh ;
+    }
+    .why-qudos__section--5{
+        height: 60vh ;
+    }
+    #sec-5-img{
+        top:20px;
+        width:25%;
+    }
+    #q-1{
+        display: block;
+        top:10px;
+        left:220px;
+        width:13%;
+    }
+    #q-2{
+        right:140px;
+        top:-30px;
+        width:15%;
+    }
+    #q-3{
+        width:15%;
+        top:30px;
+        left:30rem ;
+    }
+    .chat-text{
+        font-size: 3rem ;
+    }
+}
+
+@media(max-width:768px){
+    
+    #qudos-sign-1{
+        top:100px;
+        left:320px;
+    }
+    #driver-phone{
+        left:400px;
+    }
+    #sec-2-img{
+        margin-left:30px;
+    }
+    #sec-4-img{
+        margin-top:50px;
+        margin-left:50px;
+    }
+    #sec-5-img{
+        left:130px;
+    }
+    .why-qudos__section--2{
+        height:40vh ;
+    }
+    .why-qudos__section--2-2{
+        height:40vh ;
+    }
+    .why-qudos__section--2-3{
+        height:40vh ;
+    }
+    .why-qudos__section--2-4{
+        height:25vh ;
+    }
+    .why-qudos__section--5{
+        height:40vh ;
+    }
+
+   .card{
+    box-shadow: 15px 30px 10px #f2f2f2;
+    margin-top:30px;
+    padding:20px 10px;
+    border:none;
+    border-left:1.2rem solid #228ec8;
+    }
+    .c-description{
+        font-size:1.3rem ;
+    }
+    .card .c-header{
+        font-size:2rem;
+        font-weight: bold;
+    }
+    .chat-text{
+        font-size: 1.5rem ;
+    }
+    #q-1{
+        display: block;
+        top:10px;
+        left:140px;
+        width:12%;
+    }
+    #q-2{
+        right:130px;
+        top:-30px;
+        width:15%;
+    }
+    #q-3{
+        width:15%;
+        top:15px;
+        left:20rem ;
+    }
+}
+
+@media (max-width:480px){
+    .why-qudos__section--1 .header__prime{
+        width:100%;
+    }
+    .svg-gradient-circle--1{
+        left:-60%;
+        margin-top:-20%;
+    }
+    #header-title{
+        margin-top:0px;
+        margin-bottom:100px;
+    }
+    .subheader__prime #header-title{
+        font-size:3rem;
+    }
+    .chat-text{
+        font-size:2.3rem !important;
+    }
+    .card{
+        box-shadow: 15px 30px 10px #f2f2f2;
+        margin-top:0px;
+        padding:20px 8px;
+        border:none;
+        border-left:1.2rem solid #228ec8;
+    }
+    .c-description{
+        font-size:1.5rem ;
+    }
+    .card .c-header{
+        font-size:2rem;
+        font-weight: bold;
+    }
+    .why-qudos__section--2 .platform__btn{
+       top:50px ;
+    }
+    #car-1{
+        left:70%;
+        top:9%;
+        width:50%;
+    }
+    #qudos-sign-1{
+        top:3%;
+        left:115%;
+    }
+    #driver-phone{
+        width:18%;
+        top:7%;
+        left:135%;
+    }
+    #sec-2-img{
+        margin-top:5rem;
+        margin-left: 0;
+        width:300px;
+        height:300px;
+    }
+    #sec-3-img{
+        width:60%;
+        margin-left:10vh;
+        margin-top:0px;
+        margin-bottom:4rem;
+    }
+    #sec-4-img{
+        width:70%;
+        margin-left: 50px ;
+    }
+    #sec-5-img{
+        top:-250px;
+        width:30%;
+        left:170px;
+    }
+    #q-1{
+        display: block;
+        top:-240px;
+        left:190px;
+        width:12%;
+    }
+    #q-2{
+        right:80px;
+        top:-270px;
+        width:15%;
+    }
+    #q-3{
+        width:15%;
+        top:-225px;
+        left:29rem ;
+    }
+    .why-qudos__section--2-2 .d-flex{
+        order:2;
+    }
+    .why-qudos__section--5 .d-flex{
+        order:2;
+    }
+    .why-qudos__section--2 .subheader__prime, .why-qudos__section--3 .subheader__prime,
+    .why-qudos__section--2 div.col-sm-6:last-child .header__prime-main{
+        margin-left:0;
+    }
+    .why-qudos .subheader__prime{
+        width: 100%;
+    }
+    .why-qudos__section--2{
+        height:90vh ;
+        padding-bottom:200px;
+    }
+    .why-qudos__section--2-2{
+        height:90vh ;
+    }
+    .why-qudos__section--2-3{
+        height:90vh ;
+    }
+    .why-qudos__section--2-4{
+        height:60vh ;
+    }
+    .why-qudos__section--5{
+        height:90vh ;
+    }
+    .why-qudos__section--5 div.col-sm-6:first-child{
+        margin-top:4rem;
+    }
+    
+    }
+
+@media (max-width:375px){
+    #sec-2-img{
+        margin-top:5rem;
+        margin-left: 0;
+        width:200px;
+        height:200px;
+    }
+    .svg-gradient-circle--1{
+        left:-60%;
+        margin-top:-25%;
+    }
+    .why-qudos__section--2{
+        margin-top:20px;
+        height:75vh;
+    }
+    .why-qudos__section--2-2{
+        height:70vh;
+    }
+    .why-qudos__section--2-3{
+        height:95vh;
+    }
+    .platform__btn{
+        max-width:100%;
+    }
+    #driver-phone{
+        top:6%;
+    }
+    #q-2{
+        left:62%;
+    }
+}
+
+@media (max-width:320px){
+    #header-title .header__prime{
+        font-size:3rem;
+        line-height:4.3rem;
+    }
+    .svg-gradient-circle--1{
+        left:-70%;
+        margin-top:-40%;
+    }
+    #driver-phone{
+        left:155%;
+    }
+    #car-1{
+        left:90%;
+    }
+    #qudos-sign-1{
+        left:135%;
+    }
+    .why-qudos__section--2{
+        height:90vh;
+    }
+    .why-qudos__section--2-2{
+        height:85vh;
+    }
+    .why-qudos__section--2-3{
+        height:95vh;
+    }
+    .why-qudos__section--2-4{
+        height:70vh;
+    }
+    #sec-3-img{
+        margin-bottom:0rem;
+    }
+    #sec-4-img{
+        margin-top:0rem;
+    }
+    .card{
+        margin-left:0;
+        margin-right:0;
+    }
+    #sec-5-img{
+        left:45%;
+    }
+    #q-1{
+        left:50%;
+    }
+    #q-2{
+        left:60%;
+    }
+    #q-3{
+        left:67%;
+    }
+}
+
+
+
+

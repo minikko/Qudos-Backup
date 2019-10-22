@@ -1,6 +1,15 @@
 .qudos-blue{
     color:#228ec8;
 }
+p.subheader__prime{
+    font-weight:400;
+}
+.subheader__prime{
+    line-height: 3rem;
+}
+.h3{
+    font-size:3rem;
+}
 .header__prime:before{
     bottom:-2.5rem;
 }

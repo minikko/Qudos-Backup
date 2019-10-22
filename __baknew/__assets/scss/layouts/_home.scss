@@ -1,0 +1,103 @@
+/*==============================
+  Home
+==============================*/
+.home {
+    display: block;
+    position: relative;
+    background: url("../img/home/home-bg--mobile.jpg") no-repeat center top;
+    height: 50rem;
+    background-attachment: fixed;
+
+    &__content {
+        display: block;
+        position: absolute;
+        background-color: white;
+        -webkit-box-shadow: 0 1rem 1rem 0.1px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 1rem 1rem 0.1px rgba(0, 0, 0, 0.08);
+        -webkit-border-radius: 1rem;
+        border-radius: 1rem;
+        padding: 5rem 4rem;
+        top: 42.5rem;
+        left: 1.5rem;
+        right: 1.5rem;
+        z-index: 1;
+    }
+
+    &__btn {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 6.2rem;
+        line-height: 6.2rem;
+        color: white;
+        font-size: 1.6rem;
+        font-family: 'Montserrat', sans-serif;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background-image: -moz-linear-gradient(90deg, #234369 0%, #16243f 36%, #080514 100%);
+        background-image: -webkit-linear-gradient(90deg, #234369 0%, #16243f 36%, #080514 100%);
+        background-image: -ms-linear-gradient(90deg, #234369 0%, #16243f 36%, #080514 100%);
+        background-image: linear-gradient(90deg, #234369 0%, #16243f 36%, #080514 100%);
+        :hover {
+            color: white;
+            background: rgba(8, 5, 20, 1);
+            background: -moz-linear-gradient(left, rgba(8, 5, 20, 1) 0%, rgba(22, 36, 63, 1) 51%, rgba(35, 67, 105, 1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(8, 5, 20, 1)), color-stop(51%, rgba(22, 36, 63, 1)), color-stop(100%, rgba(35, 67, 105, 1)));
+            background: -webkit-linear-gradient(left, rgba(8, 5, 20, 1) 0%, rgba(22, 36, 63, 1) 51%, rgba(35, 67, 105, 1) 100%);
+            background: -o-linear-gradient(left, rgba(8, 5, 20, 1) 0%, rgba(22, 36, 63, 1) 51%, rgba(35, 67, 105, 1) 100%);
+            background: -ms-linear-gradient(left, rgba(8, 5, 20, 1) 0%, rgba(22, 36, 63, 1) 51%, rgba(35, 67, 105, 1) 100%);
+            background: linear-gradient(to right, rgba(8, 5, 20, 1) 0%, rgba(22, 36, 63, 1) 51%, rgba(35, 67, 105, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#080514', endColorstr='#234369', GradientType=1);
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    .home__content {
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (min-width: 481px) {
+    .home {
+        background: url("../img/home/home-bg.jpg") no-repeat center/cover;
+        background-attachment: fixed;
+    }
+}
+
+@media (min-width: 768px) {
+    .home {
+        height: 70rem;
+
+        &__wrap {
+            display: block;
+            position: relative;
+            height: 70rem;
+        }
+
+        &__content {
+            width: 41.0rem;
+            padding: 4rem;
+            left: 0;
+            right: auto;
+            top: auto;
+            bottom: 6rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .home {
+        height: 87rem;
+
+        &__wrap {
+            height: 87rem;
+        }
+
+        &__content {
+            left: 6.5rem;
+            bottom: 7rem;
+        }
+    }
+}

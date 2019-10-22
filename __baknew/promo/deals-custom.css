@@ -1,0 +1,202 @@
+.header__prime:before{
+    bottom:-2.5rem;
+}
+.why-qudos__section--1 img.img-fluid:nth-child(2) ,.why-qudos__section--1 img.img-fluid:nth-child(4) {
+    animation: none;
+}
+.why-qudos__section--2{
+    //margin-top:3vh;
+   // height:50vh;
+   height:auto;
+    clip-path: none;
+}
+.why-qudos__section--2-2{
+    height: auto;
+    padding-bottom:150px;
+    -webkit-clip-path:none;
+    clip-path: none;
+}
+.why-qudos__section--1 .header__prime,.why-qudos .subheader__prime{
+    width: 100%;
+}
+.why-qudos__section--2 .subheader__prime{
+    margin:auto;
+}
+#gift-1{
+    top:3%;
+    margin-left:-25%;
+    width:50%;
+    animation: float 7s ease-in-out infinite;
+}
+#coupon-1{
+    width:20%;
+    top:-1%;
+    margin-left:27%;
+}
+
+@-webkit-keyframes float {
+    0%, 100% {
+        filter: drop-shadow(0 5px 1.5rem rgba(0,0,0,.2));
+        -webkit-filter: drop-shadow(0 5px 1.5rem rgba(0,0,0,.2));
+        transform: translatey(0);
+    }
+    60% {
+        filter: drop-shadow(0 2.5rem 1.5rem rgba(0,0,0,.1));
+        -webkit-filter: drop-shadow(0 2.5rem 1.5rem rgba(0,0,0,.1));
+        transform: translatey(-1rem);
+        transform: rotateY(180);
+    }
+  }
+  
+  #star-1{
+    top:3%;
+    margin-left:-40%;
+    width:10%;
+    animation: float 10s ease-in-out infinite;
+}
+#star-2{
+    top:7%;
+    margin-right:30%;
+    width:5%;
+    animation: float 4s ease-in-out infinite;
+}
+#star-3{
+    top:0%;
+    margin-right:30%;
+    width:5%;
+    animation: float 5s ease-in-out infinite;
+}
+#star-4{
+    top:15%;
+    width:7%;
+    margin-left:50%;
+    animation: float 3s ease-in-out infinite;
+}
+.coupon-img{
+    height:200px;
+    overflow: hidden;
+    border-radius:1.2em 1.2em 0 0 ;
+}.coupon-img img{
+    margin-top:-50px;
+}
+.coupon-card{
+    padding:10px;
+    background: #fafafa;
+    border-radius:0 0 1.2em 1.2em;
+    margin-bottom:30px;
+}
+.promo-code{
+    background: white;
+    text-align: center;
+    font-weight: bold;
+    padding:10px;
+    border: dashed rgba(0,0,0,.2) 1px;
+    border-radius:1rem;
+    margin-top:10px;
+    /* margin-left:auto;
+    margin-right:auto; */
+}
+.copy-btn{
+    margin-top:20px;
+    margin-bottom:10px;
+    color:rgba(0,0,0,.5);
+    /* letter-spacing: 2px; */
+    font-size:1.2rem;
+    transition:.3s;
+}
+body2{
+    display: hidden !important;
+}
+
+@media (max-width:1440px){
+    .why-qudos__section--2{
+        //margin-top:5vh;
+       // height:60vh;
+    }
+}
+
+@media (max-width:1024px){
+    .copy-btn{
+        font-size:1.2rem;
+        padding-bottom:8px;
+    }
+    .why-qudos__section--2{
+       // height:60vh;
+       // padding-top:50px;
+        padding-bottom:0px;
+    }
+    .why-qudos__section--2-2{
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+
+.promo-code{
+    text-align:center !important;
+}
+.why-qudos__section--2 div.col-sm-6:last-child .header__prime-main{
+    margin-top:20px;
+    /* margin-left:auto;
+    margin-right:auto; */
+}
+.coupon-card{
+    margin-top:0px;
+    font-size:1.5rem;
+}
+.coupon-img{
+    height:auto;
+}
+.coupon-img img{
+    margin-top:-30px;
+}
+.why-qudos .img-fluid{
+    max-width:100%;
+}
+.subheader__prime{
+    font-size:2rem;
+}
+}
+
+@media (max-width:768px){
+    .copy-btn{
+        font-size:1.2rem;
+        padding-bottom:5px;
+    }
+    .why-qudos .subheader__prime{
+        font-size:1.5rem;
+    }
+}
+
+@media (max-width:480px){
+    .why-qudos__section--1 .col-sm-5{
+        top:-50px;
+    }
+    .why-qudos__section--2 div.col-sm-6:last-child .header__prime-main{
+        margin-top:10px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .subheader__prime{
+        font-size:1.5rem !important;
+    }
+    .why-qudos__section--2{
+        margin-top:0vh;
+        padding-top:0px;
+        -webkit-clip-path:none;
+        clip-path: none;
+    }
+    .why-qudos__section--2 div.col-sm-6:last-child .header__prime-main{
+        width: 100%;
+    }
+}
+@media (max-width:375px){
+    .why-qudos__section--2{
+        margin-top:0vh;
+        padding-top:0px;
+    }
+}
+@media (max-width:320px){
+    .why-qudos__section--2{
+        padding-top:0px;
+        height:auto;
+    }
+}

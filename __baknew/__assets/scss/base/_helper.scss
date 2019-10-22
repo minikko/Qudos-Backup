@@ -1,0 +1,56 @@
+[class*="qudos__blue-text"] {
+    color: $qudos-blue;
+}
+
+.clear {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.small-show {
+    display: none;
+}
+
+.active-768 {
+    display: block;
+}
+
+.svg-container {
+    margin-top: 1em;
+    width: 100%;
+    position: absolute;
+}
+
+
+#forget {
+    color: #6b6b6b;
+}
+
+@media screen and (max-width:768px) {
+    .small {
+        &-show {
+            display: block;
+
+            img {
+                max-width: 10rem;
+                max-height: 10rem;
+            }
+        }
+
+        &-hide {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2 / 1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .iti-flag {
+        background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.4.0/img/flags@2x.png");
+    }
+}

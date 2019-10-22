@@ -1,3 +1,12 @@
+p.subheader__prime{
+    font-weight:400;
+}
+.subheader__prime{
+    line-height: 3rem;
+}
+.h3{
+    font-size:3rem;
+}
 .qudos-blue{
     color:#228ec8;
 }
@@ -8,6 +17,7 @@
     font-family: 'Gochi Hand', cursive;
     color: #000;
     font-size:4rem;
+    line-height:4rem;
 }
 #driver-phone{
     top:130px;
@@ -451,6 +461,9 @@
     }
     .why-qudos__section--2-3{
         height:95vh;
+    }
+    .why-qudos__section--2-4{
+        height:50vh;
     }
     .platform__btn{
         max-width:100%;
