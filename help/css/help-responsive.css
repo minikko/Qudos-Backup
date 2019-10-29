@@ -366,7 +366,7 @@
     }
 
     h2 {
-        font-size: 36px;
+        font-size: 44px;
         font-weight: 500;
     }
 
@@ -481,7 +481,8 @@
         background: #228ec8 url(../img/section2_bg.png) no-repeat bottom left;
         background-size: 450px;
         background-repeat: no-repeat;
-        background-position-y: 500px;
+        background-position-y: 575px;
+        background-position-x: -65px;
     }
 
 

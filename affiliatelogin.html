@@ -1,361 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <!--CSS-->
-      <link rel="stylesheet" href="logins/css/bootstrap-reboot.min.css">
-      <link rel="stylesheet" href="logins/css/bootstrap-grid.min.css">
-      <link rel="stylesheet" href="logins/css/owl.carousel.min.css">
-      <link rel="stylesheet" href="logins/css/fontello.css">
-      <link rel="stylesheet" href="logins/css/main.css">
-      <!-- Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-      <link rel="shortcut icon" type="image/png" href="logins/img/favIcon.png">
-      <meta name="description" content="Log into your Qudos affiliate account. Continue building your business.">
-      <meta name="keywords" content="">
-      <title>Qudos | Affiliate Login</title>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="js/config.js"></script>
-      <script type="text/javascript">
-        var countryCode = '+1-';
-        $(function() {
 
-            $("#forget").click(function() {
-              $("#main-login").addClass("hidden");
-              $("#reset1").removeClass("hidden");
-              $("#signing_heading").addClass("hidden");
-              $("#reset_heading").removeClass("hidden");
-            });
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS-->
+    <link rel="stylesheet" href="logins/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="logins/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="logins/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="logins/css/fontello.css">
+    <link rel="stylesheet" href="logins/css/main.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="logins/img/favIcon.png">
+    <meta name="description" content="Log into your Qudos affiliate account. Continue building your business.">
+    <meta name="keywords" content="">
+    <title>Qudos | Affiliate Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/config.js"></script>
+    <script type="text/javascript">
+    var countryCode = '+1-';
+    $(function() {
 
-
-            $("#reset-2").click(function() {
-
-                var reg = /^[1-9]{1}[0-9]{5,9}$/;
-                var mobile1 = $('#mobile1').val();
+        $("#forget").click(function() {
+            $("#main-login").addClass("hidden");
+            $("#reset1").removeClass("hidden");
+            $("#signing_heading").addClass("hidden");
+            $("#reset_heading").removeClass("hidden");
+        });
 
 
-                if (mobile1.trim() == '') {
-                    alert('Please enter your Mobile Number.');
-                    $('#mobile1').focus();
-                    return false;
-                } else if (!reg.test(mobile1)) {
-                    alert('Please enter valid Mobile Number.');
-                    $('#mobile1').focus();
-                    return false;
+        $("#reset-2").click(function() {
+
+            var reg = /^[1-9]{1}[0-9]{5,9}$/;
+            var mobile1 = $('#mobile1').val();
+
+
+            if (mobile1.trim() == '') {
+                alert('Please enter your Mobile Number.');
+                $('#mobile1').focus();
+                return false;
+            } else if (!reg.test(mobile1)) {
+                alert('Please enter valid Mobile Number.');
+                $('#mobile1').focus();
+                return false;
+            }
+
+            $.ajax({
+                method: 'POST',
+                url: VENDOR_API_URL + '/mobile_forgot_password',
+                async: true,
+                data: {
+                    mobile: countryCode + mobile1
+                },
+                success: function(data, status) {
+                    console.log('OTP has been sent', data);
+                    if (typeof data === "string") {
+                        data = JSON.parse(data);
+                    }
+                    if (data.error) {
+                        alert(data.error);
+                        return;
+                    }
+                    $("#signing_heading").addClass("hidden");
+                    $("#reset_heading").addClass("hidden");
+                    $("#reset2_heading").addClass("hidden");
+                    $("#reset3_heading").addClass("hidden");
+                    $("#main-login").addClass("hidden");
+                    $("#reset1").addClass("hidden");
+                    $("#reset2").removeClass("hidden");
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 'slow');
+                },
+                error: function(data, status) {
+                    console.log('Error occured ')
                 }
-
-                $.ajax({
-                    method: 'POST',
-                    url: VENDOR_API_URL + '/mobile_forgot_password',
-                    async: true,
-                    data: {
-                        mobile: countryCode + mobile1
-                    },
-                    success: function(data, status) {
-                        console.log('OTP has been sent', data);
-                        if (typeof data === "string") {
-                            data = JSON.parse(data);
-                        }
-                        if (data.error) {
-                            alert(data.error);
-                            return;
-                        }
-                        $("#signing_heading").addClass("hidden");
-                        $("#reset_heading").addClass("hidden");
-                        $("#reset2_heading").addClass("hidden");
-                        $("#reset3_heading").addClass("hidden");
-                        $("#main-login").addClass("hidden");
-                        $("#reset1").addClass("hidden");
-                        $("#reset2").removeClass("hidden");
-                        $('html, body').animate({
-                            scrollTop: 0
-                        }, 'slow');
-                    },
-                    error: function(data, status) {
-                        console.log('Error occured ')
-                    }
-                });
-
             });
-
-
-            $("#changeMobile").click(function() {
-                $("#reset1").removeClass("hidden");
-                $("#reset2").addClass("hidden");
-                $("#signing_heading").addClass("hidden");
-                $("#reset_heading").removeClass("hidden");
-                $("#reset2_heading").addClass("hidden");
-            })
-
-
-            $("#resendOtp").click(function() {
-                var mobile1 = $('#mobile1').val();
-                $.ajax({
-                    method: 'POST',
-                    url: VENDOR_API_URL + '/resend_otp',
-                    async: true,
-                    data: {
-                        mobile: countryCode + mobile1,
-                        //driver_mobile: countryCode + mobile1,
-                        is_approved: 1
-                    },
-                    success: function(data, status) {
-                        console.log('OTP Resend Response :', data);
-
-                        if (typeof data === "string") {
-                            data = JSON.parse(data);
-                        }
-                        $('html, body').animate({
-                            scrollTop: 0
-                        }, 'slow');
-                        if (data.error) {
-                            alert(data.error);
-                            return false;
-                        } else {
-                            alert(data.log);
-                        }
-                    },
-                    error: function(data, status) {
-                        console.log('Error occured while resending otp')
-                    }
-                });
-            })
-
-            $("#reset-3").click(function() {
-                var reg = /^[0-9]{4}$/i;
-                var otp = $('#otp').val();
-
-
-                if (otp.trim() == '') {
-                    alert('Please enter OTP sent to your Mobile Number.');
-                    $('#otp').focus();
-                    return false;
-                } else if (!reg.test(otp)) {
-                    alert('Please enter valid OTP.');
-                    $('#otp').focus();
-                    return false;
-                }
-                var mobile1 = $('#mobile1').val();
-                $.ajax({
-                    method: 'POST',
-                    url: VENDOR_API_URL + '/verify_otp',
-                    async: true,
-                    data: {
-                        mobile: countryCode + mobile1,
-                        is_approved: 1,
-                        otp: otp
-                    },
-                    success: function(data, status) {
-                        console.log('OTP verified', data);
-                        if (typeof data === "string") {
-                            data = JSON.parse(data);
-                        }
-                        if (data.error) {
-                            alert(data.error);
-                            return;
-                        }
-                        $("#main-login").addClass("hidden");
-                        $("#reset1").addClass("hidden");
-                        $("#reset2").addClass("hidden");
-                        $("#reset3").removeClass("hidden");
-                        $("#signing_heading").addClass("hidden");
-                        $("#reset_heading").addClass("hidden");
-                        $("#reset2_heading").addClass("hidden");
-                        $("#reset3_heading").addClass("hidden");
-                        $("#reset4_heading").removeClass("hidden");
-                        $('html, body').animate({
-                            scrollTop: 0
-                        }, 'slow');
-                    },
-                    error: function(data, status) {
-                        console.log('Error occured during otp verification', data);
-                    }
-                });
-
-            });
-
-
-            $("#reset-4").click(function() {
-                var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
-
-                var passwordn = $('#passwordn').val();
-                var passwordnc = $('#passwordnc').val();
-
-                if (passwordn.trim() == '') {
-                    alert('Please enter your New Password.');
-                    $('#passwordn').focus();
-                    return false;
-                } else if (passwordn.trim().length < 6) {
-                    alert('Password should be of aleast 6 characters.');
-                    $('#passwordn').focus();
-                    return false;
-                } else if (passwordnc.trim() == '') {
-                    alert('Please enter New Password.');
-                    $('#passwordnc').focus();
-                    return false;
-                } else if (passwordnc.trim() != passwordn.trim()) {
-                    alert('Please enter the same password.');
-                    $('#passwordnc').focus();
-                    return false;
-
-                }
-                var mobile1 = $('#mobile1').val();
-                var otp = $('#otp').val();
-                $.ajax({
-                    method: 'POST',
-                    url: VENDOR_API_URL + '/reset_password_mobile',
-                    async: true,
-                    data: {
-                        mobile: countryCode + mobile1,
-                        password: passwordn,
-                        otp: otp,
-                        is_approved: 1
-                    },
-                    success: function(data, status) {
-                        console.log('Password reset response: ', data);
-                        if (typeof data === "string") {
-                            data = JSON.parse(data);
-                        }
-                        if (data.error) {
-                            alert(data.error);
-                            return;
-                        }
-                        $("#main-login").addClass("hidden");
-                        $("#reset1").addClass("hidden");
-                        $("#reset2").addClass("hidden");
-                        $("#reset3").addClass("hidden");
-                        $("#reset4").removeClass("hidden");
-                        $("#signing_heading").addClass("hidden");
-                        $("#reset_heading").addClass("hidden");
-                        $("#reset2_heading").addClass("hidden");
-                        $("#reset3_heading").addClass("hidden");
-                        $("#reset4_heading").removeClass("hidden");
-                          $('html, body').animate({
-                            scrollTop: 0
-                        }, 'slow');
-                    },
-                    error: function(data, status) {
-                        console.log('Error occured while resetting password', data);
-                    }
-                });
-
-            });
-
-            $("#login-main").click(function() {
-
-              $("#main-login").removeClass("hidden");
-              $("#reset1").addClass("hidden");
-              $("#reset2").addClass("hidden");
-              $("#reset3").addClass("hidden");
-              $("#reset4").addClass("hidden");
-              $("#reset5").addClass("hidden");
-              $("#signing_heading").removeClass("hidden");
-              $("#reset_heading").addClass("hidden");
-              $("#reset2_heading").addClass("hidden");
-              $("#reset3_heading").addClass("hidden");
-              $("#reset4_heading").addClass("hidden");
-
-            });
-
-
-
 
         });
-      </script>
-   </head>
-   <body>
-      <header class="header header--white">
-         <div class="container">
+
+
+        $("#changeMobile").click(function() {
+            $("#reset1").removeClass("hidden");
+            $("#reset2").addClass("hidden");
+            $("#signing_heading").addClass("hidden");
+            $("#reset_heading").removeClass("hidden");
+            $("#reset2_heading").addClass("hidden");
+        })
+
+
+        $("#resendOtp").click(function() {
+            var mobile1 = $('#mobile1').val();
+            $.ajax({
+                method: 'POST',
+                url: VENDOR_API_URL + '/resend_otp',
+                async: true,
+                data: {
+                    mobile: countryCode + mobile1,
+                    //driver_mobile: countryCode + mobile1,
+                    is_approved: 1
+                },
+                success: function(data, status) {
+                    console.log('OTP Resend Response :', data);
+
+                    if (typeof data === "string") {
+                        data = JSON.parse(data);
+                    }
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 'slow');
+                    if (data.error) {
+                        alert(data.error);
+                        return false;
+                    } else {
+                        alert(data.log);
+                    }
+                },
+                error: function(data, status) {
+                    console.log('Error occured while resending otp')
+                }
+            });
+        })
+
+        $("#reset-3").click(function() {
+            var reg = /^[0-9]{4}$/i;
+            var otp = $('#otp').val();
+
+
+            if (otp.trim() == '') {
+                alert('Please enter OTP sent to your Mobile Number.');
+                $('#otp').focus();
+                return false;
+            } else if (!reg.test(otp)) {
+                alert('Please enter valid OTP.');
+                $('#otp').focus();
+                return false;
+            }
+            var mobile1 = $('#mobile1').val();
+            $.ajax({
+                method: 'POST',
+                url: VENDOR_API_URL + '/verify_otp',
+                async: true,
+                data: {
+                    mobile: countryCode + mobile1,
+                    is_approved: 1,
+                    otp: otp
+                },
+                success: function(data, status) {
+                    console.log('OTP verified', data);
+                    if (typeof data === "string") {
+                        data = JSON.parse(data);
+                    }
+                    if (data.error) {
+                        alert(data.error);
+                        return;
+                    }
+                    $("#main-login").addClass("hidden");
+                    $("#reset1").addClass("hidden");
+                    $("#reset2").addClass("hidden");
+                    $("#reset3").removeClass("hidden");
+                    $("#signing_heading").addClass("hidden");
+                    $("#reset_heading").addClass("hidden");
+                    $("#reset2_heading").addClass("hidden");
+                    $("#reset3_heading").addClass("hidden");
+                    $("#reset4_heading").removeClass("hidden");
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 'slow');
+                },
+                error: function(data, status) {
+                    console.log('Error occured during otp verification', data);
+                }
+            });
+
+        });
+
+
+        $("#reset-4").click(function() {
+            var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+
+            var passwordn = $('#passwordn').val();
+            var passwordnc = $('#passwordnc').val();
+
+            if (passwordn.trim() == '') {
+                alert('Please enter your New Password.');
+                $('#passwordn').focus();
+                return false;
+            } else if (passwordn.trim().length < 6) {
+                alert('Password should be of aleast 6 characters.');
+                $('#passwordn').focus();
+                return false;
+            } else if (passwordnc.trim() == '') {
+                alert('Please enter New Password.');
+                $('#passwordnc').focus();
+                return false;
+            } else if (passwordnc.trim() != passwordn.trim()) {
+                alert('Please enter the same password.');
+                $('#passwordnc').focus();
+                return false;
+
+            }
+            var mobile1 = $('#mobile1').val();
+            var otp = $('#otp').val();
+            $.ajax({
+                method: 'POST',
+                url: VENDOR_API_URL + '/reset_password_mobile',
+                async: true,
+                data: {
+                    mobile: countryCode + mobile1,
+                    password: passwordn,
+                    otp: otp,
+                    is_approved: 1
+                },
+                success: function(data, status) {
+                    console.log('Password reset response: ', data);
+                    if (typeof data === "string") {
+                        data = JSON.parse(data);
+                    }
+                    if (data.error) {
+                        alert(data.error);
+                        return;
+                    }
+                    $("#main-login").addClass("hidden");
+                    $("#reset1").addClass("hidden");
+                    $("#reset2").addClass("hidden");
+                    $("#reset3").addClass("hidden");
+                    $("#reset4").removeClass("hidden");
+                    $("#signing_heading").addClass("hidden");
+                    $("#reset_heading").addClass("hidden");
+                    $("#reset2_heading").addClass("hidden");
+                    $("#reset3_heading").addClass("hidden");
+                    $("#reset4_heading").removeClass("hidden");
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 'slow');
+                },
+                error: function(data, status) {
+                    console.log('Error occured while resetting password', data);
+                }
+            });
+
+        });
+
+        $("#login-main").click(function() {
+
+            $("#main-login").removeClass("hidden");
+            $("#reset1").addClass("hidden");
+            $("#reset2").addClass("hidden");
+            $("#reset3").addClass("hidden");
+            $("#reset4").addClass("hidden");
+            $("#reset5").addClass("hidden");
+            $("#signing_heading").removeClass("hidden");
+            $("#reset_heading").addClass("hidden");
+            $("#reset2_heading").addClass("hidden");
+            $("#reset3_heading").addClass("hidden");
+            $("#reset4_heading").addClass("hidden");
+
+        });
+
+
+
+
+    });
+    </script>
+</head>
+
+<body>
+    <header class="header header--white">
+        <div class="container">
             <div class="row">
-               <div class="col-12">
-                  <div class="header__content">
-                     <a href="index.html" class="header__logo">
-                        <object type="image/svg+xml" data="img/logo--black.svg"></object>
-                        <!-- <object type="image/svg+xml" data="img/logo--black.svg"></object> -->
-                        <object type="image/svg+xml" data="img/logo--black.svg"></object>
-                     </a>
-                     <nav class="header__nav">
-                        <a href="driverlogin.html">Drive</a>
-                        <a href="riderlogin.html">Ride</a>
-                        <a href="index.html">Home</a>
-                        <div class="header__social">
-                           <a href="https://twitter.com/ridequdos"><i class="icon-tw"></i></a>
-                           <a href="https://www.facebook.com/QudosRide/"><i class="icon-fb"></i></a>
-                           <a href="https://www.linkedin.com/company/qudosride/"><i class="icon-linkedin"></i></a>
-                           <a href="https://www.instagram.com/qudosride/"><i class="icon-instagram"></i></a>
-                        </div>
-                     </nav>
-                     <button class="header__menu" type="button">
-                     <span></span>
-                     <span></span>
-                     <span></span>
-                     </button>
-                  </div>
-               </div>
+                <div class="col-12">
+                    <div class="header__content">
+                        <a href="index.html" class="header__logo">
+                            <object type="image/svg+xml" data="img/logo--black.svg"></object>
+                            <!-- <object type="image/svg+xml" data="img/logo--black.svg"></object> -->
+                            <object type="image/svg+xml" data="img/logo--black.svg"></object>
+                        </a>
+                        <nav class="header__nav">
+                            <a href="driverlogin.html">Drive</a>
+                            <a href="riderlogin.html">Ride</a>
+                            <a href="index.html">Home</a>
+                            <div class="header__social">
+                                <a href="https://twitter.com/ridequdos"><i class="icon-tw"></i></a>
+                                <a href="https://www.facebook.com/QudosRide/"><i class="icon-fb"></i></a>
+                                <a href="https://www.linkedin.com/company/qudosride/"><i class="icon-linkedin"></i></a>
+                                <a href="https://www.instagram.com/qudosride/"><i class="icon-instagram"></i></a>
+                            </div>
+                        </nav>
+                        <button class="header__menu" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
             </div>
-         </div>
-      </header>
-      <section class="sign">
-         <div class="container">
-            <div class="row">   
-              
+        </div>
+    </header>
+    <section class="sign">
+        <div class="container">
+            <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 left-heading" id="signing_heading">
                     <h3>Affiliate Sign In</h3>
-                  Qudos creates the opportunity for affiliates to build their business.
+                    Qudos creates the opportunity for affiliates to build their business.
                 </div>
-
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 left-heading hidden" id="reset_heading">
                     <h3>Reset Password</h3>
-                         Enter your number and we will send you a
-                         OTP to reset your password.
+                    Enter your number and we will send you a
+                    OTP to reset your password.
                 </div>
-
-
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 left-heading hidden" id="reset2_heading">
-                   <div id="main-hidden" class="col-md-12">
-                       <h3>OTP Confirmation</h3>
+                    <div id="main-hidden" class="col-md-12">
+                        <h3>OTP Confirmation</h3>
                     </div>
                     <div id="main-hidden1" class="col-md-12">
-                       Qudos builds an environment of satisfaction and comfortability through each rider and driver interaction.
+                        Qudos builds an environment of satisfaction and comfortability through each rider and driver interaction.
                     </div>
                 </div>
-
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 left-heading hidden" id="reset3_heading">
-                   <h3>Reset Password</h3>
-                       Qudos gives our affiliates the tools to create long standing and frequent business relationships.
+                    <h3>Reset Password</h3>
+                    Qudos gives our affiliates the tools to create long standing and frequent business relationships.
                 </div>
-
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 left-heading hidden" id="reset4_heading">
                     <h3>Reset Successfully</h3>
-                     <p class="top-margin">Your Password has been successfuly changed, you can now continue to login.</p>
+                    <p class="top-margin">Your Password has been successfuly changed, you can now continue to login.</p>
                 </div>
-
-               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                  <div class="sign__content">
-                     <div class="row"> 
-                        <div class="popup-main-content">
-                           <!--Start Inner Row-->
-                           <div id="main-login" class="row">
-
-                              <div class="col-md-12">
-                                 <div class="login-form">
-                                    <form name="login">
-                                       <label>Mobile Number</label>
-                                       <div class="row-input">
-                                          <input id="mobile" class="mobile"  onkeyup="numbermode()" title="Please fill out this field" type="tel" name="mobile"  inputmode="numeric" placeholder="Enter mobile number" required>
-                                          <span class="main-mobile">+1-</span></span>
-                                       </div>
-                                       <label>Password <a id="forget" href="#"><strong>Forgot it?</strong></label></a>
-                                       <div class="row-input">
-                                          <input id="password" value=""  title="Please fill out this field" name="password" class="password" name="password" type="password" placeholder="Enter password">
-                                       </div>
-                                       <button class="submit" type="button"  onclick="submitContactForm()">Login</button>
-                                       <a href="affiliatesignup.html"><button class="signup_btn" type="button">Signup</button></a>
-                                    </form>
-                                    <script>
-                                       function numbermode(){
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="sign__content">
+                        <div class="row">
+                            <div class="popup-main-content">
+                                <!--Start Inner Row-->
+                                <div id="main-login" class="row">
+                                    <div class="col-md-12">
+                                        <div class="login-form">
+                                            <form name="login">
+                                                <label>Mobile Number</label>
+                                                <div class="row-input">
+                                                    <input id="mobile" class="mobile" onkeyup="numbermode()" title="Please fill out this field" type="tel" name="mobile" inputmode="numeric" placeholder="Enter mobile number" required>
+                                                    <span class="main-mobile">+1-</span></span>
+                                                </div>
+                                                <label>Password <a id="forget" href="#"><strong>Forgot it?</strong></label></a>
+                                                <div class="row-input">
+                                                    <input id="password" value="" title="Please fill out this field" name="password" class="password" name="password" type="password" placeholder="Enter password">
+                                                </div>
+                                                <button class="submit" type="button" onclick="submitContactForm()">Login</button>
+                                                <a href="affiliatesignup.html"><button class="signup_btn" type="button">Signup</button></a>
+                                            </form>
+                                            <script>
+                                                function numbermode(){
                                        $('#mobile').val($('#mobile').val().replace(/\D/g, ''));
                                        /*if(($('#mobile').val().substr(0,1)) == "+"){
                                         $('#mobile').val('+'+$('#mobile').val().substr(1).replace(/\D/g, ''))
@@ -419,218 +413,216 @@
                                        }
                                        
                                     </script>
-                                    <div class="row-forget-pass">
-                                       <div class="left-align">
-                                          <a href="riderlogin.html">Looking to Ride?</a>
-                                       </div>
-                                       <!-- <div class="right-align">
+                                            <div class="row-forget-pass">
+                                                <div class="left-align">
+                                                    <a href="riderlogin.html">Looking to Ride?</a>
+                                                </div>
+                                                <!-- <div class="right-align">
                                           New to this?<a href="driversignup.html"> <strong>Signup</strong></a>
                                           </div> -->
+                                            </div>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <!--End inner Row-->
-                           <!--Start Inner Row1-->
-                           <div id="reset1" class="row hidden">
-                              <!-- <div class="col-md-6">
+                                </div>
+                                <!--End inner Row-->
+                                <!--Start Inner Row1-->
+                                <div id="reset1" class="row hidden">
+                                    <!-- <div class="col-md-6">
                                  <h3>Reset Password</h3>
                                  Enter your number and we will send you a
                                  OTP to reset your password.
                               </div> -->
-                              <div class="col-md-12">
-                                 <div class="login-form">
-                                    <form name="login">
-                                       <label>Mobile Number</label>
-                                       <div class="row-input">
-                                          <input id="mobile1" class="mobile" type="tel" name="mobile1"  inputmode="numeric" placeholder="Enter mobile number" required>
-                                          <span class="main-mobile">+1-</span></span>
-                                       </div>
-                                       <button id="reset-2" class="submit" type="button" >Send OTP</button>
-                                    </form>
-                                 </div>
-                              </div>
-                           </div>
-                           <!--Start Inner Row1-->
-                           <!--Start Inner Row2-->
-                           <div id="reset2" class="row hidden">
-                                 
-                              <div class="col-md-12">
-                                 <div class="login-form">
-                                    <p>Confirm your mobile number to reset
-                                       your password
-                                    </p>
-                                    <form name="login">
-                                       <label>Enter OTP sent to your Mobile number</label>
-                                       <div class="row-input">
-                                          <input id="otp" type="tel" name="otp" inputmode="numeric" placeholder="0000" required="">
-                                          <div class="row row-input a-color">
-                                             <div class="col-xs-5"><a id="resendOtp" href="javascript:void(0)">Resend OTP</a></div>
-                                             <div class="col-xs-7"><a id="changeMobile" href="javascript:void(0)">Change mobile number</a></div>
-                                          </div>
-                                       </div>
-                                       <button id="reset-3" href="#" class="submit top-margin" type="button">Submit</button>
-                                    </form>
-                                 </div>
-                              </div>
-                           </div>
-                           <!--Start Inner Row2-->
-                           <!--Start Inner Row3-->
-                          <div id="reset3" class="row hidden">
-                              <div class="col-md-12">
-                                 <div class="login-form">
-                                    <form name="login">
-                                       <label>Enter New Password</label>
-                                       <div class="row-input">
-                                          <input id="passwordn" value="" name="passwordn" class="password" type="password" placeholder="Enter new password">
-                                       </div>
-                                       <label>Confirm New Password</label>
-                                       <div class="row-input">
-                                          <input id="passwordnc" value="" name="passwordnc" class="password" type="password" placeholder="Re-enter new password">
-                                       </div>
-                                       <button id="reset-4" class="submit" type="button" onclick="resetpass()">Submit</button>
-                                    </form>
-                                 </div>
-                              </div>
-                           </div>
-                           <!--Start Inner Row3-->
-                           <!--Start Inner Row4-->
-                           <div id="reset4" class="row row-input hidden">
-                                <div class="col-md-12 small-hide">
-                                   <p align="center"><img class="img-fluid" src="img/tick.png" width="180" height="180" alt="sucess"></p>
-                                    <a id="login-main" href="affiliatelogin.html" class="submit-login">Go to Login</a>
+                                    <div class="col-md-12">
+                                        <div class="login-form">
+                                            <form name="login">
+                                                <label>Mobile Number</label>
+                                                <div class="row-input">
+                                                    <input id="mobile1" class="mobile" type="tel" name="mobile1" inputmode="numeric" placeholder="Enter mobile number" required>
+                                                    <span class="main-mobile">+1-</span></span>
+                                                </div>
+                                                <button id="reset-2" class="submit" type="button">Send OTP</button>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
-                           </div>
-                           <!--End Inner Row4-->
+                                <!--Start Inner Row1-->
+                                <!--Start Inner Row2-->
+                                <div id="reset2" class="row hidden">
+                                    <div class="col-md-12">
+                                        <div class="login-form">
+                                            <p>Confirm your mobile number to reset
+                                                your password
+                                            </p>
+                                            <form name="login">
+                                                <label>Enter OTP sent to your Mobile number</label>
+                                                <div class="row-input">
+                                                    <input id="otp" type="tel" name="otp" inputmode="numeric" placeholder="0000" required="">
+                                                    <div class="row row-input a-color">
+                                                        <div class="col-xs-5"><a id="resendOtp" href="javascript:void(0)">Resend OTP</a></div>
+                                                        <div class="col-xs-7"><a id="changeMobile" href="javascript:void(0)">Change mobile number</a></div>
+                                                    </div>
+                                                </div>
+                                                <button id="reset-3" href="#" class="submit top-margin" type="button">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Start Inner Row2-->
+                                <!--Start Inner Row3-->
+                                <div id="reset3" class="row hidden">
+                                    <div class="col-md-12">
+                                        <div class="login-form">
+                                            <form name="login">
+                                                <label>Enter New Password</label>
+                                                <div class="row-input">
+                                                    <input id="passwordn" value="" name="passwordn" class="password" type="password" placeholder="Enter new password">
+                                                </div>
+                                                <label>Confirm New Password</label>
+                                                <div class="row-input">
+                                                    <input id="passwordnc" value="" name="passwordnc" class="password" type="password" placeholder="Re-enter new password">
+                                                </div>
+                                                <button id="reset-4" class="submit" type="button" onclick="resetpass()">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Start Inner Row3-->
+                                <!--Start Inner Row4-->
+                                <div id="reset4" class="row row-input hidden">
+                                    <div class="col-md-12 small-hide">
+                                        <p align="center"><img class="img-fluid" src="img/tick.png" width="180" height="180" alt="sucess"></p>
+                                        <a id="login-main" href="affiliatelogin.html" class="submit-login">Go to Login</a>
+                                    </div>
+                                </div>
+                                <!--End Inner Row4-->
+                            </div>
+                            <!--End Main Content Popup-->
                         </div>
-                        <!--End Main Content Popup-->
-                     </div>
-                     <!--End Row-->
-                  </div>
-               </div>
+                        <!--End Row-->
+                    </div>
+                </div>
             </div>
-         </div>
-      </section>
-      <div class="bg-wrap">
+        </div>
+    </section>
+    <div class="bg-wrap">
         <footer class="footer">
             <div class="container">
-               <div class="row">
-                  <div class="col-12">
-                     <div class="footer__line"></div>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                     <a href="/" class="footer__logo">
-                     <img src="logins/img/logo--white.svg">
-                     </a>
-                  </div>
-                  <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-3">
-                     <span class="footer__title">Qudos Technologies</span>
-                     <ul class="footer__list">
-                        <li><a href="#experience">About Qudos</a></li>
-                        <li><a href="target-audience/">Target Audience</a></li>
-                        <li><a href="faq/">Frequently Asked Questions</a></li>
-                        <li><a href="privacy/terms.html">Terms &amp; Conditions</a></li>
-                        <li><a href="privacy/privacy.html">Privacy Policy</a></li>
-                        <li><a href="mailto:support@driveQudos.com">Contact Us</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-3">
-                     <span class="footer__title">Rider</span>
-                     <ul class="footer__list">
-                        <li><a href="why-qudos/start.html">QudosRide™</a></li>
-                        <li><a href="qudoslist/">QudosList™</a></li>
-                        <li><a href="how/referfave.html">Refer Favorite Driver</a></li>
-                        <li><a href="how/addfave.html">Add Favorite Driver</a></li>
-                        <li><a href="corporate/">Qudos Corporate</a></li>
-                     </ul>
-                     <span class="footer__title">Driver</span>
-                     <ul class="footer__list">
-                        <li><a href="welcome/">Welcome</a></li>
-                       <!--  <li><a href="why-qudos/apply.html">How to Apply</a></li> -->
-                     </ul>
-                  </div>
-                  <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-3">
-                     <span class="footer__title">Reach Us</span>
-                     <p class="footer__text">1969 Steinway Street, <br>Long Island City, NY 11105 <br><a href="tel:7183605010">(718)-360-5010</a><br><a href="mailto:support@drivequdos.com">support@driveQudos.com</a></p>
-                  </div>
-                  <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-3">
-                     <span class="footer__title footer__title--connect">Connect with Us</span>
-                     <ul class="footer__social clearfix">
-                        <li>
-                           <a href="https://www.facebook.com/QudosRide/">
-                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="29px">
-                                 <image x="0px" y="0px" width="14px" height="29px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAdCAQAAAAwA5VvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhgAJRsaoyUyAAAAx0lEQVQoz+WQPQ/BQByHn7teKwQrkRhMJoPBYrXYGH1Pm9UoMVl8BgnxEqW0NejVH60v4Jl+d0/u/i8qRlClRZEIAM3GCNVjQEWc1y/ZZcw7V50EjxGfKCvbuF/S2G8b4vLIjC0eeyvluzlLkoafREKebbDSFzJIi1KiTkBNyCZ7DA4nFXeYkM1KE5PHTr+18iVNrjwZfA7cKFMQo/g4wFbFGpc7Q/qpnLLAAQJDxFXOBlwICeUSZOV0lZof/Jt0sh7YoIRM8wNvICsbyCIf6AAAAABJRU5ErkJggg=="></image>
-                              </svg>
-                           </a>
-                        </li>
-                        <!-- <li>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer__line"></div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="/" class="footer__logo">
+                            <img src="logins/img/logo--white.svg">
+                        </a>
+                    </div>
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <span class="footer__title">Qudos Technologies</span>
+                        <ul class="footer__list">
+                            <li><a href="#experience">About Qudos</a></li>
+                            <li><a href="target-audience/">Target Audience</a></li>
+                            <li><a href="faq/">Frequently Asked Questions</a></li>
+                            <li><a href="privacy/terms.html">Terms &amp; Conditions</a></li>
+                            <li><a href="privacy/privacy.html">Privacy Policy</a></li>
+                            <li><a href="mailto:support@driveQudos.com">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <span class="footer__title">Rider</span>
+                        <ul class="footer__list">
+                            <li><a href="why-qudos/start.html">QudosRide™</a></li>
+                            <li><a href="qudoslist/">QudosList™</a></li>
+                            <li><a href="how/referfave.html">Refer Favorite Driver</a></li>
+                            <li><a href="how/addfave.html">Add Favorite Driver</a></li>
+                            <li><a href="corporate/">Qudos Corporate</a></li>
+                        </ul>
+                        <span class="footer__title">Driver</span>
+                        <ul class="footer__list">
+                            <li><a href="welcome/">Welcome</a></li>
+                            <!--  <li><a href="why-qudos/apply.html">How to Apply</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <span class="footer__title">Reach Us</span>
+                        <p class="footer__text">1969 Steinway Street, <br>Long Island City, NY 11105 <br><a href="tel:7183605010">(718)-360-5010</a><br><a href="mailto:support@drivequdos.com">support@driveQudos.com</a></p>
+                    </div>
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <span class="footer__title footer__title--connect">Connect with Us</span>
+                        <ul class="footer__social clearfix">
+                            <li>
+                                <a href="https://www.facebook.com/QudosRide/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="29px">
+                                        <image x="0px" y="0px" width="14px" height="29px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAdCAQAAAAwA5VvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhgAJRsaoyUyAAAAx0lEQVQoz+WQPQ/BQByHn7teKwQrkRhMJoPBYrXYGH1Pm9UoMVl8BgnxEqW0NejVH60v4Jl+d0/u/i8qRlClRZEIAM3GCNVjQEWc1y/ZZcw7V50EjxGfKCvbuF/S2G8b4vLIjC0eeyvluzlLkoafREKebbDSFzJIi1KiTkBNyCZ7DA4nFXeYkM1KE5PHTr+18iVNrjwZfA7cKFMQo/g4wFbFGpc7Q/qpnLLAAQJDxFXOBlwICeUSZOV0lZof/Jt0sh7YoIRM8wNvICsbyCIf6AAAAABJRU5ErkJggg=="></image>
+                                    </svg>
+                                </a>
+                            </li>
+                            <!-- <li>
                            <a href="https://twitter.com/ridequdos">
                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="26px">
                                  <image x="0px" y="0px" width="32px" height="26px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAaCAQAAAB8kpa0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhgAJTJYEb1eAAAB1ElEQVQ4y5XUzUtUURzG8c8droqVZm+GyUCUokFEVGi4iKBdtqhVi7Yt2/h/tG1TiyAQCiJq0aJaZRi4isCRLIIJGqFkfJnBYkbTFjN3xnm5w/jb3HOee74P9zz3/E6wo60aNuKwbWkLVipqj3ywA52KLeDApHGJ8izrjRROuGrGz5LBPZ/MxuJ3nazT5vQ6I+0RIfoNGLBqoanB9QaccXzx1LDlBPrBHRNN8N6mKkUbppxVTGC7LE66ra9u4WjMxjpctOKlPyF+VeRzRn0wZ6OiHIlN5r23lDLIyhgsv+h0zYSUBUvyyMUY/CvhlP7CUVMNSwoy1vQ5FZPB/dJ3hjgu74UbOmuWdMWgkX355IRIuumzQp1B68rZrBosCpzfAwzL0SCBvPk94vzYbcDrlr3QrL7VGuQ8lN0DnrYaDYNKOx9wyWU9bRlMV/smLD+73LIlaAuvabvIoCBnrM0NvNo9SeySF9vC56sB1hrwxGylM+Nq3fNaIai7E/c77YqBGHzTg+oRqs0gqg0d9sXgfz2uxwmFtsrjQaMuNFwpUWU8a3ZWQt3GJHXrcqzF3me8a55PKC/loKHYM1CU8tFSnHMUYsKIIUmHKgkUrPntu6/WW3yZ/4F0dWRyQis2AAAAAElFTkSuQmCC"></image>
                               </svg>
                            </a>
                         </li> -->
-                        <li>
-                           <a href="https://www.linkedin.com/company/qudosride/">
-                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31px" height="31px">
-                                 <image x="0px" y="0px" width="31px" height="31px" xlink:href="img/linkedin.png"></image>
-                              </svg>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="https://www.instagram.com/qudosride/">
-                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31px" height="31px">
-                                 <image x="0px" y="0px" width="31px" height="31px" xlink:href="img/instagram.png"></image>
-                              </svg>
-                           </a>
-                        </li>
-                     </ul>
-                     <span class="footer__title footer__title--download">Download</span>
-                     <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6 ">
-                           <ul class="footer__list">
-                              <li class="app_image"><a href="https://appcustomer.ridequdos.com/alerts" target="_blank">
-                                 <img src="img/qudos_rider.png" class="img-fluid">
-                                 </a>
-                              </li>
-                              <li><a href="https://appcustomer.ridequdos.com/alerts">Rider</a></li>
-                              
-                           </ul>
+                            <li>
+                                <a href="https://www.linkedin.com/company/qudosride/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31px" height="31px">
+                                        <image x="0px" y="0px" width="31px" height="31px" xlink:href="img/linkedin.png"></image>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/qudosride/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31px" height="31px">
+                                        <image x="0px" y="0px" width="31px" height="31px" xlink:href="img/instagram.png"></image>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="footer__title footer__title--download">Download</span>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6 ">
+                                <ul class="footer__list">
+                                    <li class="app_image"><a href="https://appcustomer.ridequdos.com/alerts" target="_blank">
+                                            <img src="img/qudos_rider.png" class="img-fluid">
+                                        </a>
+                                    </li>
+                                    <li><a href="https://appcustomer.ridequdos.com/alerts">Rider</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6 ">
+                                <ul class="footer__list">
+                                    <li class="app_image"><a href="https://apppartner.ridequdos.com/alerts" target="_blank">
+                                            <img src="img/qudos_driver.png" class="img-fluid">
+                                        </a>
+                                    </li>
+                                    <li><a href="https://apppartner.ridequdos.com/alerts">Driver</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6 ">
-                           <ul class="footer__list">
-                              <li class="app_image"><a href="https://apppartner.ridequdos.com/alerts" target="_blank">
-                                 <img src="img/qudos_driver.png" class="img-fluid">
-                                 </a>
-                              </li>
-                              <li><a href="https://apppartner.ridequdos.com/alerts">Driver</a></li>
-                             
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
             <div class="footer__copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-12">
-                        <small class="footer__small">
-                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px">
-                              <image x="0px" y="0px" width="18px" height="18px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAQAAAD8x0bcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhgBASUr6LMIAAABYUlEQVQoz43SsWsTARQG8F/uLkOV5iQqxSVNMhRcaq1REIcOYl0UXBw6KEVcnPxnBAcRBQehCILgkm4dXISYuAQL5hp1EGpLL6CW2hCH3kVBCn7T433few/e9xW6xqiZMy1Gqq8tyYlCJjrphqqferZwXN2Evpc2/4hqbtm3qmWYDYfmXRF5JjkQnXBP6qkBplSMfPEVk24re+hboctdUx5IHXHTTLap64VdR9236VGgpqYpVXTHjA9WrFh32rLQd6uqapEzdrVwySlvvAbvXReKDLVcNRep+miIc35oZsdGXmXVUM90ILaNorINv/yLbXGQ/wsjhyCQKmPPjopg3C+6qATK0kBfXYiOSQtj0YJrLiBU14+0Ncx7a82sy47p4LxZW9Zw1oR2JJFYtC712JKGBvjsuT2xRRuS3JaBJwYK6ir4pGekZFmc23Jg8FDTO/uHGfyfUfk7dCUM9HX0cuI3sK1zjecnoy0AAAAASUVORK5CYII="></image>
-                           </svg>
-                           Copyrighted 2017
-                        </small>
-                        <span class="footer__rights">All Rights Reserved</span>
-                        <a href="index.html" class="footer__link">www.qudos.tech</a>
-                     </div>
-                  </div>
-               </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <small class="footer__small">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px">
+                                    <image x="0px" y="0px" width="18px" height="18px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAQAAAD8x0bcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhgBASUr6LMIAAABYUlEQVQoz43SsWsTARQG8F/uLkOV5iQqxSVNMhRcaq1REIcOYl0UXBw6KEVcnPxnBAcRBQehCILgkm4dXISYuAQL5hp1EGpLL6CW2hCH3kVBCn7T433few/e9xW6xqiZMy1Gqq8tyYlCJjrphqqferZwXN2Evpc2/4hqbtm3qmWYDYfmXRF5JjkQnXBP6qkBplSMfPEVk24re+hboctdUx5IHXHTTLap64VdR9236VGgpqYpVXTHjA9WrFh32rLQd6uqapEzdrVwySlvvAbvXReKDLVcNRep+miIc35oZsdGXmXVUM90ILaNorINv/yLbXGQ/wsjhyCQKmPPjopg3C+6qATK0kBfXYiOSQtj0YJrLiBU14+0Ncx7a82sy47p4LxZW9Zw1oR2JJFYtC712JKGBvjsuT2xRRuS3JaBJwYK6ir4pGekZFmc23Jg8FDTO/uHGfyfUfk7dCUM9HX0cuI3sK1zjecnoy0AAAAASUVORK5CYII="></image>
+                                </svg>
+                                Copyrighted 2017
+                            </small>
+                            <span class="footer__rights">All Rights Reserved</span>
+                            <a href="index.html" class="footer__link">www.qudos.tech</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </footer>
-      </div>
-      <!--<script src="js/jquery-3.2.1.slim.min.js"></script>-->
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/main.js"></script>
-   </body>
+        </footer>
+    </div>
+    <!--<script src="js/jquery-3.2.1.slim.min.js"></script>-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>

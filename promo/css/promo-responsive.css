@@ -678,11 +678,25 @@
         background-position-y: 200px;
         background-position-x: 165%;
     }
+    h2.banner__title:before {
+        bottom: 105px;
+    }
 
+    h2.section-one__title:before, h2.section-two__title:before, h2.section-three__title:before {
+        bottom: 160px;
+    }
 
 }
 
 @media only screen and (min-width: 1920px) {
+
+    h2.banner__title:before {
+        bottom: 105px;
+    }
+
+    h2.section-one__title:before, h2.section-two__title:before, h2.section-three__title:before {
+        bottom: 160px;
+    }
 
     .svg-container {
         margin-top: -1em;

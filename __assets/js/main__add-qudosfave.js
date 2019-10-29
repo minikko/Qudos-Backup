@@ -1,26 +1,26 @@
-$(document).ready(function () {
-	// "use strict";
+$(document).ready(function() {
+    // "use strict";
 
-	/*==============================
-	Header
-	==============================*/
-	$(window).on('scroll', function () {
-		if ($(this).scrollTop() > 0){
-			$('.header').addClass("header--active");
-		} else {
-			$('.header').removeClass("header--active");
-		}
-	});
+    /*==============================
+    Header
+    ==============================*/
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > 0) {
+            $('.header').addClass("header--active");
+        } else {
+            $('.header').removeClass("header--active");
+        }
+    });
 
-	$('.header__menu').on('click', function() {
-		$(this).toggleClass('header__menu--active');
-		$('.header__nav').toggleClass('header__nav--active');
-	});
+    $('.header__menu').on('click', function() {
+        $(this).toggleClass('header__menu--active');
+        $('.header__nav').toggleClass('header__nav--active');
+    });
 
 
-	new WOW().init();
+    new WOW().init();
 
-	var TxtType = function(el, toRotate, period) {
+    var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
         this.loopNum = 0;
@@ -35,12 +35,12 @@ $(document).ready(function () {
         var fullTxt = this.toRotate[i];
 
         if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
         } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
         var that = this;
         var delta = 200 - Math.random() * 100;
@@ -48,26 +48,26 @@ $(document).ready(function () {
         if (this.isDeleting) { delta /= 2; }
 
         if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
+            delta = this.period;
+            this.isDeleting = true;
         } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
         }
 
         setTimeout(function() {
-        that.tick();
+            that.tick();
         }, delta);
     };
 
     window.onload = function() {
         var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
+        for (var i = 0; i < elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-type');
             var period = elements[i].getAttribute('data-period');
             if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
+                new TxtType(elements[i], JSON.parse(toRotate), period);
             }
         }
         // INJECT CSS
@@ -77,59 +77,85 @@ $(document).ready(function () {
         document.body.appendChild(css);
     };
 
-    	animateRight();
-		animateRight2();
-		animateRight3();
+    animateRight();
+    animateRight2();
+    animateRight3();
 
 
-		function animateRight() {
-		  $("#i1").animate({
-		        'marginLeft' : "+=20px" //moves left
-		    }, 3000, 'swing', animateLeft);
-		   
-		}
+    function animateRight() {
+        $("#i1").animate({
+            'marginLeft': "+=20px" //moves left
+        }, 3000, 'swing', animateLeft);
 
-		function animateLeft() {
-		    $("#i1").animate({
-		        'marginLeft' : "-=20px" //moves right
-		    }, 3000, 'swing', animateRight);
+    }
 
-
-		}
-
-		function animateRight2() {
-		    $("#i2").animate({
-		        'marginLeft' : "+=50px" //moves left
-		    }, 3000, 'swing', animateLeft2);
-		   
-		}
-
-		function animateLeft2() {
-		    $("#i2").animate({
-		        'marginLeft' : "-=50px" //moves right
-		    }, 3000, 'swing', animateRight2);
+    function animateLeft() {
+        $("#i1").animate({
+            'marginLeft': "-=20px" //moves right
+        }, 3000, 'swing', animateRight);
 
 
-		}
-		function animateRight3() {
-		    $("#i3").animate({
-		        'marginLeft' : "+=75px" //moves left
-		    }, 3000, 'swing', animateLeft3);
-		   
-		}
+    }
 
-		function animateLeft3() {
-		    $("#i3").animate({
-		        'marginLeft' : "-=75px" //moves right
-		    }, 3000, 'swing', animateRight3);
+    function animateRight2() {
+        $("#i2").animate({
+            'marginLeft': "+=50px" //moves left
+        }, 3000, 'swing', animateLeft2);
+
+    }
+
+    function animateLeft2() {
+        $("#i2").animate({
+            'marginLeft': "-=50px" //moves right
+        }, 3000, 'swing', animateRight2);
 
 
-		}
+    }
+
+    function animateRight3() {
+        $("#i3").animate({
+            'marginLeft': "+=75px" //moves left
+        }, 3000, 'swing', animateLeft3);
+
+    }
+
+    function animateLeft3() {
+        $("#i3").animate({
+            'marginLeft': "-=75px" //moves right
+        }, 3000, 'swing', animateRight3);
+
+
+    }
+
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("footer-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                        if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("footer-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
+        }
+    }
+
+
+    includeHTML();
 
 });
-
-
-
-			
-
-

@@ -1,0 +1,251 @@
+.qudos-blue{
+    color:#228ec8;
+}
+p.subheader__prime{
+    font-weight:400;
+}
+.subheader__prime{
+    line-height: 3rem;
+}
+.h3{
+    font-size:3rem;
+}
+.header__prime:before{
+    bottom:-2.5rem;
+}
+.why-qudos__section--2{
+    height:65vh;
+}
+.why-qudos__section--4{
+    padding-top:0px;
+    padding-bottom:10vh;
+    margin-top:0px;
+    clip-path: none;
+    background: #fafafa;
+    height: auto;
+}
+.why-qudos__section--1 img.img-fluid:nth-child(2) {
+    animation: none;
+}
+.subheader__prime{
+    width: 100%;
+}
+#car-1{
+    width:70%;
+    top:15%;
+    left:35%;
+}
+#sign-1{
+    left:40%;
+    width:20%;
+}
+#set-1-img{
+    margin-top:30%;
+    width:100%;
+}
+.carousel{
+    width:100%;
+}
+.carousel-inner{
+    min-height:35vh;
+}
+#carouselExampleIndicators li{
+    background: #e6e7e8;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-radius:10em;
+    opacity:1;
+}
+#carouselExampleIndicators li.active{
+    background: #3b8ecb;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    opacity:0;
+}
+.section-top-curve{
+    height:15vh;
+    background: url("../../__assets/img/faq/top-curve.svg") top no-repeat;
+    margin-bottom:-10px;
+}
+.card-header{
+    font-size:2.5rem;
+    line-height: 2.5rem;
+    background:#fff;
+    border:none;
+    padding:15px;
+    padding-left:20px;
+}
+.card-body{
+    font-size:1.7rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color:#676767;
+    text-align: justify;
+}
+.card-body p{
+    padding-left:1rem;
+    padding-bottom:15px;
+    padding-right:15px;
+}
+.card-body li{
+    text-indent: 1.3rem;
+}
+.card{
+    border:none;
+    margin-bottom:.5rem;
+}
+@media (max-width:1440px){
+    .subheader__prime{
+        width: 100%;
+        font-size:2rem;
+    }
+    .why-qudos__section--2{
+        height:50vh;
+    }
+    .carousel-inner{
+        min-height:30vh;
+    }
+}
+@media (max-width:1120px){
+    .why-qudos__section--2{
+        height:65vh;
+    }
+    .carousel-inner{
+        min-height:40vh;
+    }
+}
+@media (max-width:1024px){
+    #set-1-img{
+        width:100%;
+    }
+    .why-qudos__section--1 .header__prime{
+        font-size:3.8rem;
+        width:100%;
+    }
+    .why-qudos__section--4 .header__prime-main{
+        width: 100%;
+    }
+    .subheader__prime{
+        width: 100%;
+        font-size:1.5rem;
+    }
+    .why-qudos__section--2{
+        height:50vh;
+        padding-bottom:0rem;
+        clip-path: none;
+    }
+    .carousel-inner{
+        min-height:30vh;
+    }
+}
+@media (max-width:768px){
+    .why-qudos__section--2{
+        height:55vh;
+        padding-bottom:0rem;
+        clip-path: none;
+    }
+    .carousel-inner{
+        min-height:35vh;
+    }
+}
+
+@media (max-width:480px){
+    .why-qudos__section--1 .header__prime{
+        width:100%;
+    }
+    .svg-gradient-circle--1{
+        left:-60%;
+        margin-top:-20%;
+    }
+    #header-title{
+        margin-top:0px;
+        margin-bottom:100px;
+    }
+    #header-title .subheader__prime {
+        font-size:3rem;
+    }
+    .why-qudos__section--2{
+        height:60vh;
+        padding-bottom:10rem;
+        clip-path: none;
+    }
+    .card-header{
+        font-size:1.8rem;
+    }
+    .card-body{
+        font-size:1.5rem;
+    }    
+    .why-qudos__section--4 .header__prime-main{
+        width: 100%;
+    }
+    .why-qudos .subheader__prime{
+        width: 100%;
+    }
+    #set-1-img{
+        display:none;
+        margin-top:0;
+        width:60%;
+        margin-left:20%;
+        margin-bottom:3rem;
+    }
+    #car-1{
+        width:65%;
+        top:12%;
+        left:83%;
+    }
+    #sign-1{
+        top:3%;
+        left:90%;
+        width:18%;
+    }
+    .carousel-inner{
+        min-height:40vh;
+    }
+    .why-qudos__section--2 .subheader__prime{
+        margin-left:0;
+    }
+    .card-body li{
+        text-indent: 0rem;
+        padding-left:1rem;
+    }
+}
+
+@media (max-width:375px){
+    .svg-gradient-circle--1{
+        left:-60%;
+        margin-top:-25%;
+    }
+    #car-1{
+        top:10%;
+        left:83%;
+    }
+    #sign-1{
+        top:3%;
+        left:90%;
+    }
+    .carousel-inner{
+        min-height: 45vh;
+    }
+}
+@media (max-width:320px){
+    #header-title .header__prime{
+        font-size:3rem;
+        line-height:4.3rem;
+    }
+    .svg-gradient-circle--1{
+        left:-70%;
+        margin-top:-40%;
+    }
+    .why-qudos__section--2{
+        height:90vh;
+    }
+    .carousel-inner{
+        min-height:65vh;
+    }
+    #car-1{
+        left:97%;
+    }
+    #sign-1{
+        left:103%;
+    }
+}
