@@ -5,7 +5,7 @@
     <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="keywords" content="">
     <meta name="copyright" content="Qudos Ride with your Favorite™">
     <!-- Open Graph / Facebook -->
@@ -29,11 +29,8 @@
     <link rel="stylesheet" href="../../__assets/css/bootstrap-grid.min.css">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="../../__assets/css/owl.carousel.min.css">
-    <!-- Slick -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Animate On Scroll CSS CDN -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Custom CSS -->
     <link rel="stylesheet" href="../../__assets/css/styles.min.css">
     <link rel="stylesheet" href="../../__assets/css/qudoslist.min.css">
     <!-- FAVICON -->
@@ -66,7 +63,7 @@
                                 <a href="https://www.instagram.com/qudosride/"><i class="icon-instagram"></i></a>
                             </div>
                         </nav>
-                        <a href="https://appcustomer.ridequdos.com/alerts" class="header__btn">Start Riding</a>
+                        <a href="https://appartner.ridequdos.com/alerts" class="header__btn">Start Riding</a>
                         <button class="header__menu" type="button">
                             <span></span>
                             <span></span>
@@ -185,7 +182,7 @@
             </div>
         </div>
     </section>
-    <div class="service-wrap" include-html="../../__assets/includes/footer/footer-white.html"></div>
+    <div class="service-wrap" footer-include-html="../../__assets/includes/footer-black.html"></div>
     <script src="../../__assets/js/jquery-3.2.1.slim.min.js"></script>
     <script src="../../__assets/js/jquery.min.js"></script>
     <script src="../../__assets/js/bootstrap.min.js"></script>

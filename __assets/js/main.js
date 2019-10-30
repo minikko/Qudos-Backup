@@ -39,7 +39,7 @@ $(document).ready(function() {
         for (i = 0; i < z.length; i++) {
             elmnt = z[i];
             /*search for elements with a certain atrribute:*/
-            file = elmnt.getAttribute("footer-include-html");
+            file = elmnt.getAttribute("include-html");
             if (file) {
                 /* Make an HTTP request using the attribute value as the file name: */
                 xhttp = new XMLHttpRequest();
@@ -48,7 +48,7 @@ $(document).ready(function() {
                         if (this.status == 200) { elmnt.innerHTML = this.responseText; }
                         if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
                         /* Remove the attribute, and call this function once more: */
-                        elmnt.removeAttribute("footer-include-html");
+                        elmnt.removeAttribute("include-html");
                         includeHTML();
                     }
                 }
@@ -61,5 +61,5 @@ $(document).ready(function() {
     }
 
 
-  includeHTML();
+    includeHTML();
 });

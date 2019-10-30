@@ -1,135 +1,55 @@
-$(document).ready(function () {
-	// "use strict";
+$(document).ready(function() {
+    // "use strict"; 
 
-	/*==============================
-	Header
-	==============================*/
-	$(window).on('scroll', function () {
-		if ($(this).scrollTop() > 0){
-			$('.header').addClass("header--active");
-		} else {
-			$('.header').removeClass("header--active");
-		}
-	});
-
-	$('.header__menu').on('click', function() {
-		$(this).toggleClass('header__menu--active');
-		$('.header__nav').toggleClass('header__nav--active');
-	});
-
-
-	new WOW().init();
-
-	var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
+    /*==============================
+    Header
+    ==============================*/
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > 0) {
+            $('.header').addClass("header--active");
         } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
+            $('.header').removeClass("header--active");
         }
+    });
 
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    $('.header__menu').on('click', function() {
+        $(this).toggleClass('header__menu--active');
+        $('.header__nav').toggleClass('header__nav--active');
+    });
 
-        var that = this;
-        var delta = 200 - Math.random() * 100;
 
-        if (this.isDeleting) { delta /= 2; }
+    new WOW().init();
 
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
 
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                        if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
             }
         }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #b3b4b4}";
-        document.body.appendChild(css);
-    };
-
-    	animateRight();
-		animateRight2();
-		animateRight3();
+    }
 
 
-		function animateRight() {
-		  $("#i1").animate({
-		        'marginLeft' : "+=20px" //moves left
-		    }, 3000, 'swing', animateLeft);
-		   
-		}
-
-		function animateLeft() {
-		    $("#i1").animate({
-		        'marginLeft' : "-=20px" //moves right
-		    }, 3000, 'swing', animateRight);
-
-
-		}
-
-		function animateRight2() {
-		    $("#i2").animate({
-		        'marginLeft' : "+=50px" //moves left
-		    }, 3000, 'swing', animateLeft2);
-		   
-		}
-
-		function animateLeft2() {
-		    $("#i2").animate({
-		        'marginLeft' : "-=50px" //moves right
-		    }, 3000, 'swing', animateRight2);
-
-
-		}
-		function animateRight3() {
-		    $("#i3").animate({
-		        'marginLeft' : "+=75px" //moves left
-		    }, 3000, 'swing', animateLeft3);
-		   
-		}
-
-		function animateLeft3() {
-		    $("#i3").animate({
-		        'marginLeft' : "-=75px" //moves right
-		    }, 3000, 'swing', animateRight3);
-
-
-		}
+    includeHTML();
 
 });
-
-
-
-			
-
-
