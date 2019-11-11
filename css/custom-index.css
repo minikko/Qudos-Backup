@@ -108,3 +108,9 @@ img.header__img {
     border-radius: 15px;
     margin: 10px 20px 10px;
 }
+
+section.section.values .section__title:before {
+    left: 50%;
+    transform: translateX(-50%);
+
+}

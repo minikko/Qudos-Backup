@@ -1,6 +1,11 @@
 .qudos-blue{
     color:#228ec8;
 }
+
+
+.why-qudos__section--1 .subheader__prime{
+    letter-spacing: -0.01rem;
+}
 p.subheader__prime{
     font-weight:400;
 }
@@ -355,7 +360,7 @@ p.subheader__prime{
     .why-qudos__section--2-1{
         height:100vh;
         margin-top:5vh;
-        margin-bottom:0vh;
+        margin-bottom: 5vh;
     }
     .why-qudos__section--2-2{
         height:100vh;

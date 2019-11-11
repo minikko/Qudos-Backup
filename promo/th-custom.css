@@ -1,0 +1,118 @@
+#header-img {
+    position: relative;
+    margin: auto;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.promo-btn {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 43%;
+}
+
+#book-btn {
+    position: relative;
+    margin: auto;
+    top: auto;
+    left: 30%;
+}
+
+#qudosfave-btn {
+    margin: auto;
+    top: auto;
+    left: 54%;
+}
+
+.online150-section {
+    height: 110vh;
+}
+
+@media (max-width:1120px) {
+    .schedule100-section {
+        height: 110vh;
+    }
+
+    .promo-btn {
+        left: 41%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .schedule100-section {
+        height: 120vh;
+    }
+
+    .online150-section {
+        height: 110vh;
+    }
+
+    .why-qudos .img-fluid {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:440px) {
+    #header-img {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .promo-btn {
+        left: 32%;
+    }
+
+    #book-btn {
+        left: 5%;
+    }
+
+    #qudosfave-btn {}
+}
+
+@media (max-width:470px) {
+    .schedule100-section {
+        height: 120vh;
+    }
+}
+
+@media (max-width:375px) {
+    .schedule100-section {
+        height: 110vh;
+    }
+
+    .promo-btn {
+        left: 30%;
+    }
+
+    #book-btn {
+        left: 0;
+    }
+}
+
+@media (max-width:320px) {
+    .online150-section {
+        height: 110vh;
+    }
+
+    .schedule100-section {
+        height: 120vh;
+    }
+
+    .promo-btn {
+        left: 27%;
+    }
+
+    #book-btn {
+        left: -8%;
+    }
+
+    #qudosfave-btn {
+        left: 52%;
+    }
+}

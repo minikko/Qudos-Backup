@@ -1,0 +1,69 @@
+.qudosschedule .footer span {
+    color: black;
+}
+
+.qudosschedule .footer i {
+    color: black;
+}
+
+.qudosschedule .footer a,
+.qudosschedule .footer p,
+.qudosschedule .footer small,
+.qudosschedule .header__nav a {
+    color: rgba(0, 0, 0, .5);
+}
+
+.qudosschedule .footer a:hover,
+.qudosschedule .footer p:hover,
+.qudosschedule .footer small:hover,
+.qudosschedule .header__nav a:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 1280px) {
+    .footer .container .row div:last-child .footer__app li.text-center:last-child a {
+        padding-left: .75rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer .container .row div:last-child .footer__app li.text-center:last-child a {
+        padding-left: .4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .activate-480 {
+        display: block;
+    }
+
+    .footer .container .row div:last-child .footer__app li.text-center:last-child a {
+        padding-left: 1.3rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .activate-414 {
+        display: block;
+    }
+}
+
+@media (max-width: 360px) {
+    .activate-360 {
+        display: block;
+    }
+}
+
+@media (max-width: 320px) {
+    .activate-360 {
+        display: inline;
+    }
+
+    .qs-section-three .activate-414 {
+        display: inline;
+    }
+
+    .qs-section-three .activate-480 {
+        display: inline;
+    }
+}

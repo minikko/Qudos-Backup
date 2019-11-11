@@ -2,7 +2,7 @@
     font-size: 3rem;
     font-weight: 600;
     line-height: 4.5rem;
-} 
+}
 
 img#picture-frame {
     max-width: 50%;
@@ -158,7 +158,7 @@ p.subheader__prime {
 #sec-3-img {
     margin-left: 150px;
     margin-top: -50px;
-    width: 100%;
+    width: 75%;
 }
 
 .why-qudos__section--2,
@@ -357,10 +357,11 @@ p.subheader__prime {
 }
 
 @media(max-width:768px) {
-    
+
     img#picture-frame {
         max-width: 75% !important;
     }
+
     .why-qudos__section--2 {
         height: 80vh !important;
     }
@@ -406,10 +407,11 @@ p.subheader__prime {
 
 
 @media (max-width:480px) {
-    .why-qudos__section--1 img.img-fluid:nth-child(1){
+    .why-qudos__section--1 img.img-fluid:nth-child(1) {
         width: 70%;
         top: 5.5rem;
     }
+
     .why-qudos__section--1 img.img-fluid:nth-child(2) {
         width: 30%;
         top: 5.5rem;
@@ -572,7 +574,7 @@ p.subheader__prime {
         top: 2rem;
         -webkit-animation: float 8s ease-in-out infinite;
         animation: float 8s ease-in-out infinite !important;
-       
+
     }
 
     .why-qudos__section--1 img.img-fluid:nth-child(2) {
@@ -597,7 +599,7 @@ p.subheader__prime {
     }
 
     .why-qudos .image-box-shaper:not(:last-child) {
-        margin-right: 12rem;
+        margin-right: 5rem;
     }
 
     #sec-2-img {
@@ -711,12 +713,26 @@ p.subheader__prime {
         /*         background:blue; */
         order: 1;
     }
+
+    .why-qudos .image-box-container .image-box-shaper {
+        height: 13rem;
+        width: 13rem;
+    }
 }
 
 
 
 
 @media (max-width:414px) {
+
+    .why-qudos__section--5 img.img-fluid {
+        margin-left: -5rem
+    }
+
+    .why-qudos__section--5 .platform__btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .why-qudos__section--1 img.img-fluid:nth-child(1) {
         left: 45%;
@@ -727,6 +743,7 @@ p.subheader__prime {
         left: 65%;
         top: 12rem;
     }
+
     img#picture-frame {
         max-width: 50% !important;
     }
@@ -737,23 +754,29 @@ p.subheader__prime {
         padding-bottom: 200px;
     }
 
-    .why-qudos__section--2-2 .d-flex:nth-child(1){
-        padding-top:5rem;
+    .why-qudos__section--2-2 .d-flex:nth-child(1) {
+        padding-top: 5rem;
     }
 
-    .why-qudos__section--2-2 .d-flex:nth-child(2){
-       margin-top:-4rem;
+    .why-qudos__section--2-2 .d-flex:nth-child(2) {
+        margin-top: -4rem;
     }
 
-    .why-qudos__section--3{
-        padding-top:20rem;
-    }    
+    .why-qudos__section--3 {
+        padding-top: 20rem;
+    }
 }
 
 @media (max-width:375px) {
-    .why-qudos__section--3{
-        padding-top: 0rem;/* height: 100vh; */
+
+    img#picture-frame{
+        max-width: 45% !important
     }
+    .why-qudos__section--3 {
+        padding-top: 30rem;
+        height: 110vh;
+    }
+
     .why-qudos__section--3 div.col-sm-6:last-child img {
         width: 50%;
     }
@@ -788,7 +811,7 @@ p.subheader__prime {
     }
 
     .why-qudos .image-box-shaper:not(:last-child) {
-        margin-right: 12rem;
+        margin-right: 5rem;
     }
 
     #sec-2-img {
@@ -845,12 +868,13 @@ p.subheader__prime {
 
     .why-qudos .subheader__prime {
         width: 100%;
-        text-align: center !important;
+        /* text-align: center !important; */
     }
 
     .why-qudos__section--2 {
         height: 100vh !important;
         padding-bottom: 200px;
+        padding-top: 275px;
     }
 
     .why-qudos__section--2-2 {
@@ -877,7 +901,9 @@ p.subheader__prime {
     }
 
     .why-qudos__section--3 .container {
-        /* height: 100vh !important; */top: 40vh !important;/* padding-top: 10rem; */
+        /* height: 100vh !important; */
+        top: 40vh !important;
+        /* padding-top: 10rem; */
     }
 
     .why-qudos__section--3 .header__prime-main.text-right {
@@ -891,7 +917,8 @@ p.subheader__prime {
     .why-qudos__section--3 div.col-sm-6.top:nth-child(1) {
         order: 1;
         /* background:pink
-     */}
+     */
+    }
 
     .why-qudos__section--3 div.col-sm-6.top:nth-child(2) {
         order: 2;
@@ -910,6 +937,23 @@ p.subheader__prime {
         /*         background:blue; */
         order: 1;
     }
+
+
+
+    .why-qudos__section--3 h2.header__prime-main.text-left {
+        text-align: center !important;
+        margin-left: 0rem !important;
+        width: 100%;
+    }
+
+    .why-qudos__section--2-2 .d-flex:nth-child(1) {
+
+        padding-top: 15rem
+    }
+
+
+
+
 }
 
 @media (max-width:320px) {

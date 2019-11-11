@@ -1,3 +1,28 @@
+.start-qudos .service-wrap {
+    background-image: none;
+    background-color: #dbdbdb;
+}
+
+.start-qudos .footer span {
+    color: #000;
+}
+
+.start-qudos .footer a {
+    color: #000;
+}
+
+.start-qudos .footer p {
+    color: #000;
+}
+
+.start-qudos .footer i {
+    color: #000;
+}
+
+.start-qudos .footer small {
+    color: #000;
+}
+
 section {
     font-size: initial;
 }
@@ -38,6 +63,6 @@ h1 {
 
 @media (max-width: 600px) {
     .svg-container {
-        margin-top: 13em;
+        /* margin-top: 13em; */
     }
 }

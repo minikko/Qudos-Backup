@@ -112,7 +112,7 @@
             }
 
             i {
-                font-size: 3rem;
+                font-size: 3.7rem;
                 color: white;
             }
         }
@@ -120,7 +120,7 @@
         li {
             display: inline-block;
             float: left;
-            width: 25%;
+            width: 33%;
             margin-top: 3rem;
         }
     }
@@ -230,7 +230,7 @@
                 color: white;
                 text-align: center;
                 display: inline-block;
-                width: 38rem;
+                width: 45rem;
             }
 
             img.img-fluid:first-child {
@@ -275,7 +275,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 801px) {
     .footer {
         &__title {
             &--connect {
@@ -328,6 +328,8 @@
         }
 
         &__social {
+            width: 58%;
+
             li {
                 margin-top: 1rem;
                 margin-bottom: 1rem;
@@ -378,24 +380,57 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+    .footer {
+        &__social {
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
     .footer {
         &__title {
             &--download {
-                text-align: center;
+                text-align: left;
+            }
+
+            &--connect {
+                text-align: left;
             }
         }
 
         &__app {
-            text-align: center;
+            text-align: left;
 
             li.app-image:first-child {
                 margin-right: 1rem;
             }
 
             li.text-center:not(:last-child) {
-                padding-left: .3rem;
+                padding-left: .5rem;
                 margin-right: 1.7rem;
+            }
+        }
+
+        &__social {
+            width: 40%;
+            margin: 0;
+
+            a {
+                text-align: left;
+            }
+
+            li:first-child {
+                a {
+                    text-align: left;
+                }
+            }
+
+            li:last-child {
+                a {
+                    text-align: left;
+                }
             }
         }
 
@@ -419,7 +454,75 @@
     }
 }
 
+@media (max-width: 769px) {
+    .footer {
+        &__app {
+            text-align: left;
+        }
+
+        &__social {
+            margin: 0;
+            width: 40%;
+
+            a {
+                text-align: left;
+            }
+
+            li:first-child {
+                a {
+                    text-align: left;
+                }
+            }
+        }
+
+        &__list {
+            .text-center {
+                a:first-child {
+                    padding-left: 0rem;
+                }
+            }
+        }
+
+        &__title--connect {
+            text-align: left;
+        }
+
+        &__title--download {
+            text-align: left;
+        }
+
+        .container {
+            .row {
+                div:last-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        &__social {
+            width: 60%;
+        }
+
+        &__list {
+            .text-center {
+                a:first-child {
+                    padding-left: .4rem;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 640px) {
+    .footer {
+        &__social {
+            width: 70%;
+        }
+    }
     .nu-footer {
         .container {
             .row {
@@ -448,6 +551,16 @@
 }
 
 @media (max-width: 480px) {
+
+    .footer {
+        &__social {
+            a {
+                i {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
 
     .nu-footer {
         div.col-sm-6:first-child {
@@ -489,6 +602,22 @@
                     left: 30%;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 384px) {
+    .footer {
+        &__social {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .footer {
+        &__social {
+            width: 100%;
         }
     }
 }

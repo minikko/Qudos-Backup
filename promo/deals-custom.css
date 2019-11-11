@@ -185,7 +185,7 @@ body2{
         margin-right:auto;
     }
     .subheader__prime{
-        font-size:1.5rem !important;
+        font-size: 18px !important;
     }
     .why-qudos__section--2{
         margin-top:0vh;
@@ -227,7 +227,7 @@ body2{
     }
     .svg-gradient-circle--1{
         left:-60%;
-        margin-top:-25%;
+        margin-top: -10%;
     }
     #star-2{
         top:12%;

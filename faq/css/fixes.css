@@ -1,0 +1,62 @@
+@media (max-width: 480px) {
+    .why-qudos__section--1 .col-sm-8 {
+        top: -5rem;
+    }
+
+    .why-qudos__section--1 .header__prime {
+        font-size: 3.2rem;
+    }
+
+    .why-qudos__section--2 {
+        padding-bottom: 0;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        height: 65rem;
+    }
+
+    .carousel-inner {
+        min-height: 40rem;
+    }
+
+    .carousel-indicators {
+        top: 40rem;
+    }
+}
+
+@media (max-width: 414px) {
+    #header-title {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .why-qudos__section--1 .svg-gradient-circle--1 {
+        top: 10rem;
+    }
+}
+
+@media (max-width: 384px) {
+    #sign-1 {
+        top: 0;
+    }
+
+    #car-1 {
+        top: 9rem;
+    }
+}
+
+@media (max-width: 375px) {
+    #sign-1 {
+        top: 2rem;
+    }
+
+    #car-1 {
+        top: 11rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .why-qudos__section--1 .svg-gradient-circle--1 {
+        top: 15rem;
+    }
+}

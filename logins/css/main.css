@@ -41,7 +41,7 @@ a {
 }
 
 a {
-  /* display: inline-block; */
+  display: block;
 }
 
 object {
@@ -1219,15 +1219,15 @@ ul {
 }
 
 .footer__title {
-  display: block;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.52);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  /* display: block; */
+  /* font-size: 16px; */
+  /* color: rgba(255, 255, 255, 0.52); */
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-weight: 500; */
 }
 
 .footer__title--connect {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .footer__list {
@@ -1239,11 +1239,11 @@ ul {
 }
 
 .footer__list a {
-  display: inline-block;
-  margin-top: 5px;
-  font-size: 12px;
+  /* display: inline-block; */
+  /* margin-top: 5px; */
+  /* font-size: 12px; */
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .footer__list a:hover {
@@ -1267,10 +1267,10 @@ ul {
 }
 
 .footer__logo {
-  display: inline-block;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 40px;
+  /* display: inline-block; */
+  /* position: absolute; */
+  /* bottom: 100%; */
+  /* margin-bottom: 40px; */
 }
 
 .footer__logo img {
@@ -1278,10 +1278,10 @@ ul {
 }
 
 .footer__social li {
-  display: inline-block;
-  float: left;
-  width: 25%;
-  margin-top: 30px;
+  /* display: inline-block; */
+  /* float: left; */
+  /* width: 25%; */
+  /* margin-top: 30px; */
 }
 
 .footer__social a {
@@ -1664,6 +1664,7 @@ ul {
 @media (min-width: 1200px) {
   .sign {
     padding: 140px 0;
+    font-size: 18px;
   }
   .sign__content {
     padding: 60px 80px;
@@ -2238,7 +2239,8 @@ only screen and (min-resolution: 2dppx) {
 }
 
 .sign .container .left-heading {
-    padding-left: 100px;
+    /* padding-left: 100px; */
+    font-size: 18px;
 }
 
 /*kk*/
@@ -2252,16 +2254,15 @@ only screen and (min-resolution: 2dppx) {
       padding:50px 0px;
     }
     span.footer__title{
-        text-align:center !important;
-        
-        margin: 0 auto;
+        /* text-align:center !important; */
+        /* margin: 0 auto; */
     }
 
     .footer__list li{
-        text-align:center;
+        /* text-align:center; */
     }
     .footer__text{
-         text-align:center;
+         /* text-align:center; */
     }
 
     .footer__list li.app_image img {
@@ -2269,11 +2270,11 @@ only screen and (min-resolution: 2dppx) {
     }
 
     .footer__logo {
-      display: block;
-      position: relative !important;
-      bottom: 100%;
-      margin-bottom: 0px;
-      margin: 0 auto !important;
-      text-align: center;
+      /* display: block; */
+      /* position: relative !important; */
+      /* bottom: 100%; */
+      /* margin-bottom: 0px; */
+      /* margin: 0 auto !important; */
+      /* text-align: center; */
     }
 }

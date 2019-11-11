@@ -1,4 +1,5 @@
 .referral-program {
+
     strong {
         font-weight: 600;
         color: black;
@@ -67,6 +68,7 @@
                 left: 50%;
                 top: 0;
                 z-index: 2;
+                // image-rendering: high-quality;
             }
 
             .far {
@@ -97,7 +99,7 @@
 
         .subheader__prime {
             width: 50rem;
-            text-align: right;
+            text-align: left;
         }
 
         .col-sm-6 {
@@ -191,7 +193,7 @@
         .col-sm-6:nth-child(2) {
             .subheader__prime {
                 z-index: 2;
-                text-align: right;
+                text-align: left;
             }
         }
 
@@ -199,7 +201,7 @@
             margin-top: 10rem;
 
             .subheader__prime {
-                text-align: right;
+                text-align: left;
             }
         }
 
@@ -454,7 +456,7 @@
 
                 img.img-fluid:nth-child(4) {
                     width: 45%;
-                    top: 78%;
+                    top: 68%;
                     left: 70%;
                 }
             }
@@ -508,6 +510,7 @@
         &__section--6 {
             margin-top: -35rem;
             height: 40vh;
+
             .col-sm-6:first-child {
                 img.img-fluid:first-child {
                     top: 9vh;
@@ -904,7 +907,7 @@
             }
 
             .far {
-                top: 1vh;
+                top: -3vh;
                 left: 60%;
                 font-size: 25rem;
             }
@@ -912,6 +915,9 @@
 
         &__section--2 {
             height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
             .subheader__prime {
                 width: 44rem;
@@ -949,6 +955,8 @@
         }
 
         &__section--3 {
+            padding-bottom: 8rem;
+
             .subheader__prime {
                 width: 40rem;
             }
@@ -1012,6 +1020,7 @@
         &__section--4 {
             height: 55vh;
             padding: 0;
+            // padding-top: 5rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1205,9 +1214,19 @@
 
 @media (max-width: 412px) {
     .referral-program {
+        div.col-sm-8 {
+            img.img-fluid:first-child {
+                top: 3vh;
+            }
+        }
+
         &__section--2 {
-            padding: 7rem 0;
+            padding: 3rem 0;
             height: 124vh;
+        }
+
+        &__section--5 {
+            margin-top: 5rem;
         }
 
         &__section--6 {

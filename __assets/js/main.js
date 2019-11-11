@@ -32,6 +32,10 @@ $(document).ready(function() {
         $('.rating__slider .owl-carousel').trigger('next.owl.carousel');
     });
 
+
+    /*==============================
+    Dynamic HTML
+    ==============================*/
     function includeHTML() {
         var z, i, elmnt, file, xhttp;
         /* Loop through a collection of all HTML elements: */

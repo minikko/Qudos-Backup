@@ -1,0 +1,271 @@
+.qudosschedule {
+    .qudos__service-mark {
+        font-size: 2rem;
+        line-height: 4.5rem;
+        &--2 {
+            font-size: 1.2rem;
+            top: 1rem;
+            position: absolute;
+        }
+    }
+
+    // footer
+    .service-wrap {
+        background-image: none;
+        background-color: $qudos-placeholder-tint;
+    }
+
+    .footer {
+
+        a,
+        small,
+        p,
+        span,
+        i {
+            color: rgba(0,0,0,.6);
+        }
+    }
+
+    // header
+    .header {
+        background-color: white;
+
+        &__nav {
+            a {
+                color: rgba(0,0,0,.6);
+            }
+        }
+
+        &__menu {
+            span {
+                background-color: black;
+            }
+        }
+
+        &__btn {
+            background-image: -webkit-gradient(linear, left top, right top, color-stop(4%, #083c58), color-stop(85%, #1b2430));
+            background-image: -o-linear-gradient(left, #083c58 4%, #1b2430 85%);
+            background-image: linear-gradient(90deg, #083c58 4%, #1b2430 85%);
+
+            span {
+                background-color: black;
+            }
+        }
+    }
+
+    // hero
+    .hero {
+        position: relative;
+        background-color: $qudos-prime-bg;
+
+        &>svg {
+            position: absolute;
+            top: 21.5rem;
+            right: -15.8rem;
+        }
+
+        .svg-container {
+            top: -6.2rem;
+            left: 0;
+        }
+
+        .col-md-4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            img {
+                z-index: 1;
+                transform: scale(2);
+            }
+
+            #app {
+                img.img-fluid:first-child {
+                    top: 8rem;
+                }
+            }
+        }
+
+        .col-md-8 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            .header__prime {
+                margin-top: 0;
+                margin-bottom: 5rem;
+            }
+
+            h1,
+            p {
+                z-index: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .qudosschedule {
+        .hero {
+            position: relative;
+            background-color: $qudos-prime-bg;
+
+            &>svg {
+                position: absolute;
+                top: 17.5rem;
+                right: -39.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .qudosschedule {
+        #app {
+            img.img-fluid:first-child {
+                right: 7rem;
+            }
+        }
+
+        .hero {
+            &>svg {
+                top: 21.5rem;
+                right: -48.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .qudosschedule {
+        .hero {
+            background-size: 24%;
+            max-height: 1060px;
+
+            .container {
+                position: relative;
+                top: 15rem;
+            }
+
+            &>svg {
+                top: 57.5rem;
+                right: -58.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .qudosschedule {
+        .hero {
+            min-height: 968px;
+
+            .svg-container {
+                top: -5.2rem;
+                left: 0;
+            }
+
+            .col-md-8 {
+                top: -10rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .qudosschedule {
+        .hero {
+            .container {
+                top: 20rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .qudosschedule {
+        #app {
+            right: 0;
+            height: 30rem;
+
+            img.img-fluid:first-child {
+                right: 0rem;
+            }
+        }
+
+        .hero {
+            .col-md-4 {
+                img {
+                    transform: scale(3);
+                }
+            }
+
+            .col-md-8 {
+                top: 0rem;
+            }
+
+            &>svg {
+                top: 66.5rem;
+                right: -58.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .qudosschedule {
+        .qudos__service-mark {
+            font-size: 1.2rem;
+            &--2 {
+                font-size: .8rem;
+            }
+        }
+
+        .hero {
+            min-height: 775px;
+        }
+
+        .section {
+            li {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .qudosschedule {
+        .hero {
+            min-height: 82.6em;
+            background-size: 40%;
+
+            .svg-container {
+                top: -2.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 412px) {
+    .qudosschedule {
+        .hero {
+            .col-md-4 {
+                #app {
+                    img.img-fluid:first-child {
+                        top: 0rem;
+                    }
+                }
+            }
+
+            .col-md-8 {
+                top: -10rem;
+            }
+
+            &>svg {
+                top: 54.5rem;
+            }
+        }
+    }
+}

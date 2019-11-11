@@ -1,0 +1,64 @@
+/* Start Qudos */
+.start-qudos .footer a,
+.start-qudos .footer p,
+.start-qudos .footer small,
+.start-qudos .header__nav a {
+    color: rgba(0, 0, 0, .5);
+}
+
+.start-qudos .footer a:hover,
+.start-qudos .footer p:hover,
+.start-qudos .footer small:hover,
+.start-qudos .header__nav a:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 480px) {
+    .qudos_btn {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        display: block;
+        max-width: 32rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 414px) {
+    .img_wrapper {
+        width: 80%;
+        position: relative;
+        left: 4rem;
+        top: 5rem;
+    }
+}
+
+@media (max-width: 412px) {
+    .img_wrapper {
+        width: 70%;
+        position: relative;
+        left: 6rem;
+        top: 2rem;
+    }
+}
+
+@media (max-width: 384px) {
+    .masthead {
+        height: 75rem;
+        padding: 0;
+    }
+
+    .masthead .col-sm-12.col-lg-6.col-md-6:first-child {
+        top: 10rem;
+    }
+
+    .masthead .col-sm-12.col-lg-6.col-md-6:last-child {
+        top: 0rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .img_wrapper {
+        left: 4.5rem;
+    }
+}

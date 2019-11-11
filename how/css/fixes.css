@@ -1,0 +1,13 @@
+.addfave .footer a,
+.addfave .footer p,
+.addfave .footer small,
+.addfave .header__nav a {
+    color: rgba(0, 0, 0, .5);
+}
+
+.addfave .footer a:hover,
+.addfave .footer p:hover,
+.addfave .footer small:hover,
+.addfave .header__nav a:hover {
+    color: rgba(0, 0, 0, 1);
+}

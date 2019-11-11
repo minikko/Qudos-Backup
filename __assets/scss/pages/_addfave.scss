@@ -1,0 +1,424 @@
+// addfave section
+.addfave {
+
+    // footer
+    .service-wrap {
+        background-image: none;
+        background-color: $qudos-placeholder-tint;
+    }
+
+    .footer {
+
+        a,
+        small,
+        p,
+        span,
+        i {
+            color: black;
+        }
+    }
+
+    img {
+        -webkit-filter: drop-shadow(0 2.5rem 1.5rem rgba(0, 0, 0, 0.1));
+        filter: drop-shadow(0 2.5rem 1.5rem rgba(0, 0, 0, 0.1));
+    }
+
+    // header
+    .header {
+        background-color: white;
+
+        &__nav {
+            a {
+                color: black;
+            }
+        }
+
+        &__menu {
+            span {
+                background-color: black;
+            }
+        }
+
+        &__btn {
+            background-image: -webkit-gradient(linear, left top, right top, color-stop(4%, #083c58), color-stop(85%, #1b2430));
+            background-image: -o-linear-gradient(left, #083c58 4%, #1b2430 85%);
+            background-image: linear-gradient(90deg, #083c58 4%, #1b2430 85%);
+
+            span {
+                background-color: black;
+            }
+        }
+    }
+
+    // hero
+    .hero {
+        position: relative;
+        background-color: $qudos-prime-bg;
+
+        &>svg {
+            position: absolute;
+            top: 21.5rem;
+            right: -15.8rem;
+        }
+
+        .qudos__service-mark {
+            font-size: 1.5rem;
+            line-height: 4.5rem;
+        }
+
+        .svg-container {
+            top: -9.2rem;
+            left: 0;
+        }
+
+        .col-md-4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            img {
+                z-index: 1;
+                transform: scale(2);
+            }
+
+            #app {
+                img.img-fluid:first-child {
+                    // width: 80%;
+                    top: 10rem;
+                    right: 10rem;
+                }
+            }
+        }
+
+        .col-md-8 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            .header__prime {
+                margin-top: 0;
+                margin-bottom: 5rem;
+            }
+
+            h1,
+            p {
+                z-index: 1;
+            }
+        }
+    }
+
+    // Section 4
+    .section-four {
+        background-image: none;
+
+        div.col-md-6:last-child {
+            text-align: center;
+
+            img {
+                width: 45%;
+            }
+        }
+    }
+
+    .section-five {
+        background-image: none;
+        background-color: $qudos-blue;
+
+        ul {
+            margin-bottom: 2rem;
+
+            li {
+                color: white;
+            }
+        }
+
+        img {
+            width: 45%;
+        }
+    }
+
+    .section-six {
+        background-color: $qudos-prime-bg;
+
+        .col-md-6:last-child {
+            img {
+                width: 45%;
+            }
+        }
+    }
+
+    .section-seven {
+        background-image: none;
+
+
+        .col-md-6:first-child {
+            text-align: center;
+            background-image: url('../img/add-qudosfave/fireworks.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: -1rem center;
+
+            img {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .addfave {
+        .hero {
+            .svg-container {
+                top: -6.2rem;
+                left: 0;
+            }
+
+            &>svg {
+                top: 17.5rem;
+                right: -39.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .addfave {
+        #app {
+            right: 7rem;
+        }
+
+        .hero {
+            &>svg {
+                top: 21.5rem;
+                right: -47.8rem;
+            }
+        }
+
+        .section-six {
+            .container {
+                .row div.col-sm-12:last-child {
+                    .section-wrapper {
+                        img.img-fluid:last-child {
+                            width: 45%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .section-seven {
+            .container {
+                .row {
+                    div.col-sm-12:first-child {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .addfave {
+        .hero {
+            background-size: 24%;
+            max-height: 1060px;
+
+            .container {
+                position: relative;
+                top: 15rem;
+            }
+
+            &>svg {
+                top: 57.5rem;
+                right: -58.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .addfave {
+        .hero {
+            min-height: 968px;
+
+            .svg-container {
+                top: -5.2rem;
+                left: 0;
+            }
+
+            .col-md-8 {
+                top: -20rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .addfave {
+        .hero {
+            .container {
+                top: 20rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .addfave {
+        #app {
+            right: -5rem;
+        }
+
+        .hero {
+            .col-md-4 {
+                img {
+                    transform: scale(3);
+                }
+            }
+
+            .svg-container {
+                top: -3.2rem;
+            }
+
+            .col-md-8 {
+                top: -10rem;
+            }
+
+            &>svg {
+                top: 66.5rem;
+                right: -58.8rem;
+            }
+        }
+
+        .section-seven {
+            .col-md-6:first-child {
+                background-position: 0rem center;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .addfave {
+        .section {
+            ul {
+                padding-left: 30%;
+            }
+        }
+
+        .hero {
+            min-height: 775px;
+
+            .col-md-4 {
+                #app {
+                    img.img-fluid:first-child {
+                        width: 30%;
+                    }
+                }
+            }
+        }
+
+        .section {
+            height: 80rem;
+
+            li {
+                text-align: left;
+            }
+        }
+
+        .section-five {
+            padding: 0;
+            max-height: unset;
+            height: 90rem;
+
+            .col-md-6:last-child {
+                p:first-child {
+                    width: 50%;
+                }
+            }
+        }
+
+        .section-six {
+            max-height: unset;
+            height: 80rem;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .addfave {
+        .hero {
+            background-size: 40%;
+
+            .svg-container {
+                top: -2.2rem;
+            }
+
+            .col-md-4 {
+                #app {
+                    img.img-fluid:first-child {
+                        top: 0rem;
+                        right: 10rem;
+                    }
+                }
+            }
+
+            .col-md-8 {
+                top: -11em;
+            }
+
+            &>svg {
+                top: 56.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 384px) {
+    .addfave {
+        .hero {
+            .svg-container {
+                top: 1.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .addfave {
+        .section {
+            ul {
+                padding-left: 25%;
+            }
+        }
+
+        .hero {
+            min-height: 100vh;
+
+            .col-md-8 {
+
+                // top: -20em;
+                .subheader__prime {
+                    width: 32rem;
+                }
+            }
+
+            .col-md-4 {
+                #app {
+                    img.img-fluid:first-child {
+                        // top: -10rem;
+                        right: 8rem;
+                    }
+                }
+            }
+
+            &>svg {
+                top: 48.5rem;
+            }
+        }
+    }
+}

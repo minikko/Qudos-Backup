@@ -91,7 +91,7 @@ h1.header__prime {
 }
 
 #sec-2-img {
-    margin-left: -100px;
+    /* margin-left: -100px; */
     margin-top: -60px;
 }
 
@@ -108,7 +108,7 @@ h1.header__prime {
 }
 
 #sec-3-img {
-    margin-left: 150px;
+    margin-left: 10px;
     margin-top: -50px;
     width: 75%;
 }
@@ -609,6 +609,8 @@ h1.header__prime {
     }
 }
 
+
+
 @media (min-width: 480px) {
     .experience__wrap:before {
         left: -30px;
@@ -757,5 +759,308 @@ section#experience {
 
 .modal-header {
     border-bottom: none !important;
+
+}
+
+
+@media (max-width:414px) {
+    .why-qudos__section--1 .header__prime {
+        width: 100%;
+    }
+
+    .svg-gradient-circle--1 {
+        left: -25%;
+        margin-top: 0%;
+    }
+
+    #header-title {
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+
+    .subheader__prime #header-title {
+        font-size: 3rem;
+    }
+
+    .why-qudos__section--2 .platform__btn {
+        top: 50px;
+    }
+
+    #qudos-sign-1 {
+        left: 90%;
+        top: 1%;
+        width: 17%;
+    }
+
+    #qudos-sign-5 {
+        right: 30px;
+        width: 17%;
+    }
+
+    #car-1 {
+        left: 75%;
+        top: -30px;
+        width: 65%;
+    }
+
+    #car-5 {
+        width: 50%;
+        top: -146px;
+        left: 110px;
+    }
+
+    #driver-phone {
+        margin-top: -3%;
+        left: 135%;
+        width: 18%;
+    }
+
+    .why-qudos__section--1 .col-sm-4 {
+        top: -20px !important;
+    }
+
+    #sec-2-img {
+        /* margin-top:5rem; */
+        margin-left: 0;
+        width: 310px;
+        height: 230px;
+    }
+
+    #sec-3-img {
+        width: 60%;
+        margin-left: 10vh;
+        margin-top: 0px;
+        margin-bottom: 4rem;
+    }
+
+    #sec-4-img {
+        width: 50%;
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+    }
+
+    #sec-5-img {
+        top: -150px;
+        width: 40%;
+        left: 160px;
+    }
+
+    #like-icon {
+        margin-left: 20px;
+        top: -190px;
+    }
+
+    #share-icon {
+        width: 20%;
+        margin-left: 30px;
+    }
+
+    .why-qudos__section--2-2 .d-flex {
+        order: 2;
+    }
+
+    .why-qudos__section--2 .subheader__prime,
+    .why-qudos__section--3 .subheader__prime,
+    .why-qudos__section--2 div.col-sm-6:last-child .header__prime-main {
+        margin-left: 0;
+    }
+
+    .why-qudos__section--2 .platform__btn {
+        top: 4rem;
+    }
+
+    .why-qudos .subheader__prime {
+        width: 100%;
+    }
+
+    .why-qudos__section--2 {
+        height: 100vh;
+        padding-bottom: 50px;
+    }
+
+    .why-qudos__section--2-2 {
+        height: 90vh;
+    }
+
+    .why-qudos__section--2-3 {
+        height: 90vh;
+    }
+
+    .why-qudos__section--5 {
+        height: 90vh;
+    }
+
+    .why-qudos__section--5 div.col-sm-6:first-child {
+        margin-top: 4rem;
+    }
+
+    .why-qudos__section--2-2 .platform__btn {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .why-qudos__section--2-3 .platform__btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .why-qudos__section--2-3 {
+       
+        clip-path: none;
+        padding: inherit;
+    }
+
+}
+
+
+
+@media (max-width:375px) {
+    .why-qudos__section--1 .header__prime {
+        width: 100%;
+    }
+
+    .svg-gradient-circle--1 {
+        left: -40%;
+        margin-top: -7%;
+    }
+
+    #header-title {
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+
+    .subheader__prime #header-title {
+        font-size: 3rem;
+    }
+
+    .why-qudos__section--2 .platform__btn {
+        top: 50px;
+    }
+
+    #qudos-sign-1 {
+        left: 90%;
+        top: 1%;
+        width: 17%;
+    }
+
+    #qudos-sign-5 {
+        right: 30px;
+        width: 17%;
+    }
+
+    #car-1 {
+        left: 90%;
+        top: -55px;
+        width: 65%;
+    }
+
+    #car-5 {
+        width: 50%;
+        top: -146px;
+        left: 110px;
+    }
+
+    #driver-phone {
+        margin-top: -3%;
+        left: 135%;
+        width: 18%;
+    }
+
+    .why-qudos__section--1 .col-sm-4 {
+        top: -20px !important;
+    }
+
+    #sec-2-img {
+        /* margin-top:5rem; */
+        margin-left: 0;
+        width: 310px;
+        height: 230px;
+    }
+
+    #sec-3-img {
+        width: 60%;
+        margin-left: 10vh;
+        margin-top: 0px;
+        margin-bottom: 4rem;
+    }
+
+    #sec-4-img {
+        width: 50%;
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+    }
+
+    #sec-5-img {
+        top: -150px;
+        width: 40%;
+        left: 160px;
+    }
+
+    #like-icon {
+        margin-left: 20px;
+        top: -190px;
+    }
+
+    #share-icon {
+        width: 20%;
+        margin-left: 30px;
+    }
+
+    .why-qudos__section--2-2 .d-flex {
+        order: 2;
+    }
+
+    .why-qudos__section--2 .subheader__prime,
+    .why-qudos__section--3 .subheader__prime,
+    .why-qudos__section--2 div.col-sm-6:last-child .header__prime-main {
+        margin-left: 0;
+    }
+
+    .why-qudos__section--2 .platform__btn {
+        top: 4rem;
+    }
+
+    .why-qudos .subheader__prime {
+        width: 100%;
+    }
+
+    .why-qudos__section--2 {
+        height: 100vh;
+        padding-bottom: 50px;
+    }
+
+    .why-qudos__section--2-2 {
+        height: 90vh;
+    }
+
+    .why-qudos__section--2-3 {
+        height: 90vh;margin-top: 0vh;
+    }
+
+    .why-qudos__section--5 {
+        height: 90vh;
+    }
+
+    .why-qudos__section--5 div.col-sm-6:first-child {
+        margin-top: 4rem;
+    }
+
+    .why-qudos__section--2-2 .platform__btn {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .why-qudos__section--2-3 .platform__btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .why-qudos__section--2-3 {
+       
+        clip-path: none;
+        padding: inherit;
+    }
 
 }

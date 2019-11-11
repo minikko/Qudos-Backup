@@ -1,0 +1,26 @@
+#app {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    z-index: 10;
+  }
+  .character {
+    position: absolute;
+    top: calc(50% - 5rem);
+    left: calc(50% - 5rem);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5px;
+  }
+  
+  img.glitter-star {
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+  
+    animation: glitter 2s linear 0s infinite normal;
+    -webkit-animation: glitter 2s linear 0s infinite normal;
+    -moz-animation: glitter 2s linear 0s infinite normal;
+    -ms-animation: glitter 2s linear 0s infinite normal;
+    -o-animation: glitter 2s linear 0s infinite normal;
+  }

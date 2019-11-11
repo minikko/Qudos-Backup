@@ -1,5 +1,16 @@
-[class*="qudos__blue-text"] {
+.qudos__blue-text {
     color: $qudos-blue;
+}
+
+.qudos__service-mark {
+    font-size: .7rem;
+    margin-bottom: auto;
+    line-height: 5.5rem;
+    vertical-align: top;
+}
+
+.qudos__darkblue-text {
+    color: $qudos-bg--dark;
 }
 
 .clear {

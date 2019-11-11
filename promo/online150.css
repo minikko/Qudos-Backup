@@ -1,0 +1,244 @@
+/* text promo pages */
+@-webkit-keyframes float {
+    0%, 100% {
+        -webkit-transform: translatey(0);
+                transform: translatey(0);
+        opacity: .4;
+    }
+    60% {
+        -webkit-transform: translatey(-1rem);
+                transform: translatey(-1rem);
+        -webkit-transform: rotateY(180);
+                transform: rotateY(180);
+        opacity: .9;
+    }
+  }
+
+.qudos-blue{
+    color:#228ec8;
+}
+
+.terms-conditions{
+    font-size: 2rem !important;  
+}
+p.subheader__prime{
+    font-weight:500;
+    color:#000;
+    text-align: center;
+}
+.subheader__prime{
+    line-height: 3rem;
+    width:100%;
+    font-size: 2.5rem;
+    text-shadow: 8px 0px 8px rgba(0,0,0,.14);
+}
+.h3{
+    font-size:3rem;
+}
+.header__prime{
+    margin-top:1rem;
+    text-align: center;
+    margin-bottom:4rem;
+    font-weight: 800;
+    font-size:11rem;
+    text-shadow: 8px 0px 8px rgba(0,0,0,.14);
+}
+.qudos-blue sup{
+    font-size:6rem;
+}
+.header__prime:before{
+    bottom:-2.5rem;
+}
+.svg-gradient-circle--1{
+    display:none;
+}
+.header__prime::before{
+    display: none;
+}
+.svg-container{
+    /* display: none; */
+}
+.why-qudos__section--1 img.img-fluid:nth-child(2) {
+    -webkit-animation: none;
+            animation: none;
+}
+.left-col-img img{
+    position: relative;
+    z-index: 20;
+}
+.bottom-grey-section{
+    display: none;
+    height:35vh;
+    background:#e6e7e8;
+}
+.why-qudos__section--1{
+    height:100vh;
+    /* margin-bottom:-35vh; */
+}
+.promo-btn{
+    margin-left:37%;
+    padding-top:8px;
+    padding-bottom:8px;
+    height:auto;
+    border-radius:1rem;
+    line-height:1.6rem;
+}
+#book-btn{
+    position: absolute;
+    left:-15%;
+}
+#qudosfave-btn{
+    background: #228ec8;
+    padding-top:13px;
+    padding-bottom:13px;
+    position: absolute;
+    left:17%;
+}
+
+p.promo-description{
+    font-size:1.8rem;
+    font-weight:400;
+}
+.promo-btn img{
+    position: relative;
+    border-radius:1.3rem;
+}
+#rider-promo{
+    width:65%;
+    margin-top:-5%;
+}
+#driverget100{
+    margin-top:-8%;
+}
+#driverget100 .header__btn{
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:2rem;
+    background: #228ec8;
+    width: 30%;
+    max-width: 100%;
+    margin-left: 35%;
+}
+.driver-get-100-section{
+    padding-top:10%;
+}
+@media (max-width:1440px){
+    .why-qudos__section--1{
+        margin-top:50px;
+    }
+}
+
+@media (max-width:1120px){
+    .why-qudos__section--1{
+        margin-top:40px;
+    }
+    .why-qudos__section--1 .header__prime{
+        width:100%;
+    }
+}
+
+@media (max-width:480px){
+    .why-qudos__main>div.svg-container{
+        margin-top:4rem;
+    }
+    #rider-promo{
+        left:50%;
+        margin-top:-10%;
+        width:50%;
+    }
+    .why-qudos__section--1 .col-sm-7{
+        margin-top:130px;
+    } 
+    .why-qudos__section--1 .subheader__prime{
+        width:100%;
+    }
+    .promo-btn{
+        margin-left:32%;
+        margin-right:0;
+    }
+    .header__prime{
+        margin-top:1rem;
+        text-align: center;
+        margin-bottom:0;
+        font-weight: 800;
+        font-size:8rem;
+        text-shadow: 8px 0px 8px rgba(0,0,0,.14);
+    }
+    .qudos-blue sup{
+        font-size:4.4rem;
+    }
+    p.subheader__prime{
+        font-size:2.3rem !important;
+    }
+    p.promo-description{
+        font-size:1.7rem !important;
+        font-weight:400;
+    }
+    #driverget100 .header__btn{
+        width:80%;
+        max-width: 100%;
+        margin-left:10%;
+    }
+    .driver-get-100-section{
+        height:125vh;
+    }
+    #driverget100{
+        margin-top:70%;
+    }
+}
+@media (max-width:375px){
+   
+    #rider-promo{
+        margin-top:0%;
+    }
+    .why-qudos__section--1 .col-sm-7{
+        margin-top:100px;
+    }
+    p.subheader__prime{
+        font-size:2rem !important;
+        line-height: 2.4rem;
+    }
+    .promo-btn{
+        margin-left:29%;
+    }
+    p.promo-description{
+        font-size:1.4rem !important;
+        font-weight:400;
+    }
+   
+
+}
+@media (max-width:320px){
+    .why-qudos__section--1 .col-sm-7{
+        margin-top:60px;
+    }
+    .header__prime{
+        font-size:7rem;
+    }
+    .qudos-blue sup{
+        font-size:3.8rem;
+    }
+    p.subheader__prime{
+        font-size:1.9rem !important;
+    }
+    
+    .promo-btn{
+        margin-left:25%;
+    }
+    
+    .driver-get-100-section{
+        height:133vh;
+    }
+    .driver-get-100-section .header__prime{
+        font-size:6.5rem;
+    }
+    p.promo-description{
+        font-size:1.2rem !important;
+        font-weight:400;
+    }
+    #driverget100 .header__btn{
+        padding-top:15px;
+        padding-bottom:15px;
+        font-size:1.6rem;
+    }
+}

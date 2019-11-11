@@ -1,0 +1,28 @@
+.infographics {
+    background-color: $qudos-prime-bg;
+    // header
+    .header {
+        background-color: white;
+        &__nav {
+            a {
+                color: black;
+            }
+        }
+
+        &__menu {
+            span {
+                background-color: black;
+            }
+        }
+
+        &__btn {
+            background-image: -webkit-gradient(linear, left top, right top, color-stop(4%, #083c58), color-stop(85%, #1b2430));
+            background-image: -o-linear-gradient(left, #083c58 4%, #1b2430 85%);
+            background-image: linear-gradient(90deg, #083c58 4%, #1b2430 85%);
+
+            span {
+                background-color: black;
+            }
+        }
+    }
+}

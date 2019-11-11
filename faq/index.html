@@ -38,6 +38,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../__assets/css/styles.min.css">
     <link rel="stylesheet" href="../faq/custom.css">
+    <link rel="stylesheet" href="css/fixes.css">
 </head>
 
 <body class="why-qudos">
@@ -133,7 +134,7 @@
                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                             </ol>
                             <div class="carousel-inner">
-                                <div class="carousel-item subheader__prime text-center active">
+                                <div class="carousel-item subheader__prime text-left active">
                                     Unlike other ride-hailing apps, Qudos enables riders and drivers to
                                     closely interact.
                                     The app allows for riders, who particularly like the services of a certain driver, to
@@ -144,14 +145,14 @@
                                     relationship between the rider
                                     and driver is a win-win situation for everyone.
                                 </div>
-                                <div class="subheader__prime text-center carousel-item">
+                                <div class="subheader__prime text-left carousel-item">
                                     Apart from getting rides from the ride-hailing public, Qudos has corporate accounts that
                                     includes medical offices,
                                     small coporations, local hotels and gyms. These corporate accounts are a more targeted
                                     and reliable source of
                                     repeat rides for our drivers.
                                 </div>
-                                <div class="subheader__prime text-center carousel-item">
+                                <div class="subheader__prime text-left carousel-item">
                                     Qudos provides a platform for our drivers and riders to interact repeatedly. Through
                                     this, we empower our
                                     drivers to directly connect with and develop their own set of repeat customers, not only
@@ -240,7 +241,7 @@
                                     </div>
                                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>When using the Qudos App, the rider can:</p>
+                                            <p class="pb-0 mt-0 minus-rem">When using the Qudos App, the rider can:</p>
                                             <p>
                                                 <li>Tap on the Qudos menu icon on the bottom right of the screen.</li>
                                                 <li>Go to QudosFave driver.</li>
@@ -394,6 +395,16 @@
     AOS.init();
     </script>
     <script src="../../__assets/js/main.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149373672-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-149373672-1');
+    </script>
 </body>
 
 </html>

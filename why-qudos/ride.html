@@ -23,6 +23,12 @@
     <link rel="shortcut icon" type="image/png" href="../../__assets/img/favIcon.png">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../__assets/css/styles.min.css">
+    <link rel="stylesheet" href="css/ride__fixes.css">
+    <style type="text/css">
+    .qudos-blue {
+        color: #228ec8;
+    }
+    </style>
 </head>
 
 <body class="why-qudos">
@@ -48,7 +54,7 @@
                                 <a href="https://www.instagram.com/qudosride/"><i class="icon-instagram"></i></a>
                             </div>
                         </nav>
-                        <a href="https://appcustomer.ridequdos.com/alerts" class="header__btn">Start Riding</a>
+                        <a href="#" class="header__btn" id="goto__link1">Start Riding</a>
                         <button class="header__menu" type="button">
                             <span></span>
                             <span></span>
@@ -74,7 +80,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <h1 class="header__prime">Why Qudos?</h1>
+                        <h1 class="header__prime">Why <span class="qudos-blue">Qudos?</span></h1>
                         <p class="subheader__prime">
                             Enjoy a customized ride-hailing experience, a lot of referral bonuses and much more!
                         </p>
@@ -118,7 +124,7 @@
                         <div class="image-box-container d-flex flex-row">
                             <div class="image-box-shaper">
                                 <img class="img-fluid" src="../../__assets/img/why-qudos/s2-image--2.png" alt="Section Two Image 2" data-aos="fade-up">
-                                <p class="section__text">Ride again with their favorite</p>
+                                <p class="section__text">Ride again with <span class="activate-384">their favorite</span></p>
                             </div>
                             <div class="image-box-shaper">
                                 <img class="img-fluid" src="../../__assets/img/why-qudos/s2-image--3.png" alt="Section Two Image 3" data-aos="fade-up" data-aos-delay="300">
@@ -129,7 +135,7 @@
                                 <p class="section__text">Communicate important information to drivers</p>
                             </div>
                         </div>
-                        <a href="#" class="platform__btn mt-auto">Start Riding</a>
+                        <a href="#" class="platform__btn mt-auto" id="goto__link2">Start Riding</a>
                     </div>
                 </div>
         </section>
@@ -222,7 +228,18 @@
     <script>
     AOS.init();
     </script>
-    <script src="../../__assets/js/main.js"></script>
+    <script src="../__assets/js/main.js"></script>
+    <script src="../__assets/js/goto-rider__link.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149373672-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-149373672-1');
+    </script>
 </body>
 
 </html>

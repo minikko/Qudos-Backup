@@ -449,21 +449,21 @@ p.subheader__prime{
         height:200px;
     }
     .svg-gradient-circle--1{
-        left:-60%;
-        margin-top:-25%;
+        left: -50%;
+        margin-top: -20%;
     }
     .why-qudos__section--2{
         margin-top:20px;
         height:75vh;
     }
     .why-qudos__section--2-2{
-        height:70vh;
+        height: 80vh;
     }
     .why-qudos__section--2-3{
-        height:95vh;
+        height: 100vh;
     }
     .why-qudos__section--2-4{
-        height:50vh;
+        height: 60vh;
     }
     .platform__btn{
         max-width:100%;
@@ -473,6 +473,10 @@ p.subheader__prime{
     }
     #q-2{
         left:62%;
+    }
+    
+    .why-qudos__section--5{
+        height:100vh ;
     }
 }
 
@@ -529,6 +533,10 @@ p.subheader__prime{
         left:67%;
     }
 }
+
+
+
+
 
 
 

@@ -1,0 +1,54 @@
+.qudoslist .footer a,
+.qudoslist .footer p,
+.qudoslist .footer small,
+.qudoslist .header__nav a {
+    color: rgba(0, 0, 0, .5);
+}
+
+.qudoslist .footer a:hover,
+.qudoslist .footer p:hover,
+.qudoslist .footer small:hover,
+.qudoslist .header__nav a:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.qudoslist .qudos__service-mark {
+    font-size: 2rem;
+    line-height: 4.5rem;
+}
+
+.qudoslist .qudos__service-mark--2 {
+    font-size: 1.2rem;
+    top: 0;
+    position: absolute;
+}
+
+@media (max-width: 480px) {
+    .qudoslist .hero .col-md-8 {
+        top: -5rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .qudoslist .hero .container {
+        top: 10rem;
+    }
+
+    .qudoslist .hero>svg {
+        top: 60rem;
+    }
+
+    .qudoslist .hero .col-md-8 {
+        top: -5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .qudoslist .hero {
+        min-height: 530px;
+    }
+
+    .qudoslist .hero>svg {
+        top: 45rem;
+    }
+}

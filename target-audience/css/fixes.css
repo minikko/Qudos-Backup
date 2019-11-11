@@ -1,0 +1,79 @@
+@media (max-width: 412px) {
+    .why-qudos__section--2-2 {
+        height: 75rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .why-qudos__section--2-3 {
+        height: 75rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .why-qudos__section--2-4 {
+        height: 75rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .why-qudos__section--2-5 {
+        height: 75rem;
+        margin-top:0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .why-qudos__section--1 .svg-gradient-circle--1 {
+        top: 0rem;
+    }
+
+    .why-qudos__section--2-2 {
+        height: 85rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .why-qudos__section--2-3 {
+        height: 85rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .why-qudos__section--2-4 {
+        height: 85rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .why-qudos__section--2-5 {
+        height: 85rem;
+        margin-top:0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+

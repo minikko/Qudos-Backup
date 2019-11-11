@@ -469,7 +469,7 @@
 
  @media (min-width: 1200px) {
      .header__content {
-         padding: 0 65px;
+         /* padding: 0 65px; */
      }
 
      .header__nav {
@@ -514,11 +514,11 @@
  }
 
  .footer__title {
-     display: block;
-     font-size: 16px;
-     color: rgba(255, 255, 255, 0.52);
-     font-family: 'Montserrat', sans-serif;
-     font-weight: 500;
+     /* display: block; */
+     /* font-size: 16px; */
+     /* color: rgba(255, 255, 255, 0.52); */
+     /* font-family: 'Montserrat', sans-serif; */
+     /* font-weight: 500; */
  }
 
  .footer__title--connect {
@@ -573,7 +573,7 @@
  }
 
  .footer__title--download {
-     padding-top: 30px;
+     /* padding-top: 30px; */
  }
 
  .footer__social li {
@@ -813,7 +813,7 @@
      }
 
      .footer__title--download {
-         padding-top: 30px;
+         /* padding-top: 30px; */
      }
  }
 

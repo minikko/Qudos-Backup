@@ -514,11 +514,11 @@
  }
 
  .footer__title {
-     display: block;
-     font-size: 16px;
-     color: rgba(255, 255, 255, 0.52);
-     font-family: 'Montserrat', sans-serif;
-     font-weight: 500;
+     /* display: block; */
+     /* font-size: 16px; */
+     /* color: rgba(255, 255, 255, 0.52); */
+     /* font-family: 'Montserrat', sans-serif; */
+     /* font-weight: 500; */
  }
 
  .footer__title--connect {
@@ -526,7 +526,7 @@
  }
 
  .footer__list {
-     margin-bottom: 35px;
+     /* margin-bottom: 35px; */
  }
 
  .footer__list li {
@@ -573,7 +573,7 @@
  }
 
  .footer__title--download {
-     padding-top: 30px;
+     /* padding-top: 30px; */
  }
 
  .footer__social li {
@@ -719,22 +719,22 @@
      }
 
      .footer__title {
-         text-align: center;
+         /* text-align: center; */
      }
 
      .footer__list {
-         text-align: center;
+         /* text-align: center; */
      }
 
      .footer__text {
-         text-align: center
+         /* text-align: center */
      }
 
      .footer__social li {
-         display: block;
-         float: left;
-         width: 17% !important;
-         margin-top: 30px;
+         /* display: block; */
+         /* float: left; */
+         /* width: 17% !important; */
+         /* margin-top: 30px; */
      }
 
      .footer__title--download {
@@ -751,8 +751,8 @@
      }
 
      ul.footer__social.clearfix {
-         text-align: center;
-         margin: 0 auto;
+         /* text-align: center; */
+         /* margin: 0 auto; */
          /* padding-left: 105px; */
      }
 
@@ -813,7 +813,7 @@
      }
 
      .footer__title--download {
-         padding-top: 30px;
+         /* padding-top: 30px; */
      }
  }
 

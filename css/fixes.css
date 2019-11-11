@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    .experience__box h3 {
+        width: 88%;
+    }
+}
+
+@media (max-width: 413px) {
+    .section.rating .col-12.col-md-5.col-xl-4.offset-xl-1 .section__title {
+        width: 74%;
+    }
+}
+
+@media (max-width: 366px) {
+    .experience__box h3 {
+        width: 90%;
+    }
+}

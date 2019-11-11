@@ -328,3 +328,66 @@ Usage
 		-webkit-filter: drop-shadow(0 0 -10px $qudos-blue);
 	}
 }
+
+@keyframes beforeLineAnim {
+	45%,
+	50% {
+	  background-position: -100% 0;
+	}
+	45% {
+	  transform: scale(1)
+	}
+	50%,
+	95% {
+	  transform: scale(1, -1)
+	}
+	95% {
+	  background-position: 80% 0
+	}
+  }
+  
+  @keyframes afterLineAnim {
+	20%,
+	25% {
+	  background-position: -100% 0;
+	}
+	20% {
+	  transform: scale(1) rotate(-90deg)
+	}
+	25% {
+	  transform: scale(-1, 1) rotate(-90deg)
+	}
+	70%,
+	75% {
+	  background-position: 80% 0;
+	}
+	70% {
+	  transform: scale(-1, 1) rotate(-90deg)
+	}
+	75% {
+	  transform: scale(1, 1) rotate(-90deg)
+	}
+  }
+
+  @keyframes glitter {
+	0% {
+	  -webkit-transform: scale(1.0);
+	  opacity: 1;
+	}
+	25% {
+	  -webkit-transform: scale(0.5);
+	  opacity: 0;
+	}
+	50% {
+	  -webkit-transform: scale(1.0);
+	  opacity: 1;
+	}
+	75% {
+	  -webkit-transform: scale(0.5);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: scale(1.0);
+	  opacity: 1;
+	}
+  }

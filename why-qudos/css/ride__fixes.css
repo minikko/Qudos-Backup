@@ -1,0 +1,21 @@
+@media (max-width: 480px) {
+    .header__prime:before {
+        bottom: -2.5rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .why-qudos__section--4 div.col-sm-6:last-child {
+        padding-left: 4.5rem;
+    }
+
+    .why-qudos__section--5 div.col-sm-6:nth-child(1) {
+        padding-left: 4.5rem;
+    }
+}
+
+@media (max-width: 384px) {
+    .activate-384 {
+        display: block;
+    }
+}
