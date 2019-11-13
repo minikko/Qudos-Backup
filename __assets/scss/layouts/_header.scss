@@ -124,10 +124,12 @@
         -webkit-border-radius: 3px;
         border-radius: 3px;
         text-align: center;
-        background-image: -moz-linear-gradient(90deg, $qudos-blue 0%, #2e81a0 48%, #3c747a 100%);
-        background-image: -webkit-linear-gradient(90deg, $qudos-blue 0%, #2e81a0 48%, #3c747a 100%);
-        background-image: -ms-linear-gradient(90deg, $qudos-blue 0%, #2e81a0 48%, #3c747a 100%);
-        background-image: linear-gradient(90deg, $qudos-blue 0%, #2e81a0 48%, #3c747a 100%);
+        // background-image: -moz-linear-gradient(90deg, $qudos-blue 0%, #2e81a0 48%, #3c747a 100%);
+        // background-image: -webkit-linear-gradient(90deg, $qudos-blue 0%, #2e81a0 48%, #3c747a 100%);
+        // background-image: -ms-linear-gradient(90deg, $qudos-blue 0%, #2e81a0 48%, #3c747a 100%);
+        // background-image: linear-gradient(90deg, $qudos-blue 0%, #2e81a0 48%, #3c747a 100%);
+        background-color: #3b8ecb !important;
+        background-image: none !important;
         margin-right: 4rem;
 
         &:hover {

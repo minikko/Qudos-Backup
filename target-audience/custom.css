@@ -115,7 +115,7 @@ p.subheader__prime{
     margin-left:-10px;
 }
 .subheader__prime{
-    text-align: justify;
+    /* text-align: justify; */
     width: 100%;
 }
 .why-qudos__section--1 .subheader__prime{

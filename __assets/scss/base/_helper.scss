@@ -1,5 +1,13 @@
+.border-solid-right {
+    border-right: 1px solid rgba(lightgrey, .5);
+}
+
+.border-solid-bottom {
+    border-bottom: 1px solid rgba(lightgrey, .5);
+}
+
 .qudos__blue-text {
-    color: $qudos-blue;
+    color: $qudos-blue !important;
 }
 
 .qudos__service-mark {

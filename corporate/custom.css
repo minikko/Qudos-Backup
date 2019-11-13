@@ -304,7 +304,7 @@ p.subheader__prime {
 }
 
 #schedule-watermark {
-    filter: invert(100%);
+    /* filter: invert(100%); */
     position: absolute;
     margin-top: -150px;
     height: 100vh;
@@ -376,7 +376,7 @@ p.subheader__prime {
     }
 
     #schedule-watermark {
-        filter: invert(100%);
+        /* filter: invert(100%); */
         position: absolute;
         margin-top: -100px;
         height: 100vh;

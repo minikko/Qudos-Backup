@@ -26,6 +26,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700" rel="stylesheet">
     <!-- fontawesome -->
     <link rel="stylesheet" href="../__assets/fontawesome/css/all.min.css">
+    <!-- animate on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <!-- Bootstrap Related CSS -->
     <link rel="stylesheet" href="../__assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../__assets/css/bootstrap-reboot.min.css">
@@ -69,72 +71,286 @@
             </div>
         </div>
     </header>
-    <main class="infographics" style="height: 90vh;">
+    <main class="main">
         <!--  -->
-        <a href="#" target="_blank" id="goto__link" style="margin-top: 10rem;">test</a>
+        <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 235">
+                <title>header__underwave</title>
+                <g id="a96e250b-9604-42bb-a28d-eff83e0cbb26" data-name="header__underwav">
+                    <g id="b88468c3-ab36-4573-9a6a-80b203967c09" data-name="header__underwave">
+                        <path d="M0,0V156.43S198.09,235,622.26,235C1271,235,1920,76.09,1920,76.09V0Z" fill="#fff" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="image-header"><img src="../__assets/img/infographics/car-img.png" alt="Header Image">WHY
+                        <span class="image-header__text" title="QUDOS?">QUDOS?</span></h1>
+                </div>
+            </div>
+            <section class="infographics__section-1 border-solid-bottom">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="text-center"><span class="infographics-h3__header infographics-h3__header--driver"
+                                title="DRIVER">DRIVER</span></h3>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="text-center"><span class="infographics-h3__header infographics-h3__header--rider"
+                                title="RIDER">RIDER</span></h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-8 d-flex align-items-center">
+                                <p class="section__text" data-aos="fade-right" data-aos-delay="300">
+                                    Qudos empowers you to build your own set of repeat riders, allowing you to keep a steady base of loyal clientele!
+                                </p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 text-left">
+                                <img class="img-fluid" src="../__assets/img/infographics/driver-img.png" alt="Driver Image 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 text-right">
+                                <img class="img-fluid" src="../__assets/img/infographics/rider-img-1.png" alt="Rider Image 1">
+                            </div>
+                            <div class="col-sm-6 col-md-8 d-flex align-items-center">
+                                <p class="section__text text-right"  data-aos="fade-left" data-aos-delay="600">
+                                    <span class="qudos__blue-text">Enjoy a customized ride-hailing experience, a lot of
+                                        referral bonuses and much more!</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infographics__section-2 border-solid-bottom">
+                <h2 class="infographics-h2__header text-center">Both drivers and riders can connect</h2>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-8 d-flex flex-column justify-content-center">
+                                <p class="section__text">
+                                    Tell your riders how to add you as favorite driver.
+                                </p>
+                                <p class="section__text">
+                                    Riders can connect with you using <span data-aos="zoom-in" data-aos-delay="300" class="d-inline-block"><strong>QudosList.</strong></span>
+                                </p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 text-left">
+                                <img class="img-fluid" src="../__assets/img/infographics/driver-img.png" alt="Driver Image 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 text-right">
+                                <img class="img-fluid" src="../__assets/img/infographics/rider-img-2.png" alt="Rider Image 2">
+                            </div>
+                            <div class="col-sm-6 col-md-8 d-flex flex-column justify-content-center">
+                                <h4 class="infographics-h4__header text-left w-75 qudos__blue-text">Riders can:</h4>
+                                <p class="section__text text-left d-flex align-items-center qudos__blue-text" data-aos="fade-left" data-aos-delay="600">
+                                    <img src="../__assets/img/infographics/heart-message.png" alt="Heart Message" id="heartMessage"> Ride again with their favorite
+                                </p>
+                                <p class="section__text text-left d-flex align-items-center qudos__blue-text" data-aos="fade-left" data-aos-delay="900">
+                                    <img src="../__assets/img/infographics/clock.png" alt="Clock Message" id="clockMessage"> Schedule rides in advance
+                                </p>
+                                <p class="section__text text-left d-flex align-items-center qudos__blue-text" data-aos="fade-left" data-aos-delay="1200">
+                                    <img src="../__assets/img/infographics/phone.png" alt="Phone Message" id="phoneMessage"> Communicate important information to drivers
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infographics__section-3 border-solid-bottom">
+                <h2 class="infographics-h2__header text-center">Connect with QudosList <img src="../__assets/img/infographics/qudoslist-icon.png" alt="QudosList Logo"></h2>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-8 d-flex flex-column justify-content-center">
+                                <p class="section__text">
+                                    The only platform that connects drivers with riders who prefer a customized ride-hailing experience.
+                                </p>
+                                <p class="section__text" data-aos="fade-right" data-aos-delay="300">
+                                    <strong>Share Qudos with your riders.</strong>
+                                </p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 text-left">
+                                <img class="img-fluid" src="../__assets/img/infographics/driver-img.png" alt="Driver Image 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 text-right">
+                                <img class="img-fluid" src="../__assets/img/infographics/rider-img-3.png" alt="Rider Image 2">
+                            </div>
+                            <div class="col-sm-6 col-md-8 d-flex flex-column justify-content-center">
+                                <h4 class="infographics-h4__header text-left qudos__blue-text">QudosList allows you to:</h4>
+                                <p class="section__text text-left d-flex align-items-center qudos__blue-text" data-aos="fade-left" data-aos-delay="600">
+                                    <img src="../__assets/img/infographics/like-icon.png" alt="Like Icon" id="likeIcon"> Create a roster of trusted drivers
+                                </p>
+                                <p class="section__text text-left d-flex align-items-center qudos__blue-text" data-aos="fade-left" data-aos-delay="900">
+                                    <img src="../__assets/img/infographics/share-icon.png" alt="Share Icon" id="shareIcon"> Expand your network
+                                </p>
+                                <p class="section__text text-left d-flex align-items-center qudos__blue-text" data-aos="fade-left" data-aos-delay="1200">
+                                    <img src="../__assets/img/infographics/star-icon.png" alt="Star Icon" id="starIcon"> Share your favorite drivers with family
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infographics__section-4 border-solid-bottom">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="infographics-h2__header text-center">It's fast and convenient to connect with
+                            QudosList.</h2>
+                    </div>
+                    <div class="col-6">
+                        <h2 class="infographics-h2__header text-center qudos__blue-text">Personalizing your ride is
+                            <span class="d-block">fast and convenient.</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-8 d-flex flex-column justify-content-center">
+                                <p class="section__text" data-aos="fade-right">
+                                    <strong>Choose your Favorite Driver!</strong>
+                                </p>
+                                <p class="section__text" data-aos="fade-right" data-aos-delay="300">
+                                    Show riders how to use the QudosList search to add you as a favorite driver
+                                </p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 text-left">
+                                <img class="img-fluid" src="../__assets/img/infographics/driver-img.png" alt="Driver Image 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 text-right">
+                                <img class="img-fluid" src="../__assets/img/infographics/rider-img-4.png" alt="Rider Image 4">
+                            </div>
+                            <div class="col-sm-6 col-md-8 d-flex flex-column justify-content-center">
+                                <p class="section__text text-right qudos__blue-text" data-aos="fade-left" data-aos-delay="600">
+                                    <strong>Choose your Favorite Driver!</strong>
+                                </p>
+                                <p class="section__text text-right qudos__blue-text" data-aos="fade-left" data-aos-delay="900">
+                                    Filter your search to find drivers whose attributes suit your ride-hailing needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infographics__section-final">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="infographics-h2__header text-center">Take control of your success!</h2>
+                    </div>
+                    <div class="col-6">
+                        <h2 class="infographics-h2__header text-center qudos__blue-text">Start an open dialogue from beginning to end.</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="section__text text-center">
+                            Every ride becomes a better experience when riders and drivers have mutual <span class="d-block">trust and respect. This connection truly matters in the long-term.</span>
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-8 d-flex flex-column justify-content-center">
+                                <!-- ? -->
+                            </div>
+                            <div class="col-sm-6 col-md-4 text-left">
+                                <img class="img-fluid" src="../__assets/img/infographics/driver-img.png" alt="Driver Image 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 text-right">
+                                <img class="img-fluid" src="../__assets/img/infographics/rider-img-final.png" alt="Rider Image Final">
+                            </div>
+                            <div class="col-sm-6 col-md-8 d-flex flex-column justify-content-center">
+                                <!-- ? -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- Footer -->
     <div class="service-wrap" include-html="../__assets/includes/footer/footer-black.html"></div>
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <!-- JS -->
+    <script src="../__assets/js/jquery-3.2.1.slim.min.js"></script>
     <script src="../__assets/js/jquery.min.js"></script>
     <script src="../__assets/js/bootstrap.min.js"></script>
-    <script src="../__assets/js/aos.js"></script>
-    <script>AOS.init();</script>
+    <script src="../__assets/js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({once: true});
+    </script>
     <script>
-    $(document).ready(function() {
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /* Loop through a collection of all HTML elements: */
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("include-html");
-                if (file) {
-                    /* Make an HTTP request using the attribute value as the file name: */
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
+        $(document).ready(function() {
+            function includeHTML() {
+                var z, i, elmnt, file, xhttp;
+                /* Loop through a collection of all HTML elements: */
+                z = document.getElementsByTagName("*");
+                for (i = 0; i < z.length; i++) {
+                    elmnt = z[i];
+                    /*search for elements with a certain atrribute:*/
+                    file = elmnt.getAttribute("include-html");
+                    if (file) {
+                        /* Make an HTTP request using the attribute value as the file name: */
+                        xhttp = new XMLHttpRequest();
+                        xhttp.onreadystatechange = function() {
+                            if (this.readyState == 4) {
+                                if (this.status == 200) {
+                                    elmnt.innerHTML = this.responseText;
+                                }
+                                if (this.status == 404) {
+                                    elmnt.innerHTML = "Page not found.";
+                                }
+                                /* Remove the attribute, and call this function once more: */
+                                elmnt.removeAttribute("include-html");
+                                includeHTML();
                             }
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found.";
-                            }
-                            /* Remove the attribute, and call this function once more: */
-                            elmnt.removeAttribute("include-html");
-                            includeHTML();
                         }
+                        xhttp.open("GET", file, true);
+                        xhttp.send();
+                        /* Exit the function: */
+                        return;
                     }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /* Exit the function: */
-                    return;
                 }
             }
-        }
 
-        includeHTML();
-    });
+            includeHTML();
+        });
     </script>
     <script src="../__assets/js/main.js"></script>
-
-
-    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149373672-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-149373672-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-149373672-1');
     </script>
-    
+
 </body>
 
 </html>
