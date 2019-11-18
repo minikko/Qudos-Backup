@@ -1,3 +1,5 @@
+
+
 .p-head {
     font-size: 2rem;
     color: #228ec8;
@@ -85,7 +87,7 @@
     }
     .why-qudos__section--1 .svg-gradient-circle--1{
         right: 20%;
-        top:-10rem;
+        top: 10rem;
     }
     .p-head{
         font-size: 2rem;
@@ -105,3 +107,4 @@
     right: 20%;
     top: -5rem;
 }
+
