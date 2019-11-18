@@ -1,0 +1,29 @@
+//anchor tag
+$default-anchor: .8rem;
+
+.core {
+    &__header {
+        &--h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 8.6rem;
+                height: 3px;
+                bottom: -1.5rem;
+                left: 0;
+                background: $blues-gradient--linear;
+            }
+        }
+    }
+
+    &__parag {
+        font-size: .85rem;
+        font-weight: 500;
+    }
+}

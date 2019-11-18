@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Qudos Tech. website structure.",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "displaceable": "^0.5.0"
+  },
   "devDependencies": {
     "del": "^5.1.0",
     "gulp": "^4.0.2",

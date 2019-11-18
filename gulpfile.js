@@ -36,4 +36,35 @@ gulp.task('clean', () => {
     ]);
 });
 
+// CORE WATCH
+gulp.task('core__watch', () => {
+    gulp.watch('core__assets/scss/**/*.scss', (done) => {
+        gulp.series(['clean', 'core__styles'])(done);
+    });
+});
+
+gulp.task('core__styles', () => {
+    return gulp.src('core__assets/scss/**/*.scss')
+        // Initialize Sourcemap
+        .pipe(sourcemap.init())
+        // Compile SASS files
+        .pipe(sass().on('error', sass.logError))
+        // Autoprefix CSS styles for cross browser compatibility
+        .pipe(autoprefixer())
+        // Minify CSS
+        .pipe(csso())
+        // Rename output file
+        .pipe(rename('styles.min.css'))
+        // Write Sourcemap
+        .pipe(sourcemap.write('.'))
+        // Destination folder
+        .pipe(gulp.dest('core__assets/css'));
+});
+
+gulp.task('clean', () => {
+    return del([
+        'core__assets/css/main.css',
+    ]);
+});
+
 gulp.task('default', gulp.series(['clean', 'styles']));

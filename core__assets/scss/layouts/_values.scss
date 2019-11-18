@@ -1,0 +1,91 @@
+/*==============================
+  Values
+==============================*/
+
+.values {
+  position: relative;
+  z-index: 3;
+  padding: 6.5rem 0;
+
+  &__img {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    width: 30rem;
+  }
+
+  &__box {
+    position: relative;
+    display: block;
+    padding-left: 8rem;
+    margin: 5.5rem auto 0;
+    width: 100%;
+    max-width: 36rem;
+
+    h3 {
+      display: block;
+      font-size: 1.2rem;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    object {
+      position: absolute;
+      left: -2.5rem;
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      transform: translateX(0);
+      margin: 0;
+      top: -2rem;
+    }
+
+    p {
+      display: block;
+      color: rgba(255, 255, 255, 0.5);
+      margin: 0;
+    }
+  }
+
+  .section__title {
+    text-align: center;
+
+    :before {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .values__box {
+    padding-left: 0;
+    padding-top: 10rem;
+    max-width: 27rem;
+    margin: 5rem auto 0;
+
+    object {
+      top: 0;
+      left: -40px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .values {
+    padding: 8rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .values {
+    padding: 10rem 0 12rem;
+  }
+}

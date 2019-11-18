@@ -1,0 +1,43 @@
+.section-core {
+    &--hero {
+        display: flex;
+        align-items: center;
+        padding: 20rem 0 25rem 0;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            background-image: url(../img/core__home/hero-bg.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -15rem;
+            opacity: 1;
+        }
+
+        // images
+        #platform-0 {
+            top: -8rem;
+            width: 75%;
+            left: 3.5rem;
+        }
+
+        #platform-1 {
+            top: 2rem;
+            left: 0rem;
+        }
+
+        #platform-2 {
+            width: 20%;
+            left: 0rem;
+            top: 4rem;
+        }
+    }
+}

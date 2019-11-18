@@ -19,8 +19,8 @@
     }
 
     img {
-        -webkit-filter: drop-shadow(0 2.5rem 1.5rem rgba(0, 0, 0, 0.1));
-        filter: drop-shadow(0 2.5rem 1.5rem rgba(0, 0, 0, 0.1));
+        // -webkit-filter: drop-shadow(0 2.5rem 1.5rem rgba(0, 0, 0, 0.1));
+        // filter: drop-shadow(0 2.5rem 1.5rem rgba(0, 0, 0, 0.1));
     }
 
     // header
@@ -303,6 +303,10 @@
 
 @media (max-width: 480px) {
     .addfave {
+        .activate-480 {
+            display: block;
+        }
+
         .section {
             ul {
                 padding-left: 30%;
@@ -390,9 +394,19 @@
 
 @media (max-width: 320px) {
     .addfave {
+        .activate-320 {
+            display: block;
+        }
+
         .section {
             ul {
                 padding-left: 25%;
+            }
+
+            &-six {
+                .activate-480 {
+                    display: inline-block;
+                }
             }
         }
 

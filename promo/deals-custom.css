@@ -166,8 +166,8 @@ body2{
         width:100%;
     }
     .svg-gradient-circle--1{
-        left:-60%;
-        margin-top:-20%;
+        /* left:-60%; */
+        /* margin-top:-20%; */
     }
     #header-title{
         margin-top:0px;
@@ -197,25 +197,25 @@ body2{
         width: 100%;
     }
     #gift-1{
-        top:8%;
-        margin-left:10%;
+        top: 4%;
+        margin-left: -25%;
     }
     #coupon-1{
-        top:5%;
-        margin-left:57%;
+        top: 2%;
+        margin-left: 25%;
     }
       
     #star-1{
-        top:7%;
-        margin-left:-5%;
+        top: 5%;
+        margin-left: -40%;
     }
     #star-2{
         top:15%;
         margin-right:15%;
     }
     #star-3{
-        top:5%;
-        margin-right:-20%;
+        top: 3%;
+        margin-right: 11%;
     }
     #star-4{
         display:none;
@@ -226,12 +226,12 @@ body2{
         margin-bottom:50px;
     }
     .svg-gradient-circle--1{
-        left:-60%;
-        margin-top: -10%;
+        /* left:-60%; */
+        /* margin-top: -10%; */
     }
     #star-2{
-        top:12%;
-        margin-right:15%;
+        top: 9%;
+        margin-right: 50%;
     }
     .why-qudos__section--2{
         margin-top:0vh;

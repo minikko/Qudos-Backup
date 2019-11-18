@@ -137,7 +137,7 @@
                 top: 12rem;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 6%;
+                width: 8%;
             }
         }
 
@@ -173,7 +173,7 @@
         background-image: url(../img/infographics/qldr.png);
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: 10%;
+        background-size: 8%;
 
         .col-6:first-child {
             .col-sm-6:last-child {
@@ -289,6 +289,37 @@
                 .row {
                     margin-top: 7rem;
                 }
+            }
+
+            .infographics__section-final {
+                .row:last-child {
+                    img {
+                        width: 75%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .infographics {
+        .section__text {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+@media (max-width: 1280px) { 
+    .infographics {
+        .main {
+            background-position-y: 8rem;
+            background-size: 20%;
+
+            .svg-container {
+                margin-top: 8rem;
+                margin-bottom: 8rem;
             }
         }
     }
@@ -841,16 +872,6 @@
         .image-header {
             img {
                 top: 1rem;
-            }
-        }
-
-        .main {
-            background-position-y: 8rem;
-            background-size: 20%;
-
-            .svg-container {
-                margin-top: 8rem;
-                margin-bottom: 8rem;
             }
         }
     }

@@ -1,0 +1,17 @@
+html,
+body {
+    font-size: calc(8px + .35vw);
+
+    /* Responsive base font size */
+    &-typography {
+        &__header {
+            &--one {
+                font-weight: 700;
+            }
+
+            &--sub {
+                
+            }
+        }
+    }
+}

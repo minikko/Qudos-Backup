@@ -52,20 +52,7 @@
                             <object type="image/svg+xml" data="../../__assets/img/logo--black.svg"></object>
                             <object type="image/svg+xml" data="../../__assets/img/logo--black.svg"></object>
                         </a>
-                        <nav class="header__nav">
-                            <a href="../promo/">Promo</a>
-                            <a href="../affiliatelogin.html">Affiliate</a>
-                            <a href="../why-qudos/drive.html">Drive</a>
-                            <a href="../why-qudos/start.html">Ride</a>
-                            <button></button>
-                            <a class="desk" href="mailto:support@drivequdos.com">Contact Us</a>
-                            <div class="header__social">
-                                <a href="https://www.facebook.com/QudosRide/"><i class="icon-fb"></i></a>
-                                <a href="https://www.linkedin.com/company/ridequdos/"><i class="icon-linkedin"></i></a>
-                                <a href="https://www.instagram.com/qudosride/"><i class="icon-instagram"></i></a>
-                            </div>
-                        </nav>
-                        <a href="https://appartner.ridequdos.com/alerts" class="header__btn">Start Riding</a>
+                        <div class="menu" include-html="../../__assets/includes/header/header-rider.html"></div>
                         <button class="header__menu" type="button">
                             <span></span>
                             <span></span>
@@ -304,15 +291,15 @@
     AOS.init();
     </script>
     <script src="../../__assets/js/main.js"></script>
-    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149373672-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-149373672-1');
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-149373672-1');
     </script>
 </body>
 
