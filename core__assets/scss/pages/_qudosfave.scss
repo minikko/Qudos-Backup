@@ -1,0 +1,309 @@
+.section-core {
+    &--qudosfave {
+        display: flex;
+        align-items: center;
+        height: 48rem;
+        position: relative;
+
+        // images
+        #platform-8 {
+            width: 80%;
+            top: -3.4rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &--what-can {
+        .col-12 {
+            padding-top: 5rem;
+            padding-bottom: 0rem;
+
+            &>p {
+                max-width: 50%;
+                min-width: 50%;
+            }
+        }
+
+        .col-sm-12 {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    }
+
+    &--factors {
+        #phone-3 {
+            width: 48%;
+        }
+
+        .row:first-child {
+            &>.col-md-7 {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                padding-left: 4rem;
+
+                p {
+                    max-width: 90%;
+                }
+            }
+        }
+
+        .row:nth-child(2) {
+            [class^=col-] {
+                padding-top: 0;
+            }
+
+            &>.col-md-7 {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+            }
+        }
+
+        .row:last-child {
+            [class^=col-] {
+                padding-top: 0;
+            }
+
+            &>.col-md-7 {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                padding-left: 4rem;
+
+                p {
+                    max-width: 90%;
+                }
+            }
+        }
+
+        img {
+            z-index: 1;
+            width: 48%;
+
+            &:not(:last-child) {
+                margin-right: .3rem;
+            }
+        }
+
+        img:first-child {
+            z-index: 3;
+            width: 25%;
+            bottom: 12.5rem;
+            left: 8rem;
+            filter: $drop-shadow-default;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .section-core {
+        &--factors {
+            .row:nth-child(2) {
+                .col-sm-12:last-child {
+                    img:not(:last-child) {
+                        margin-right: .4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .section-core {
+        &--qudosfave {
+            margin-top: 5rem;
+            overflow: hidden;
+
+            #platform-8 {
+                top: -4.2rem;
+            }
+
+            .col-md-6 {
+                &>span {
+                    left: 20rem;
+                }
+            }
+
+            .core__parag {
+                min-width: 40%;
+                max-width: 50%;
+            }
+        }
+
+        &--what-can {
+            .col-12 {
+                &>p {
+                    max-width: 79%;
+                }
+            }
+        }
+
+        &--factors {
+            margin-bottom: 10rem;
+
+            #phone-3 {
+                width: 25%;
+            }
+
+            .col-sm-12 {
+                padding-top: 5rem;
+                padding-bottom: 0;
+            }
+
+            .col-md-5 {
+                display: flex;
+                justify-content: center;
+            }
+
+            .core__header--h2,
+            .core__parag {
+                text-align: center;
+            }
+
+            .core__parag {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .row:first-child {
+                &>.col-md-7 {
+                    padding-top: 3rem;
+                    padding-left: 0;
+                }
+            }
+
+            .row:nth-child(2) {
+                &>.col-md-7 {
+                    order: 2;
+                    padding-top: 3rem;
+                }
+
+                &>.col-md-5 {
+                    padding-top: 5rem;
+                }
+            }
+
+            .row:last-child {
+                &>.col-md-7 {
+                    order: 2;
+                    padding-top: 3rem;
+                    padding-left: 0;
+
+                    p {
+                        max-width: 80%;
+                    }
+                }
+
+                &>.col-md-5 {
+                    padding-top: 5rem;
+                }
+            }
+
+            img:first-child {
+                width: 15%;
+                bottom: 1.5rem;
+                left: 16rem;
+            }
+
+            img {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .section-core {
+        &--qudosfave {
+            .core__parag {
+                max-width: 58%;
+            }
+        }
+
+        &--what-can {
+            .col-12 {
+                padding-top: 0;
+
+                &>p {
+                    max-width: 88%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .section-core {
+        &--qudosfave {
+            h1 {
+                text-align: center;
+
+                &::after {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            p {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #platform-8 {
+                top: -3.5rem;
+            }
+
+            .core__parag {
+                max-width: 100%;
+            }
+
+            .col-md-6 {
+                &>span {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .col-md-5 {
+                &>span {
+                    position: relative;
+                    top: 20rem;
+                }
+            }
+        }
+
+        &--what-can {
+            margin-top: 8rem;
+        }
+
+        &--factors {
+            img:first-child {
+                left: 14rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .section-core {
+        &--qudosfave {
+            #platform-8 {
+                top: -2.7rem;
+            }
+        }
+
+        &--factors {
+            .row:last-child {
+                &>.col-md-7 {
+                    p {
+                        max-width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}

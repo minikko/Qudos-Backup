@@ -1114,10 +1114,10 @@ p.subheader__prime {
 @media (max-width: 375px) {
 
     .why-qudos__section--1{
-        /* height:100vh !important */
+        height: 110vh !important;
     }
     #state-building {
-        top: -30px !important;
+        top: 2px !important;
         margin-left: -70px !important;
         width: 100%;
     }

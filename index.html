@@ -18,26 +18,21 @@
     <meta name="twitter:title" content="Qudos | Always the Ride You Want™">
     <meta name="twitter:description" content="Qudos is a ride-hailing app in NYC that connects riders and drivers based on preferences. Download the app to find the ride that's right for you">
     <meta name="twitter:card" content="qudos_image">
-    <!-- Fonts -->
+    <!-- Typefaces -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700" rel="stylesheet">
-    <!-- Fontello -->
-    <link rel="stylesheet" href="__assets/css/fontello.css">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="__assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="core__assets/fonts/fontawesome/css/all.min.css">
+    <!-- Fontello -->
+    <link rel="stylesheet" href="core__assets/css/vendors/fontello/fontello.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="__assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="__assets/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="__assets/css/bootstrap-grid.min.css">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="__assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="core__assets/css/vendors/bootstrap/bootstrap.min.css">
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <!-- Custom CSS-->
-    <link rel="stylesheet" href="__assets/css/styles.min.css">
-    <link rel="stylesheet" href="../css/custom-index.css">
-    <link rel="stylesheet" href="css/fixes.css">
+    <link rel="stylesheet" href="core__assets/css/styles.min.css">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="__assets/img/favIcon.png">
-    <script async src="//pagead2.googlesyndication.com/
-      pagead/js/adsbygoogle.js"></script>
+    <link rel="shortcut icon" type="image/png" href="core__assets/img/favIcon.png">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
             google_ad_client: "pub-3671330856215428",
@@ -53,10 +48,10 @@
                 <div class="col-12">
                     <div class="header__content">
                         <a href="/" class="header__logo">
-                            <object type="image/svg+xml" data="__assets/img/logo--white.svg"></object>
-                            <object type="image/svg+xml" data="__assets/img/logo--black.svg"></object>
+                            <object type="image/svg+xml" data="core__assets/img/logo--black.svg"></object>
+                            <object type="image/svg+xml" data="core__assets/img/logo--black.svg"></object>
                         </a>
-                      <div class="menu" include-html="__assets/includes/header/header-index.html"></div>
+                        <div include-html="core__components/header/header-index.html"></div>
                         <button class="header__menu" type="button">
                             <span></span>
                             <span></span>
@@ -67,209 +62,159 @@
             </div>
         </div>
     </header>
-    <section class="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="home__wrap">
-                        <div class="home__content">
-                            <h1 class="section__title">Ride with your Favorite™</h1>
-                            <p class="section__text">Qudos is the only ride-hailing app that connects riders to drivers that are worth keeping and can request these favorite drivers – again and again.</p>
-                            <a href="how/addfave.html" class="home__btn">Get to know QudosFave™</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section experience" id="experience">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-                    <h2 class="section__title section__title--center">Expectation met every <span class="active-768">ride you make.</span></h2>
-                    <p class="section__text section__text--center">Qudos is providing excellent experience with expectations met each and every ride. When riders and drivers get to know each other, every ride becomes a better experience when it’s your favorite.</p>
-                </div>
-                <div class="col-12">
-                    <div class="experience__wrap">
-                        <div class="experience__box">
-                            <img src="img/experience/1.jpg" alt="">
-                            <h3>Start driving to connect and build a steady base of loyal and amazing clientele.</h3>
-                            <div class="experience__button">
-                                <main class="container">
-                                    <a href="https://apppartner.ridequdos.com/alerts" class="qudos_expbutton effect">
-                                        <div class='icon'></div>
-                                        <span>Drive with Qudos</span>
-                                    </a>
-                                </main>
-                            </div>
-                        </div>
-                        <div class="experience__box">
-                            <img src="img/experience/2.jpg" alt="">
-                            <h3>Rider will enjoy truly curated and highly personalized ride experience within your fingertips.
-                            </h3>
-                            <main class="container">
-                                <a href="https://appcustomer.ridequdos.com/alerts" class="qudos_expbutton effect">
-                                    <div class='icon2'></div>
-                                    <span>Ride with Qudos</span>
-                                </a>
-                            </main>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section rating">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-5 col-xl-4 offset-xl-1">
-                    <h2 class="section__title">Qudos does not end with a rating!</h2>
-                    <p class="section__text">The quality of your experience should not be reduced to a random number. That’s why our rating system goes beyond five stars. </p>
-                    <p class="section__text">Instead, our feedback focuses on how the experience makes you feel. Rider and drivers will finally experience a socially friendly and safe platform.</p>
-                </div>
-                <div class="col-12 col-md-7 col-xl-7">
-                    <div class="rating__slider">
-                        <div class="owl-carousel">
-                            <div class="item">
-                                <div class="rating__slide">
-                                    <img src="__assets/img/rating/2.jpg" alt="">
-                                    <img src="__assets/img/rating/2.jpg" alt="">
-                                    <div>
-                                        <h3>Trust</h3>
-                                        <p>Qudos creates an opportunity to build long-standing relationships only trusted service providers can offer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="rating__slide">
-                                    <img src="__assets/img/rating/1.jpg" alt="">
-                                    <img src="__assets/img/rating/1.jpg" alt="">
-                                    <div>
-                                        <h3>Safety</h3>
-                                        <p>Riders can request services from drivers they trust and with whom they feel comfortable–drivers who care about them. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="rating__slide">
-                                    <img src="__assets/img/rating/3.jpg" alt="">
-                                    <img src="__assets/img/rating/3.jpg" alt="">
-                                    <div>
-                                        <h3>Consistency</h3>
-                                        <p>Qudos delivers an exceptional riding experience that is consistent with our riders’ wants and also focus on the drivers' needs.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="rating__slide">
-                                    <img src="__assets/img/rating/4.jpg" alt="">
-                                    <img src="__assets/img/rating/4.jpg" alt="">
-                                    <div>
-                                        <h3>Personalization</h3>
-                                        <p>Through innovative technology, we will allow our users to customize their rides according to their personalities.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="rating__slide">
-                                    <img src="__assets/img/rating/5.jpg" alt="">
-                                    <img src="__assets/img/rating/5.jpg" alt="">
-                                    <div>
-                                        <h3>Loyalty</h3>
-                                        <p>With Qudos, our riders now have the chance to genuinely show loyalty for those who deliver commendable services by adding them to their QudosFave™ list. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rating__btn"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section platform">
-        <div class="platform__img"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
-                    <h2 class="section__title section__title--white">Qudos is the evolution <span class="d-block">of ride-hailing.</span></h2>
-                    <p class="section__text section__text--white">Qudos is more than a technological achievement. Qudos is all about trust and building these personal relationships. It doesn’t matter whether you’re in a big city like New York or a suburb in Long Island, we want to give our riders and drivers a sense of community. </p>
-                    <p class="section__text section__text--white">This is a technology platform that personalized ride-hailing service within your terms and time, a flexibility that truly represents our riders and drivers. </p>
-                    <a href="how/addfave.html" class="platform__btn">Get to know QudosFave™</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section service">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 order-md-2 col-xl-7">
-                    <img src="__assets/img/service/service.jpg" alt="" class="service__img">
-                </div>
-                <div class="col-12 col-md-6 order-md-1 col-xl-5">
-                    <h2 class="section__title">Qudos, simply your <span class="d-block">go-to ride-hailing service!</span></h2>
-                    <p class="section__text">There's nothing like the feeling of being a regular;
-                        when you're greeted with a smile, when the barista
-                        has your coffee made before you get to the front of
-                        the line or when the waitress knows your order before
-                        you even say a word.</p>
-                    <p class="section__text">These are your go-to places, because it’s these people who help us feel like we belong. These relationships make your part of the world feel a closer knit. And now, there’s a ride-hailing service that can do that too.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="service-wrap">
-        <section class="section values">
+    <main>
+        <section class="section-core--hero section-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <object type="image/svg+xml" data="__assets/img/symbol.svg" class="values__img"></object>
-                        <h2 class="section__title section__title--center section__title--white">What Makes Qudos Different</h2>
+                    <div class="col-sm-12 col-md-8">
+                        <span class="d-inline-block position-relative w-100 h-100">
+                            <img id="platform-1" class="img-fluid position-absolute" src="core__assets/img/core__home/platform-base.svg" alt="Platform base">
+                            <img id="platform-0" class="img-fluid position-absolute" src="core__assets/img/core__home/platform-0.png" data-aos="fade-down-left" alt="Building block">
+                            <img id="platform-2" class="img-fluid position-absolute" src="core__assets/img/core__home/platform-1.png" data-aos="fade-down" data-aos-delay="600" alt="Mini platform block">
+                        </span>
                     </div>
+                    <div class="col-sm-12 col-md-4">
+                        <span class="d-inline-block h-100">
+                            <h1 class="core__header--h1"> Always The Ride You Want™</h1>
+                            <p class="core__parag">Qudos is the only ride-hailing app that connects riders to drivers that are worth keeping and can request these favorite drivers – again and again.</p>
+                            <a href="how/addfave.html" class="btn btn--primary">
+                                Get To Know QudosFave™
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-core--schedule">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h2 class="core__header--h2">Qudos<span class="qudos__blue-text">Schedule™</span></h1>
+                            <p class="core__parag">Avoid long taxi lines and book your ride in advance with QudosSchedule. Through this feature, riders can schedule a ride as early as an hour or up to 6 days ahead of their trip.
+                            </p>
+                            <a href="schedule/" class="btn btn--primary">
+                                Know More
+                            </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <img class="img-fluid" src="core__assets/img/core__home/section__schedule-calendar.png" alt="Calendar image">
+                        <img class="img-fluid" src="core__assets/img/core__home/section__schedule-phone.png" alt="Phone image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-core--fave">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <img class="img-fluid" src="core__assets/img/core__home/section__fave-people.png" alt="People image">
+                        <img class="img-fluid position-absolute" src="core__assets/img/core__home/section__fave-like.png" alt="Like icon image">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <span class="h-100">
+                            <h2 class="core__header--h2">Qudos<span class="qudos__blue-text">Fave™</span></h1>
+                                <p class="core__parag">QudosFave enables you to save you to save your favorite drivers for future rides. Riders can keep a list of favorite drivers and schedule rides ahead of time.</p>
+                                <a href="how/addfave.html" class="btn btn--primary">
+                                    Know More
+                                </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-core--list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h2 class="core__header--h2"><span class="white-text">QudosList™</span></h2>
+                        <p class="white-text core__parag">The only ride-hailing app that connects riders and drivers to create a customized riding experience. Riders can network with one another to find drivers, and can connect to drivers based on preferences.
+                        </p>
+                        <a href="qudoslist/" class="btn btn--primary">
+                            Know More
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <img class="img-fluid" src="core__assets/img/core__home/section__fave-people.png" alt="People image">
+                        <i class="white-text fas fa-share-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="service-wrap">
+        <section class="values">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h3 class="core__header--h3">What Makes Qudos Different</h3>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-12 col-md-4">
                         <div class="values__box">
-                            <object type="image/svg+xml" data="__assets/img/values/1.svg"></object>
+                            <img src="core__assets/img/core__home/trusted__icon.png" alt="Trusted icon">
                             <h3>Trusted</h3>
-                            <p>Trust and knowledge! Those everyday, regular and routine human interactions create an unspoken bond of friendship and mutuality. That is precisely what is at the heart of Qudos and its platform.</p>
+                            <p class="core__parag">Trust and knowledge! Those everyday, regular and routine human interactions create an unspoken bond of friendship and mutuality. That is precisely what is at the heart of Qudos and its platform.</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="values__box">
-                            <object type="image/svg+xml" data="__assets/img/values/2.svg"></object>
+                            <img src="core__assets/img/core__home/personal__icon.png" alt="Trusted icon">
                             <h3>Personal</h3>
-                            <p>To Qudos, ride-hailing is more than just sharing a ride. It’s an interaction, a conversation, an avenue to create an experience. Great service experience leads to a relationship that’s built on trust and tailored to each person’s unique needs and preferences.</p>
+                            <p class="core__parag">To Qudos, ride-hailing is more than just sharing a ride. It’s an interaction, a conversation, an avenue to create an experience. Great service experience leads to a relationship that’s built on trust and tailored to each person’s unique needs and preferences.</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="values__box">
-                            <object type="image/svg+xml" data="__assets/img/values/3.svg"></object>
+                            <img src="core__assets/img/core__home/innovative__icon.png" alt="Trusted icon">
                             <h3>Innovative</h3>
-                            <p>Relevant and in-tune with both consumers and drivers, Qudos pioneers technology to revolutionize the ride-hailing industry by emphasizing noteworthy services and comfort over slick algorithms, today and down the road.</p>
+                            <p class="core__parag">Relevant and in-tune with both consumers and drivers, Qudos pioneers technology to revolutionize the ride-hailing industry by emphasizing noteworthy services and comfort over slick algorithms, today and down the road.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div include-html="__assets/includes/footer/footer-black.html"></div>
+        <div include-html="core__components/footer/footer-black.html"></div>
     </div>
-    
-    <script src="__assets/js/jquery-3.2.1.slim.min.js"></script>
-    <script src="__assets/js/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="__assets/js/bootstrap.min.js"></script>
-    <script src="__assets/js/owl.carousel.min.js"></script>
-    <script src="__assets/js/main.js"></script>
+    <script src="core__assets/js/jquery.min.js"></script>
+    <script src="core__assets/js/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="core__assets/js/vendors/owl/owl.carousel.min.js"></script>
+    <script src="core__assets/js/vendors/animateOnScroll/aos.js"></script>
+    <script>
+    AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: 'ease-in-out', // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
+    </script>
+    <script src="core__assets/js/core.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149373672-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-149373672-1');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-149373672-1');
     </script>
-
 </body>
 
 </html>

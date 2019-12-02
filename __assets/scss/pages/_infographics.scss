@@ -2,7 +2,7 @@
     background-color: $qudos-prime-bg;
 
     &-h2__header {
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-weight: 700;
         margin-top: 5rem;
     }
@@ -47,17 +47,26 @@
         margin-bottom: 2rem;
     }
 
+    &-h5__header {
+        font-size: 2.2rem;
+    }
+
     // Sections
     [class^="infographics__section-"] {
         padding-bottom: 5rem;
         overflow: hidden;
     }
 
-    #heartMessage {
-        width: 15%;
+    #addUser,
+    #clockIcon,
+    #userIcon,
+    #usersIcon,
+    #blackStar {
+        width: 12.5%;
         margin-right: 2rem;
     }
 
+    #heartMessage,
     #clockMessage {
         width: 15%;
         margin-right: 2rem;
@@ -87,12 +96,27 @@
     }
 
     &__section-1 {
+        background-image: url(../img/infographics/qldr.png);
+        background-repeat: no-repeat;
+        background-size: 7%;
+        background-position: center center;
         .row:last-child {
+            .col-6:first-child {
+                .row {
+                    .col-sm-6:last-child {
+                        .img-fluid {
+                            transform: scaleX(-1);
+                        }
+                    }
+                }
+            }
             .col-6:last-child {
                 .row {
                     .col-sm-6:first-child {
                         .img-fluid {
                             width: 78%;
+                            left: 2rem;
+                            position: relative;
                         }
                     }
                 }
@@ -101,6 +125,17 @@
     }
 
     &__section-2 {
+        background-image: url(../img/infographics/QudosSchedule.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 9.5%;
+
+        &>.row {
+            .col-sm-6.col-md-8.d-flex.flex-column.justify-content-center {
+                align-self: flex-start;
+            }
+        }
+
         .col-6:first-child {
             .col-sm-6:last-child {
                 img {
@@ -134,10 +169,16 @@
 
             img {
                 position: absolute;
-                top: 12rem;
+                top: 15rem;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 8%;
+            }
+        }
+
+        &>.row {
+            .col-sm-6.col-md-8.d-flex.flex-column.justify-content-center {
+                align-self: flex-start;
             }
         }
 
@@ -170,10 +211,10 @@
 
 
     &__section-4 {
-        background-image: url(../img/infographics/qldr.png);
+        background-image: url(../img/infographics/QudosFave.svg);
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: 8%;
+        background-size: 11%;
 
         .col-6:first-child {
             .col-sm-6:last-child {
@@ -311,7 +352,7 @@
     }
 }
 
-@media (max-width: 1280px) { 
+@media (max-width: 1280px) {
     .infographics {
         .main {
             background-position-y: 8rem;
@@ -327,6 +368,15 @@
 
 @media (max-width: 991px) {
     .infographics {
+
+        #addUser,
+        #clockIcon,
+        #userIcon,
+        #usersIcon,
+        #blackStar {
+            width: 15%;
+        }
+
         .image-header {
             font-size: 6rem;
             margin-bottom: 6rem;
@@ -337,7 +387,7 @@
         }
 
         &-h2__header {
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
 
         &-h4__header {
@@ -350,24 +400,40 @@
             width: 25rem;
         }
 
+        &-h5__header {
+            font-size: 1.65rem;
+        }
+
         &__section-2 {
             &>.row {
                 .col-6:first-child {
                     display: flex;
                     align-items: center;
-                }
-            }
-
-            .col-6:last-child {
-                .row {
-                    .col-sm-6:first-child {
-                        display: flex;
-                        align-items: center;
-                    }
 
                     .col-sm-6:last-child {
-                        p {
-                            width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            position: relative;
+                            bottom: 1rem;
+                        }
+                    }
+                }
+
+                .col-6:last-child {
+                    .row {
+                        .col-sm-6:first-child {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .col-sm-6:last-child {
+                            p {
+                                width: 100%;
+                            }
                         }
                     }
                 }
@@ -377,9 +443,9 @@
         &__section-3 {
             h2 {
                 img {
-                    top: 15rem;
-                    left: 48%;
-                    width: 6%;
+                    top: 16rem;
+                    left: 49%;
+                    width: 8%;
                 }
             }
 
@@ -390,24 +456,30 @@
 
                     .row {
                         .col-sm-6:last-child {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
                             img {
-                                padding-top: 1.5rem;
+                                position: relative;
+                                bottom: 1rem;
                             }
                         }
                     }
                 }
-            }
 
-            .col-6:last-child {
-                .row {
-                    .col-sm-6:first-child {
-                        display: flex;
-                        align-items: center;
-                    }
+                .col-6:last-child {
+                    .row {
+                        .col-sm-6:first-child {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
 
-                    .col-sm-6:last-child {
-                        p {
-                            width: 100%;
+                        .col-sm-6:last-child {
+                            p {
+                                width: 100%;
+                            }
                         }
                     }
                 }
@@ -467,15 +539,35 @@
         }
 
         &-h2__header {
-            font-size: 1.7rem;
+            font-size: 2.7rem;
         }
 
         &-h3__header {
-            font-size: 3rem;
-            width: 23rem;
+            font-size: 2.8rem;
+            width: 20rem;
+        }
+
+        &-h5__header {
+            font-size: 1.4rem;
         }
 
         &__section-1 {
+            .row:first-child {
+                .col-6:first-child {
+                    h3 {
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+                }
+
+                .col-6:last-child {
+                    h3 {
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+
             .row:last-child {
                 .col-6:first-child {
                     .row {
@@ -563,6 +655,7 @@
 
                             img {
                                 padding-top: 0;
+                                bottom: 0;
                             }
                         }
                     }
@@ -609,6 +702,8 @@
         }
 
         &__section-final {
+            background-position: center 30rem;
+
             &>.row:last-child {
                 .section__text.text-center {
                     width: 85%;
@@ -648,6 +743,8 @@
 @media (max-width: 575px) {
     .infographics {
         &__section-1 {
+            background-size: 12%;
+            background-position: center 16rem;
             .row:last-child {
                 .col-6:first-child {
                     .row {
@@ -680,6 +777,9 @@
         }
 
         &__section-2 {
+            background-position: center 15rem;
+            background-size: 16%;
+
             &>.row {
                 .col-6:first-child {
                     align-items: start;
@@ -726,8 +826,8 @@
         &__section-3 {
             h2 {
                 img {
-                    top: 10rem;
-                    width: 10%;
+                    top: 11rem;
+                    width: 13%;
                 }
             }
 
@@ -777,7 +877,7 @@
         }
 
         &__section-4 {
-            background-size: 15%;
+            background-size: 20%;
             background-position-y: 15rem;
 
             .row:last-child {
@@ -846,6 +946,15 @@
     }
 }
 
+@media (max-width: 573px) {
+    .infographics {
+        &__section-final {
+            background-position: center 30rem;
+            background-size: 30%;
+        }
+    }
+}
+
 @media (max-width: 540px) {
     .infographics {
         &-h3__header {
@@ -883,6 +992,7 @@
             font-size: 5rem;
             padding-left: 19rem;
             text-align: left;
+
             &::after {
                 left: 67%;
             }
@@ -890,6 +1000,23 @@
             &__text {
                 left: 1rem;
             }
+        }
+    }
+}
+
+@media (max-width: 422px) {
+    .infographics {
+        &__section-final {
+            background-position: center 35rem;
+        }
+    }
+}
+
+@media (max-width: 412px) {
+    .infographics {
+        &-h3__header {
+            font-size: 2.4rem;
+            width: 16rem;
         }
     }
 }
@@ -920,12 +1047,22 @@
         .image-header {
             padding-left: 15rem;
         }
+
         &__section-final {
             .row:last-child {
                 .section__text.text-center {
                     margin-top: 2rem;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .infographics {
+        &-h3__header {
+            font-size: 2rem;
+            width: 14.5rem;
         }
     }
 }
@@ -955,6 +1092,7 @@
             img {
                 top: 1rem;
             }
+
             &::after {
                 left: 23rem;
                 top: 1.5rem;
@@ -963,13 +1101,32 @@
     }
 }
 
+@media (max-width: 340px) {
+    .infographics {
+        &-h3__header {
+            font-size: 1.75rem;
+            width: 13.5rem;
+        }
+    }
+}
+
 @media (max-width: 330px) {
     .infographics {
         .image-header {
             padding-left: 13rem;
+
             img {
                 top: 1.5rem;
             }
+        }
+    }
+}
+
+@media (max-width: 328px) {
+    .infographics {
+        &__section-final {
+            background-position: center 29rem;
+            background-size: 38%;
         }
     }
 }

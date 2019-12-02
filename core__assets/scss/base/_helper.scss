@@ -1,3 +1,30 @@
+/*==============================
+  Displays
+==============================*/
+@media (min-width: 576px) {
+  .d-mw--575 {
+    display: block !important;
+  }
+  .h-mw--575 {
+    display: none !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .d-mw--575 {
+    display: none !important;
+  }
+
+  .h-mw--575 {
+    display: block !important;
+  }
+}
+
+
+/*==============================
+  Borders
+==============================*/
+
 .border-solid-right {
     border-right: 1px solid rgba(lightgrey, .5);
 }
@@ -6,9 +33,37 @@
     border-bottom: 1px solid rgba(lightgrey, .5);
 }
 
+/*==============================
+  Text colouring
+==============================*/
+
 .qudos__blue-text {
     color: $qudos-blue !important;
 }
+
+.qudos__navyblue-text {
+    color: $qudos-navyblue !important;
+}
+
+.black-text {
+  color: black !important;
+}
+
+.white-text {
+  color: white !important;
+}
+
+/*==============================
+  Font weights
+==============================*/
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+/*==============================
+  Servicemarks / Trademarks
+==============================*/
 
 .qudos__service-mark {
     font-size: .7rem;
@@ -17,9 +72,9 @@
     vertical-align: top;
 }
 
-.qudos__darkblue-text {
-    color: $qudos-bg--dark;
-}
+/*==============================
+  Clearfix for floats
+==============================*/
 
 .clear {
     display: block;
@@ -27,41 +82,16 @@
     clear: both;
 }
 
-.small-show {
-    display: none;
+/*==============================
+  Width sizing
+==============================*/
+.w-30 {
+  width: 30% !important;
 }
 
-.active-768 {
-    display: block;
-}
-
-.svg-container {
-    margin-top: 1em;
-    width: 100%;
-    position: absolute;
-}
-
-
-#forget {
-    color: #6b6b6b;
-}
-
-@media screen and (max-width:768px) {
-    .small {
-        &-show {
-            display: block;
-
-            img {
-                max-width: 10rem;
-                max-height: 10rem;
-            }
-        }
-
-        &-hide {
-            display: none;
-        }
-    }
-}
+/*==============================
+  International flag icon
+==============================*/
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),

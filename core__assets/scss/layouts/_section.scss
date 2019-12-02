@@ -1,0 +1,70 @@
+.section {
+    [class^=col-] {
+        padding: 10rem 0;
+    }
+
+    &-banner {
+        display: block;
+        position: relative;
+        background-image: url(../img/ellipse-cut.png);
+        background-repeat: no-repeat;
+        background-size: 12%;
+        background-position: left top;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-image: url(../img/section-banner--bg.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            background-image: url(../img/hero-bg.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -16rem;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .section {
+        &-banner {
+            &::after {
+                background-position-y: -6rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .section {
+        &-banner {
+            &::after {
+                background-position-y: -1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        &-banner {
+            background-size: 20%;
+        }
+    }
+}

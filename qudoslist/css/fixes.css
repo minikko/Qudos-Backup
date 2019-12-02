@@ -43,6 +43,15 @@
     }
 }
 
+@media (max-width: 390px) {
+    .qudoslist .section.section-two {
+        height: unset;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        margin-bottom: 0;
+    }
+}
+
 @media (max-width: 320px) {
     .qudoslist .hero {
         min-height: 530px;

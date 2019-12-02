@@ -1,19 +1,36 @@
-// Colours
-$qudos-blue: #0b9ff5;
-$qudos-checkbox-green: #61da80;
-$qudos-placeholder-tint: #dbdbdb;
-$qudos-darkgrey: #676767;
-$qudos-bg--dark: #233041;
-$qudos-bg--darker: #0d111c;
-$qudos-prime-bg: #fafafa;
+/*==============================
+  Text colouring
+==============================*/
 
-// Linear gradient
+// Black default: #000000
+$qudos-blue: #218ec7;
+$qudos-navyblue: #232f41;
+
+$qudos-darkgrey: #676767;
+$qudos-grey: #b4b4b4;
+$qudos-lightgrey: #e6e6e6;
+$qudos-lighter-grey: #f4f4f4;
+
+$qudos-checkbox-green: #61da80;
+
+/*==============================
+  Linear gradient
+==============================*/
+
 $blues-gradient--linear: linear-gradient(to right, #83bada 0%, #83bada 47%, #1f8dc6 52%, #1f8dc6 100%);
 
-// Dropshadows
-$speech-bubble-dropshadow: 0 5px 10px 0 rgba(33,142,199,0.3);
-$speech-bubble__tri-dropshadow: -10px 5px 15px -5px rgba(33,142,199,0.3);
+/*==============================
+  Shadows
+==============================*/
+$box-shadow-default: 0 1px 3px rgba(0, 0, 0, 0.12);
+$box-shadow-hovered: 0 10px 10px rgba(0, 0, 0, 0.12);
+$box-shadow-actived: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
-// Dropshadows
-$speech-bubble-dropshadow: 0 5px 10px 0 rgba(33,142,199,0.3);
-$speech-bubble__tri-dropshadow: -10px 5px 15px -5px rgba(33,142,199,0.3);
+$drop-shadow-default: drop-shadow(0 0 0.75rem rgba(black, .2));
+
+/*==============================
+  Typography
+==============================*/
+
+//anchor tag
+$default-anchor: .85rem;

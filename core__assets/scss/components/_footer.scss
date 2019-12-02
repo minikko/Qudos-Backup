@@ -213,13 +213,12 @@
     }
 }
 
-
 /*==============================
   NU Footer start
 ==============================*/
 
 .nu-footer {
-    background-color: $qudos-bg--darker;
+    background-color: $qudos-darkgrey;
 
     .container {
         .row {
@@ -321,7 +320,7 @@
             bottom: auto;
             margin-top: -2rem;
             margin-bottom: 2rem;
-            margin-left: 0rem;
+            margin-left: -1rem;
         }
 
         &__line {
@@ -348,7 +347,7 @@
 @media (min-width: 1200px) {
     .footer {
         &__line {
-            margin-bottom: 12rem;
+            margin-bottom: 10rem;
         }
 
         &__copyright {

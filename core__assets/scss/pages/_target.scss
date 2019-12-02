@@ -1,0 +1,14 @@
+.section-core {
+    &--target {
+        display: flex;
+        align-items: center;
+        height: 48rem;
+        position: relative;
+        //image
+        #target-platform {
+            top: -5rem;
+            width: 90%;
+            left: 1rem;
+        }
+    }
+}

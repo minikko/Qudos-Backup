@@ -6,12 +6,11 @@
   position: relative;
   z-index: 3;
   padding: 6.5rem 0;
+  background-color: white;
 
   &__img {
     position: relative;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
     transform: translateX(-50%);
     margin-bottom: 40px;
     width: 30rem;
@@ -20,46 +19,40 @@
   &__box {
     position: relative;
     display: block;
-    padding-left: 8rem;
     margin: 5.5rem auto 0;
     width: 100%;
     max-width: 36rem;
 
+    &-square {
+      display: inline-block;
+      position: absolute;
+      top: -.5rem;
+      left: -.5rem;
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      background-color: $qudos-lighter-grey;
+      z-index: -1;
+    }
+
     h3 {
       display: block;
-      font-size: 1.2rem;
-      color: #fff;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 400;
+      font-size: 1.65rem;
+      color: black;
+      font-family: inherit;
+      font-weight: 700;
       margin-top: 0;
       margin-bottom: 1.5rem;
     }
 
-    object {
-      position: absolute;
-      left: -2.5rem;
-      -webkit-transform: translateX(0);
-      -moz-transform: translateX(0);
-      transform: translateX(0);
-      margin: 0;
-      top: -2rem;
+    img {
+      margin-bottom: 1rem;
+      width: 40%;
     }
 
     p {
       display: block;
-      color: rgba(255, 255, 255, 0.5);
       margin: 0;
-    }
-  }
-
-  .section__title {
-    text-align: center;
-
-    :before {
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      transform: translateX(-50%);
     }
   }
 }
@@ -67,7 +60,6 @@
 @media (min-width: 768px) {
   .values__box {
     padding-left: 0;
-    padding-top: 10rem;
     max-width: 27rem;
     margin: 5rem auto 0;
 
@@ -86,6 +78,21 @@
 
 @media (min-width: 1200px) {
   .values {
-    padding: 10rem 0 12rem;
+    padding: 5rem 0 10rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .values {
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      p {
+        text-align: center;
+      }
+    }
   }
 }

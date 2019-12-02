@@ -2,6 +2,31 @@
     cursor: pointer;
 }
 
+a.card-title {
+    color: #212529 !important;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.card-header:hover {
+    cursor: pointer;
+}
+
+.accordion .card-header:after {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f068";
+    float: right;
+}
+
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067";
+}
+
+a.card-title:hover {
+    text-decoration: none !important;
+}
+
 .qudos-blue {
     color: #228ec8;
 }
@@ -255,7 +280,8 @@ p.subheader__prime {
     }
 
     .why-qudos__section--2 .subheader__prime {
-        margin-left: 0;text-align: center !important;
+        margin-left: 0;
+        text-align: center !important;
     }
 
     .card-body li {
@@ -333,5 +359,3 @@ p.subheader__prime {
 .minus-rem {
     margin-bottom: -1rem;
 }
-
-

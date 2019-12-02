@@ -1,0 +1,39 @@
+// This class is a modified carousel class from Bootstrap
+
+.carousel {
+    &-inner {
+        padding: 1rem;
+    }
+
+    &-indicators {
+        bottom: -5rem;
+        margin-right: auto;
+        margin-left: auto;
+
+        li {
+            background-color: $qudos-grey;
+
+            &.active {
+                background-color: $qudos-blue;
+            }
+        }
+    }
+
+    &-control {
+
+        &-prev,
+        &-next {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .carousel {
+        &-indicators li {
+            width: .75rem;
+            height: .75rem;
+            border-radius: 50%;
+        }
+    }
+}
