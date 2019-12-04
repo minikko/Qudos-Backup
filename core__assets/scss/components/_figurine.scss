@@ -1,0 +1,50 @@
+.figurine {
+    .container {
+        .row:not(:first-child) {
+            .col-sm-12 {
+                padding-top: 0;
+            }
+        }
+    }
+
+    &-desc {
+        padding: 2rem;
+
+        h3 {
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+
+        dd {
+            font-size: 1.75rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        .carousel {
+            &-item {
+                h4 {
+                    color: $qudos-blue;
+                }
+
+                p {
+                    color: rgba(black, .5);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1199px) {
+    .figurine {
+        &-desc {    
+            .carousel {
+                &-item {
+                    li, p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

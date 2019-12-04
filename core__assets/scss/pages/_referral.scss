@@ -1,0 +1,18 @@
+.section-core {
+    &--referral {
+        display: flex;
+        align-items: center;
+        height: 48rem;
+        position: relative;
+
+        #referral-platform {
+            top: -8rem;
+            width: 100%;
+            left: 1.5rem;
+        }
+
+        #referral-car {
+            width: 45%;
+        }
+    }
+}

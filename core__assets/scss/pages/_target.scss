@@ -4,11 +4,292 @@
         align-items: center;
         height: 48rem;
         position: relative;
+
         //image
         #target-platform {
             top: -5rem;
             width: 90%;
             left: 1rem;
+        }
+    }
+
+    &--audience {
+        #james {
+            .carousel-item:first-child {
+                p {
+                    width: 90%;
+                }
+            }
+        }
+
+        .carousel {
+            &-item {
+                width: 42rem;
+            }
+
+            &-inner {
+                height: 10rem;
+            }
+        }
+
+        .col-md-8 {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .section-core {
+        &--audience {
+            .carousel {
+                &-item {
+                    width: 34rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .section-core {
+        &--target {
+            overflow: hidden;
+            margin-top: 5rem;
+
+            #target-platform {
+                top: -6rem;
+                left: 1.5rem;
+            }
+
+            .col-md-6 {
+                &>span {
+                    left: 20rem;
+                }
+            }
+
+            .core__parag {
+                max-width: 45%;
+                min-width: 47%;
+            }
+        }
+
+        &--audience {
+            .figurine {
+                #amy {
+                    .figurine-img {
+                        padding-top: 0;
+                    }
+                }
+
+                #james,
+                #john {
+                    .col-md-8 {
+                        order: 2;
+                    }
+                }
+
+                &-img {
+                    text-align: center;
+                    padding-bottom: 3rem;
+
+                    img {
+                        width: 55%;
+                    }
+                }
+
+                .col-md-8 {
+                    padding-top: 0;
+                }
+            }
+
+            .carousel {
+                &-inner {
+                    height: 12rem;
+                }
+
+                &-item {
+                    width: 42rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .section-core {
+        &--audience {
+            overflow: hidden;
+
+            #amy,
+            #robinson,
+            #john,
+            #donna {
+                .figurine {
+                    &-desc {
+                        .carousel {
+                            &-item {
+
+                                p,
+                                li {
+                                    width: 90%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .section-core {
+        &--audience {
+            overflow: hidden;
+
+            .carousel {
+                &-item {
+                    width: 39rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .section-core {
+        &--audience {
+            overflow: hidden;
+
+            .carousel {
+                &-item {
+                    width: 35rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .section-core {
+        &--target {
+            overflow: hidden;
+
+            .col-md-6 {
+                &>span {
+                    top: -9rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .col-md-5 {
+                &>span {
+                    position: relative;
+                    top: 12rem;
+
+                    h1 {
+                        text-align: center;
+
+                        &::after {
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+
+                    p {
+                        text-align: center;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        &--audience {
+            .carousel {
+                &-item {
+                    width: 33rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .section-core {
+        &--target {
+            #target-platform {
+                top: -5rem;
+            }
+        }
+
+        &--audience {
+            .figurine {
+                &-desc {
+                    dd {
+                        max-width: 75%;
+                    }
+                }
+            }
+
+            .carousel {
+                &-item {
+                    height: 15rem;
+                    width: 33rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .section-core {
+        &--audience {
+            .carousel {
+                &-item {
+                    width: 30rem;
+
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .figurine {
+                &-desc {
+                    .carousel {
+                        &-item {
+                            p {
+                                padding: 1rem;
+                            }
+
+                            ul {
+                                padding-left: 1rem;
+                                padding-right: 1rem;
+                                padding-bottom: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .section-core {
+        &--target {
+            #target-platform {
+                top: -4rem;
+                left: 1rem;
+            }
+        }
+
+        &--audience {
+            .carousel-item {
+                width: 26rem;
+            }
         }
     }
 }
