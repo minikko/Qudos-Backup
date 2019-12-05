@@ -19,14 +19,18 @@
     }
 
     &--features {
-        // .container {
-        //     background-image: url(../img/core__welcome/timeline.png);
-        //     background-repeat: no-repeat;
-        //     background-size: cover;
-        //     background-position: center center;
-        // }
+
+        background-image: url(../img/core__welcome/timeline.png);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center center;
+        background-position-y: 39%;
+        background-position-x: 45%;
+
 
         .values__box {
+
+            margin: 10rem auto 0 !important;
 
             &-square {
                 top: -0.5rem;
@@ -52,6 +56,7 @@
                 font-family: 'Gochi Hand', cursive;
                 font-size: 1.25rem;
                 color: #233041 !important;
+                text-align: center;
 
             }
 
@@ -125,6 +130,7 @@
         }
 
         &--features {
+            background-image: none !important;
             padding-top: 0;
 
             .values__box {
@@ -295,6 +301,12 @@
             .values__box {
                 img {
                     margin-bottom: 3rem;
+                }
+                h3{
+                    text-align: center !important
+                }
+                .chat__text{
+                    font-size: 2rem !important
                 }
             }
         }

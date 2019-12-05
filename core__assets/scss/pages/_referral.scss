@@ -15,4 +15,103 @@
             width: 45%;
         }
     }
+
+    &--code {
+        &-mobile {
+            img {
+                width: 90%;
+            }
+
+            .col-sm-12 {
+                padding-top: 5rem;
+                padding-bottom: 0;
+            }
+
+            .col-md-7 {
+                display: flex;
+                justify-content: space-between;
+
+                span:last-child {
+                    img:first-child {
+                        width: 100%;
+                        top: 13rem;
+                        left: -.5rem;
+                        z-index: 2;
+                        filter: $drop-shadow-default;
+                    }
+                }
+
+                span:nth-child(2) {
+                    img:first-child {
+                        width: 100%;
+                        top: 6rem;
+                        left: -.5rem;
+                        z-index: 2;
+                        filter: $drop-shadow-default;
+                    }
+                }
+
+                span:first-child {
+                    img:first-child {
+                        width: 55%;
+                        top: -.75rem;
+                        left: -.2rem;
+                        z-index: 2;
+                        filter: $drop-shadow-default;
+                    }
+                }
+            }
+
+            .col-md-4 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        &-desktop {
+            img {
+                width: 70%;
+            }
+
+            .col-sm-12 {
+                padding-top: 10rem;
+            }
+
+            .col-md-7 {
+                &>span:last-child {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    img:first-child {
+                        position: absolute;
+                        top: 11rem;
+                        right: -2rem;
+                        width: 45%;
+                        z-index: 2;
+                        filter: $drop-shadow-default;
+                    }
+                }
+
+                &>span:first-child {
+                    left: -17rem;
+
+                    img:first-child {
+                        position: absolute;
+                        top: 1.5rem;
+                        right: 12.5rem;
+                        width: 45%;
+                        z-index: 2;
+                        filter: $drop-shadow-default;
+                    }
+                }
+            }
+
+            .col-md-4 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
 }
