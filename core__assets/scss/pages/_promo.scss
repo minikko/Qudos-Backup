@@ -5,6 +5,28 @@
         height: 48rem;
         position: relative;
 
+        .card-b {
+            transition: all .4s;
+
+            &:hover {
+                background-color: $qudos-blue;
+                border: 1px solid rgba($qudos-navyblue, .1);
+                box-shadow: 0 10px 10px rgba($qudos-blue, .5);
+
+                h2 {
+                    color: white;
+                }
+
+                p {
+                    color: rgba(white, .75);
+                }
+            }
+
+            &:active {
+                box-shadow: 0 2px 3px rgba($qudos-blue, .12), 0 2px 2px rgba($qudos-blue, .24);
+            }
+        }
+
         .values__box-square {
             position: unset;
             padding: 1rem;

@@ -5,6 +5,7 @@
   .d-mw--575 {
     display: block !important;
   }
+
   .h-mw--575 {
     display: none !important;
   }
@@ -20,17 +21,37 @@
   }
 }
 
+@media (min-width: 473px) {
+  .d-mw--472 {
+    display: block !important;
+  }
+
+  .h-mw--472 {
+    display: none !important;
+  }
+}
+
+@media (max-width: 472px) {
+  .d-mw--472 {
+    display: none !important;
+  }
+
+  .h-mw--472 {
+    display: block !important;
+  }
+}
+
 
 /*==============================
   Borders
 ==============================*/
 
 .border-solid-right {
-    border-right: 1px solid rgba(lightgrey, .5);
+  border-right: 1px solid rgba(lightgrey, .5);
 }
 
 .border-solid-bottom {
-    border-bottom: 1px solid rgba(lightgrey, .5);
+  border-bottom: 1px solid rgba(lightgrey, .5);
 }
 
 /*==============================
@@ -38,11 +59,11 @@
 ==============================*/
 
 .qudos__blue-text {
-    color: $qudos-blue !important;
+  color: $qudos-blue !important;
 }
 
 .qudos__navyblue-text {
-    color: $qudos-navyblue !important;
+  color: $qudos-navyblue !important;
 }
 
 .black-text {
@@ -66,10 +87,10 @@
 ==============================*/
 
 .qudos__service-mark {
-    font-size: .7rem;
-    margin-bottom: auto;
-    line-height: 5.5rem;
-    vertical-align: top;
+  font-size: .7rem;
+  margin-bottom: auto;
+  line-height: 5.5rem;
+  vertical-align: top;
 }
 
 /*==============================
@@ -77,9 +98,9 @@
 ==============================*/
 
 .clear {
-    display: block;
-    content: "";
-    clear: both;
+  display: block;
+  content: "";
+  clear: both;
 }
 
 /*==============================
@@ -87,6 +108,14 @@
 ==============================*/
 .w-30 {
   width: 30% !important;
+}
+
+/*==============================
+  Shadow
+==============================*/
+.no-shadow {
+  filter: none !important;
+  box-shadow: none !important;
 }
 
 /*==============================
@@ -99,7 +128,7 @@ only screen and (-o-min-device-pixel-ratio: 2 / 1),
 only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
-    .iti-flag {
-        background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.4.0/img/flags@2x.png");
-    }
+  .iti-flag {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.4.0/img/flags@2x.png");
+  }
 }

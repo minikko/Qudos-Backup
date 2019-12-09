@@ -1,0 +1,285 @@
+.section-core {
+    &--deals {
+        display: flex;
+        align-items: center;
+        height: 48rem;
+        position: relative;
+
+        #deals-platform {
+            top: -7rem;
+            width: 90%;
+            left: 3.5rem;
+        }
+
+        #deals-car {
+            width: 45%;
+        }
+    }
+
+    &--promo-codes {
+        margin-bottom: 10rem;
+
+        .col-sm-6 {
+            padding-top: 2rem;
+            padding-bottom: 0;
+        }
+
+        .card-b {
+            margin: 1rem;
+
+            .core__parag {
+                max-width: 85%;
+                min-height: 3rem;
+            }
+
+            img {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 1200px) {
+    .section-core {
+        &--deals {
+            #deals-car {
+                top: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .section-core {
+        &--promo-codes {
+            .btn-clip::after {
+                line-height: 2.4rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .section-core {
+        &--deals {
+            #deals-car {
+                top: -2.5rem;
+            }
+
+            #deals-platform {
+                top: -6rem;
+                width: 90%;
+                left: 2.5rem;
+            }
+        }
+
+        &--promo-codes {
+            .btn-clip::after {
+                line-height: 2.6rem;
+            }
+
+            .card-b {
+                padding: 2rem 1.5rem .5rem;
+                min-height: 22rem;
+
+                img {
+                    width: 70%;
+                }
+
+                .core__parag {
+                    max-width: 100%;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .section-core {
+        &--deals {
+            overflow: hidden;
+            margin-top: 5rem;
+
+            #deals-platform {
+                top: -10rem;
+            }
+
+            #deals-car {
+                top: 13.5rem;
+            }
+
+            .core__parag {
+                max-width: 70%;
+                min-width: 70%;
+            }
+
+            .col-md-6 {
+                &>span {
+                    left: 20rem;
+                }
+            }
+        }
+
+        &--promo-codes {
+            .btn-clip::after {
+                line-height: 2.8rem;
+            }
+
+            .card-b {
+                padding: 2rem 1.5rem 1rem;
+                min-height: 24rem;
+
+                img {
+                    width: 60%;
+                }
+
+                .core__parag {
+                    max-width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .section-core {
+        &--deals {
+            height: 52rem;
+        }
+
+        &--promo-codes {
+            .card-b {
+                max-width: 22rem;
+                margin-left: auto;
+                margin-right: auto;
+
+                img {
+                    width: 45%;
+                }
+
+                .core__parag {
+                    max-width: 78%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .section-core {
+        &--promo-codes {
+            .btn-clip::after {
+                line-height: 3rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .section-core {
+        &--deals {
+            #deals-car {
+                top: 10.5rem;
+            }
+
+            #deals-platform {
+                top: -8rem;
+            }
+
+            .col-md-6 {
+                &>span {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: -5rem;
+                }
+            }
+
+            .col-md-5 {
+                &>span {
+                    position: relative;
+                    top: 20rem;
+
+                    h1 {
+                        text-align: center;
+
+                        &::after {
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+
+                    p {
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+
+        &--promo-codes {
+            .card-b {
+                .core__parag {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) and (min-width: 351px) {
+    .section-core {
+        &--deals {
+            #deals-platform {
+                top: -7rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .section-core {
+        &--deals {
+            #deals-platform {
+                top: -7rem;
+                left: 2.5rem;
+            }
+
+            #deals-car {
+                top: 9.5rem;
+            }
+
+            .col-md-5 {
+                &>span {
+                    top: 18rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .section-core {
+        &--deals {
+            #deals-platform {
+                top: -6rem;
+            }
+
+            #deals-car {
+                top: 8.5rem;
+            }
+
+            .core__parag {
+                max-width: 85%;
+            }
+        }
+
+        &--promo-codes {
+            .card-b {
+                padding: 2rem 1.5rem 1.5rem;
+                min-height: 26rem;
+            }
+        }
+    }
+}

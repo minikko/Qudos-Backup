@@ -21,6 +21,74 @@
             color: white;
         }
     }
+
+    &-clip {
+        border-radius: 0;
+        max-width: 32rem;
+        min-width: 15rem;
+        padding: .5rem .55rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: black;
+        background-color: rgba($qudos-grey, .15);
+        position: relative;
+
+        &::before {
+            content: '';
+            display: none;
+            position: absolute;
+            z-index: 4;
+            top: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid rgba(0,0,0,.72);
+          }
+
+        &::after {
+            content: 'Copy to Clipboard';
+            display: none;
+            position: absolute;
+            z-index: 4;
+            top: 3.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10rem;
+            height: 36px;
+            color: white;
+            font-size: 10px;
+            line-height: 2.1rem;
+            text-align: center;
+            background: rgba(0, 0, 0, .72);
+            border-radius: 3px;
+        }
+
+        &:hover {
+            background-color: $qudos-blue;
+            border: 1px solid rgba($qudos-navyblue, .1);
+            box-shadow: 0 5px 10px rgba($qudos-blue, .5);
+            color: white;
+            &::before {
+                display: block;
+            }
+        }
+
+        &:hover {
+            &::after {
+                display: block;
+            }
+        }
+
+        &:active, &:focus {
+            &::after {
+                content: 'Copied!';
+                display: block;
+            }
+        }
+    }
 }
 
 @media (max-width: 480px) {

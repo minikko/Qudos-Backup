@@ -18,7 +18,7 @@
         }
     }
 
-    &--features {
+    &--quickmap {
 
         background-image: url(../img/core__welcome/timeline.png);
         background-repeat: no-repeat;
@@ -129,7 +129,7 @@
             }
         }
 
-        &--features {
+        &--quickmap {
             background-image: none !important;
             padding-top: 0;
 
@@ -181,7 +181,7 @@
 
 @media (max-width: 575px) {
     .section-core {
-        &--features {
+        &--quickmap {
             .values__box {
                 display: flex;
                 flex-direction: column;
@@ -297,7 +297,7 @@
 
 @media (max-width: 390px) {
     .section-core {
-        &--features {
+        &--quickmap {
             .values__box {
                 img {
                     margin-bottom: 3rem;
@@ -329,7 +329,7 @@
             }
         }
 
-        &--features {
+        &--quickmap {
             .values__box {
                 &-square {
                     width: 13rem;
