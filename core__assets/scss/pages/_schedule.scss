@@ -329,9 +329,14 @@
     &--schedules {
       overflow: visible;
 
-      #platform-6 {
-        top: -3.1rem;
-        left: 4.5rem;
+        #platform-6 {
+        top: 2rem;
+        left: 9rem;
+      }
+
+      #platform-5 {
+        top: 7rem;
+        left: 5rem;
       }
 
       .col-sm-12:first-child {
@@ -399,7 +404,6 @@
     &--confirm-sched {
       .qs-section-two {
         .col-sm-12:last-child {
-          //  background: red;
           -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
           order: 2;
@@ -441,9 +445,14 @@
 @media (max-width: 396px) {
   .section-core {
     &--schedules {
-      #platform-6 {
+       #platform-6 {
         top: 2rem;
         left: 9rem;
+      }
+
+      #platform-5 {
+        top: 7rem;
+        left: 5rem;
       }
     }
   }
@@ -480,9 +489,14 @@
 @media (max-width: 350px) {
   .section-core {
     &--schedules {
-      #platform-6 {
-        top: -1.3rem;
-        left: 3.9rem;
+       #platform-6 {
+        top: 2rem;
+        left: 9rem;
+      }
+
+      #platform-5 {
+        top: 7rem;
+        left: 5rem;
       }
     }
   }
@@ -491,9 +505,14 @@
 @media (max-width: 325px) {
   .section-core {
     &--schedules {
-      #platform-6 {
-        top: -1.3rem;
-        left: 2.9rem;
+       #platform-6 {
+        top: 2rem;
+        left: 9rem;
+      }
+
+      #platform-5 {
+        top: 7rem;
+        left: 5rem;
       }
 
       .col-sm-12:first-child {

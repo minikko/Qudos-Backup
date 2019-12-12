@@ -1,0 +1,102 @@
+// Copied Tooltip
+.copy-notification {
+    color: white;
+    background-color: rgba(black, 0.8);
+    padding: 1rem;
+    border-radius: 2.5rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 10rem;
+    margin-top: -3rem;
+    margin-left: -8.5rem;
+    display: none;
+    text-align: center;
+}
+
+.section-core {
+    &--new-codes {
+        .col-12 {
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+
+            small {
+                margin-top: 1.5rem;
+                display: block;
+                max-width: 55rem;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: .65rem;
+            }
+        }
+
+        .table {
+            max-width: 55rem;
+            margin-left: auto;
+            margin-right: auto;
+
+            thead {
+                th {
+                    font-size: .85rem;
+                    font-weight: 500;
+                }
+
+                th:first-child {
+                    padding-left: 3rem;
+                    padding-top: 1rem;
+                }
+            }
+
+            tbody {
+                background-color: rgba($qudos-lighter-grey, .5);
+
+                td {
+                    padding: 1rem;
+                }
+
+                td:nth-child(2) {
+                    width: 34%;
+                }
+
+                td:nth-child(3) {
+                    font-weight: 700;
+                    width: 22%;
+                }
+
+                th {
+                    width: 16%;
+                    font-weight: 700;
+                    padding-left: 3rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+
+                button {
+                    position: relative;
+
+                    &::before {
+                        content: 'Copy to clipboard';
+                        display: inline-block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 10rem;
+                        height: 100%;
+                    }
+
+                    &.active {
+                        &::before {
+                            content: 'Copied';
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &--new-codes + &--code-mobile {
+        .col-sm-12 {
+            padding-top: 3rem;
+        }
+    }
+}
