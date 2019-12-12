@@ -1,0 +1,35 @@
+<svg id="phone_horizontal" data-name="phone horizontal" xmlns="http://www.w3.org/2000/svg" width="1466.157" height="892.314" viewBox="0 0 488.719 297.438">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fbfbfb;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fefefe;
+      }
+
+      .cls-3 {
+        fill: #e6e7e8;
+      }
+
+      .cls-4 {
+        fill: #233041;
+      }
+
+      .cls-5 {
+        fill: #374b66;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M979,666l137-79s12.62-6.661,28,2l305,177s2.96,1.771,3,10v13s-1.08,4.28-9,9l-134,77s-10.35,7.222-26-1L981,699a12.452,12.452,0,0,1-7-11V674S973.762,669.611,979,666Z" transform="translate(-966.281 -584.562)"/>
+  <path class="cls-2" d="M974,668s-2.046,3.224,6,8l305,177s14.09,5.188,26-2l137-79s2.84-2.247,0-8l7,2-2,21-158,85L968,683S961.416,673.437,974,668Z" transform="translate(-966.281 -584.562)"/>
+  <path class="cls-3" d="M973,674s1.583,5.609,6,8l308,177a30.672,30.672,0,0,0,25-2l131-75s8.32-4.485,9-10l3,4v18l-146,87-20,1L975,700l-5-7Z" transform="translate(-966.281 -584.562)"/>
+  <path class="cls-4" d="M1005,686l144-84,256,148-145,84Z" transform="translate(-966.281 -584.562)"/>
+  <path class="cls-3" d="M1343,796v3l15,9h3l16-9v-3l-14-9-3-1Z" transform="translate(-966.281 -584.562)"/>
+  <path class="cls-5" d="M1051,641l40-23,2,1v2l-40,23h-3Z" transform="translate(-966.281 -584.562)"/>
+</svg>

@@ -1,0 +1,506 @@
+.qudos-schedule {
+  header {
+    background: #ffffff;
+  }
+
+  .card {
+    background: #fdfdfd;
+    box-shadow: 5px 10px 5px 0 #f2f2f2;
+  }
+
+  .core {
+    &__header {
+      &--h1 {
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+.section {
+  [class^="col-"] {
+    padding: 5rem 0;
+  }
+
+  &-banner--blue {
+    display: block;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      background-image: url(../img/core__schedule/background.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .section {
+    &-banner--blue {
+      &::after {
+        background-position-y: -6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .section {
+    &-banner--blue {
+      &::after {
+        background-position-y: -1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    &-banner--blue {
+      background-size: 20%;
+
+      &::after {
+        background-position-y: 0rem !important;
+        height: 160%;
+      }
+    }
+  }
+}
+
+.section-core {
+  &--schedules {
+    display: flex;
+    align-items: center;
+    height: 35rem;
+    position: relative;
+
+    p {
+      max-width: 100%;
+    }
+
+    // images
+    #platform-5 {
+      top: 2rem;
+      width: 60%;
+    }
+
+    #platform-6 {
+      top: -3.5rem;
+      left: 5.5rem;
+      width: 45%;
+    }
+  }
+
+  &--portal {
+    // background: red
+  }
+
+  &--choose-fave {
+    background-color: $qudos-navyblue;
+    background-image: url(../img/core__corporate/choose-fave-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 100% center;
+  }
+
+  &--confirm-sched {
+    .qs-section-two {
+      img {
+        padding: 0rem 0.75rem;
+
+        &:nth-child(3) {
+          position: absolute;
+          z-index: 1;
+          bottom: 13rem;
+        }
+      }
+    }
+
+    .qs-section-three {
+      img {
+        padding: 0rem 0.75rem;
+
+        &:nth-child(2) {
+          position: absolute;
+          z-index: 1;
+          width: 8rem;
+          left: 7rem;
+          bottom: 7rem;
+        }
+      }
+    }
+
+    a {
+      text-decoration: underline;
+      color: $qudos-blue;
+    }
+
+    img {
+      width: 33%;
+    }
+  }
+}
+
+@media (max-width: 1770px) and (min-width: 1200px) {
+  .section-core {
+    &--schedules {
+      #platform-6 {
+        top: -7.5rem;
+        left: 6.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1475px) {
+  .section-core {
+    &--choose-fave {
+      background-size: contain;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .section-core {
+    &--choose-fave {
+      background-position-x: 40rem;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .section-core {
+    &--choose-fave {
+      background-position-x: 35rem;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .section-core {
+    &--schedules {
+      #platform-6 {
+        top: -2.7rem;
+        left: 4.5rem;
+      }
+    }
+
+    &--choose-fave {
+      background-image: url(../img/core__corporate/choose-fave-bg@991.jpg);
+      background-position-x: right;
+    }
+  }
+}
+
+@media (max-width: 935px) {
+  .section-core {
+    &--choose-fave {
+      background-position-x: 35rem;
+    }
+  }
+}
+
+@media (max-width: 925px) and (min-width: 768px) {
+  .section-core {
+    &--schedules {
+      #platform-6 {
+        top: -3.7rem;
+        left: 4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 825px) {
+  .section-core {
+    &--choose-fave {
+      background-position-x: 30rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section-core {
+    &--schedules {
+      overflow: hidden;
+      margin-top: 5rem;
+
+      #platform-6 {
+        top: -4.8rem;
+        left: 5.5rem;
+      }
+
+      .core__parag {
+        max-width: 60%;
+        min-width: 50%;
+      }
+
+      .col-sm-12:first-child {
+        & > span {
+          left: 24rem;
+        }
+      }
+    }
+
+    &--portal {
+      .d-block {
+        display: inline !important;
+      }
+
+      .col-12:first-child {
+        padding-top: 0;
+      }
+    }
+
+    &--live-map {
+      [class^="col-"] {
+        padding: 5rem 0;
+      }
+
+      .col-sm-12:last-child {
+        padding-top: 0;
+      }
+    }
+
+    &--choose-fave {
+      background-image: url(../img/core__corporate/choose-fave-bg@767.jpg);
+      background-position: center bottom;
+
+      .col-sm-12:first-child {
+        padding-top: 5rem;
+      }
+    }
+
+    &--confirm-sched {
+      .col-sm-12:first-child {
+        order: 2;
+        padding-top: 0;
+        justify-content: flex-start !important;
+      }
+
+      .col-sm-12:last-child {
+        padding-bottom: 5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .section-core {
+    &--live-map {
+      [class^="col-"] {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+
+    &--choose-fave {
+      [class^="col-"] {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .col-sm-12:first-child {
+        padding-bottom: 3rem;
+      }
+    }
+
+    &--confirm-sched {
+      [class^="col-"] {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .section-core {
+    &--schedules {
+      overflow: visible;
+
+      #platform-6 {
+        top: -3.1rem;
+        left: 4.5rem;
+      }
+
+      .col-sm-12:first-child {
+        & > span {
+          top: -9rem;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      .col-sm-12:last-child {
+        text-align: center;
+
+        & > span {
+          margin-top: 2rem;
+          position: relative;
+          top: 10rem;
+        }
+
+        h1 {
+          text-align: center;
+
+          &::after {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+        p {
+          max-width: 100%;
+          min-width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    &--live-map {
+      h2,
+      p {
+        text-align: center;
+      }
+    }
+
+    &--portal {
+      padding-top: 10rem;
+    }
+
+    &--choose-fave {
+      h2,
+      p {
+        text-align: center;
+      }
+
+      p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+      }
+
+      .col-sm-12:first-child {
+        padding-bottom: 0;
+      }
+    }
+
+    &--confirm-sched {
+      .qs-section-two {
+        .col-sm-12:last-child {
+          //  background: red;
+          -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+          order: 2;
+          padding-top: 0rem;
+        }
+      }
+      .col-sm-12:first-child {
+        justify-content: center !important;
+        h2,
+        p {
+          text-align: center;
+        }
+        p {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 80%;
+        }
+      }
+
+      .col-sm-12:last-child {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+
+        h2,
+        p {
+          text-align: center;
+        }
+
+        p {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 396px) {
+  .section-core {
+    &--schedules {
+      #platform-6 {
+        top: 2rem;
+        left: 9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .section-core {
+    &--schedules {
+      #platform-6 {
+        top: 2rem;
+        left: 9rem;
+      }
+
+      #platform-5 {
+        top: 7rem;
+        left: 5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) and (min-width: 326px) {
+  .section-core {
+    &--schedules {
+      .col-sm-12:first-child {
+        & > span {
+          top: -7rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .section-core {
+    &--schedules {
+      #platform-6 {
+        top: -1.3rem;
+        left: 3.9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  .section-core {
+    &--schedules {
+      #platform-6 {
+        top: -1.3rem;
+        left: 2.9rem;
+      }
+
+      .col-sm-12:first-child {
+        & > span {
+          top: -5rem;
+        }
+      }
+    }
+  }
+}

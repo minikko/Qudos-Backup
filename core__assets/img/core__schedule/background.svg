@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="1972.09" viewBox="0 0 3840 1972.09">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #218ec7;
+      }
+
+      .cls-2 {
+        fill: #2693cc;
+      }
+
+      .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" y="177" width="3840" height="1001"/>
+  <rect class="cls-2" x="-9" y="-321" width="3840" height="2160"/>
+  <path class="cls-3" d="M-23,1308.35S707.677,807.289,1667,872.523,3334.01,797.907,3113-313l744-4,16,2213.111L-35,1882.12Z"/>
+  <path class="cls-4" d="M-117,1430.3s355.239-279.23,1394,67.97,1718.36,391.09,2687,268.89l-39,204.92H-35Z"/>
+</svg>

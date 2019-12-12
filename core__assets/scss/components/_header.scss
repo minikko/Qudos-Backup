@@ -185,6 +185,28 @@
         }
     }
 
+    &__inverted {
+        .header__menu {
+            span {
+                background-color: white;
+            }
+            &--active {
+                span {
+                    background-color: black;
+                }
+            }
+        }
+        @media (min-width: 768px) {
+            .header__nav {
+                a {
+                    margin: 0 0 0 3rem;
+                    color: white;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
     &--active,
     &--white {
         background-color: white;
