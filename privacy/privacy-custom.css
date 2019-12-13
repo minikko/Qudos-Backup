@@ -17,6 +17,14 @@
     top:6rem;
     right:200%;
 }
+
+.header__prime {
+    
+    color: #233041;
+    margin-bottom: 5rem;
+    position: relative;
+    line-height: 5.5rem;
+}
 .subheader__prime{
     width: 100%;
 }

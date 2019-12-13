@@ -1,0 +1,144 @@
+.policies {
+    [data-toggle~="collapse"] {
+        cursor: pointer;
+    }
+
+    .qudos-blue {
+        color: #228ec8;
+    }
+
+    p.subheader__prime {
+        font-weight: 400;
+    }
+
+    .subheader__prime {
+        line-height: 3rem;
+    }
+
+    .core__header-special--1, .subheader__prime{
+        color: #233041;
+    }
+
+
+    .section-core {
+        &--policies {
+            display: flex;
+            align-items: center;
+            height: 22rem;
+            position: relative;
+
+            .card-body {
+                font-size: 1.2rem;
+                line-height: 2.5rem;
+                font-weight: 400;
+                color: #676767;
+                text-align: inherit;
+                margin-top: 0rem;
+
+                p {
+                    padding-left: 1rem;
+                }
+
+                li {
+                    text-indent: 1.3rem;
+                }
+            }
+        }
+
+        &--rules {}
+
+
+    }
+
+    .core {
+        &__header {
+            &--h1 {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 3rem;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    // background: none;
+                }
+            }
+        }
+
+      &__parag{
+        max-width: 100% !important;
+      }
+    }
+}
+
+
+
+@media (max-width: 1440px) {
+    .policies {
+        .subheader__prime {
+            width: 100%;
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    .policies {
+        .why-qudos__section--2 {
+            height: 65vh;
+        }
+
+        .carousel-inner {
+            min-height: 40vh;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .policies {
+        .subheader__prime {
+            width: 100%;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .policies {
+        .section [class^=col-] {
+            padding: 4rem 0;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .policies {
+        .card {
+            width: 100%;
+        }
+
+        .card-header {
+            font-size: 1.8rem;
+        }
+
+        .card-body {
+            font-size: 1rem;
+        }
+
+        .carousel-inner {
+            min-height: 40vh;
+        }
+
+        .card-body li {
+            text-indent: 0rem;
+            padding-left: 1rem;
+        }
+
+        .accordion .card-header {
+            &:after {
+                position: absolute;
+                right: 0.25rem;
+            }
+        }
+    }
+}
