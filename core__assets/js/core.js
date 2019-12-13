@@ -94,9 +94,9 @@ $(document).ready(function() {
     });
     
     $('.clip-btn').click(function() {
-        $(this).addClass('active');
+        $(this).addClass('action');
         setTimeout(function(){
-            $('.active').removeClass('active');
+            $('.action').removeClass('action');
         },2000);
     }); 
 });

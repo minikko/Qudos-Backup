@@ -12,6 +12,7 @@
     margin-left: -8.5rem;
     display: none;
     text-align: center;
+    opacity: 0;
 }
 
 .section-core {
@@ -84,9 +85,9 @@
                         height: 100%;
                     }
 
-                    &.active {
+                    &.action {
                         &::before {
-                            content: 'Copied';
+                            content: 'Copied!';
                         }
                     }
                 }
@@ -94,9 +95,26 @@
         }
     }
 
-    &--new-codes + &--code-mobile {
+    &--new-codes+&--code-mobile {
+
         .col-sm-12 {
             padding-top: 3rem;
+        }
+    }
+
+    &--new-codes~&--confirm-book {
+        margin-top: 7rem;
+        background-color: rgba($qudos-lighter-grey, .25);
+        .btn--primary {
+            max-width: 15rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        a {
+            text-decoration: none;
         }
     }
 }

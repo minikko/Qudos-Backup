@@ -17,29 +17,110 @@
       }
     }
   }
-}
 
-.section {
-  [class^="col-"] {
-    padding: 5rem 0;
+  .section-core {
+    &--schedules {
+      display: flex !important;
+      align-items: center;
+      height: 35rem;
+      position: relative !important;
+
+      p {
+        max-width: 100%;
+      }
+
+      // images
+      #platform-5 {
+        top: 2rem;
+        width: 60%;
+      }
+
+      #platform-6 {
+        top: -3.5rem;
+        left: 5.5rem;
+        width: 45%;
+      }
+    }
+
+    &--portal {
+      // background: red
+    }
+
+    &--choose-fave {
+      background-color: $qudos-navyblue;
+      background-image: url(../img/core__corporate/choose-fave-bg.jpg);
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: 100% center;
+    }
+
+    &--confirm-sched {
+      .qs-section-two {
+        img {
+          padding: 0rem 0.75rem;
+
+          &:nth-child(3) {
+            position: absolute;
+            z-index: 1;
+            bottom: 13rem;
+            -webkit-filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.2));
+            filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.2));
+            width: 50%;
+            border-radius: 10rem;
+          }
+        }
+      }
+
+      .qs-section-three {
+        img {
+          padding: 0rem 0.75rem;
+
+          &:nth-child(2) {
+            position: absolute;
+            z-index: 1;
+            width: 8rem;
+            left: 7rem;
+            bottom: 7rem;
+            -webkit-filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.2));
+            filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.2));
+            width: 25%;
+          }
+        }
+      }
+
+      a {
+        text-decoration: underline;
+        color: $qudos-blue;
+      }
+
+      img {
+        width: 33%;
+      }
+    }
   }
 
-  &-banner--blue {
-    display: block;
-    position: relative;
+  .section {
+    [class^="col-"] {
+      padding: 5rem 0;
+    }
 
-    &::after {
-      content: "";
-      display: inline-block;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: -1;
-      position: absolute;
-      background-image: url(../img/core__schedule/background.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
+    &-banner--blue {
+      display: block;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        background-image: url(../img/core__schedule/background.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     }
   }
 }
@@ -73,80 +154,6 @@
         background-position-y: 0rem !important;
         height: 160%;
       }
-    }
-  }
-}
-
-.section-core {
-  &--schedules {
-    display: flex;
-    align-items: center;
-    height: 35rem;
-    position: relative;
-
-    p {
-      max-width: 100%;
-    }
-
-    // images
-    #platform-5 {
-      top: 2rem;
-      width: 60%;
-    }
-
-    #platform-6 {
-      top: -3.5rem;
-      left: 5.5rem;
-      width: 45%;
-    }
-  }
-
-  &--portal {
-    // background: red
-  }
-
-  &--choose-fave {
-    background-color: $qudos-navyblue;
-    background-image: url(../img/core__corporate/choose-fave-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 100% center;
-  }
-
-  &--confirm-sched {
-    .qs-section-two {
-      img {
-        padding: 0rem 0.75rem;
-
-        &:nth-child(3) {
-          position: absolute;
-          z-index: 1;
-          bottom: 13rem;
-        }
-      }
-    }
-
-    .qs-section-three {
-      img {
-        padding: 0rem 0.75rem;
-
-        &:nth-child(2) {
-          position: absolute;
-          z-index: 1;
-          width: 8rem;
-          left: 7rem;
-          bottom: 7rem;
-        }
-      }
-    }
-
-    a {
-      text-decoration: underline;
-      color: $qudos-blue;
-    }
-
-    img {
-      width: 33%;
     }
   }
 }
@@ -329,7 +336,7 @@
     &--schedules {
       overflow: visible;
 
-        #platform-6 {
+      #platform-6 {
         top: 2rem;
         left: 9rem;
       }
@@ -445,7 +452,7 @@
 @media (max-width: 396px) {
   .section-core {
     &--schedules {
-       #platform-6 {
+      #platform-6 {
         top: 2rem;
         left: 9rem;
       }
@@ -489,7 +496,7 @@
 @media (max-width: 350px) {
   .section-core {
     &--schedules {
-       #platform-6 {
+      #platform-6 {
         top: 2rem;
         left: 9rem;
       }
@@ -505,7 +512,7 @@
 @media (max-width: 325px) {
   .section-core {
     &--schedules {
-       #platform-6 {
+      #platform-6 {
         top: 2rem;
         left: 9rem;
       }
