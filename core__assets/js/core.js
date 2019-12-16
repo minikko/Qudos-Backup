@@ -80,7 +80,15 @@ $(document).ready(function() {
         event.preventDefault();
         CopyToClipboard("QUDOSRIDER25", true, "Copied!");
     });
+    $("#cc1").click(function(event) {
+        event.preventDefault();
+        CopyToClipboard("QUDOSRIDER25", true, "Copied!");
+    });
     $("#c2").click(function(event) {
+        event.preventDefault();
+        CopyToClipboard("QUDOSRIDER18", true, "Copied!");
+    });
+    $("#cc2").click(function(event) {
         event.preventDefault();
         CopyToClipboard("QUDOSRIDER18", true, "Copied!");
     });
@@ -88,7 +96,15 @@ $(document).ready(function() {
         event.preventDefault();
         CopyToClipboard("QUDOSRIDER16", true, "Copied!");
     });
+    $("#cc3").click(function(event) {
+        event.preventDefault();
+        CopyToClipboard("QUDOSRIDER16", true, "Copied!");
+    });
     $("#c4").click(function(event) {
+        event.preventDefault();
+        CopyToClipboard("QUDOSRIDER15", true, "Copied!");
+    });
+    $("#cc4").click(function(event) {
         event.preventDefault();
         CopyToClipboard("QUDOSRIDER15", true, "Copied!");
     });
